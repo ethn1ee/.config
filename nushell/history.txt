@@ -1,0 +1,6285 @@
+ls
+la
+clear
+ls
+f
+clear
+tmux ls
+^tmux ls
+clear
+ls
+cd spitikos
+ls
+ls | select name
+ls
+clear
+ls
+ls | select name
+ls | sort-by size
+ls | sort-by size | reverse
+ls -a
+tree
+clear
+ls *md
+ls
+ls *s
+ls **s
+clear
+4 > 10
+clear
+{'name': 'nu', 'stars': 5, 'language': 'Python'} | upsert language 'Rust'
+config nu
+$nu.config-path
+$env.config.buffer_editor = zed
+$env.config.buffer_editor = "zed"
+config nu
+clear
+celear
+clear
+$env.config
+kgno
+^kgno
+^kubectl
+^kubectl get nodes
+^"kubectl get nodes"
+^kubectl get namespaces
+^kubectl get nodes
+clear
+gemini
+^gemini
+clear
+brew list
+^brew list
+which brew
+which kubectl
+cd ..
+clear
+la
+ls -a
+clear
+zed .zshrc
+which go
+config nu
+$env.config.buffer_editor = "zed"
+config nu
+clear
+which brew
+config nu
+print $env.path
+source $nu.config-path
+clear
+which brew
+clear
+gemini
+clear
+which go
+go env GOPATH
+clear
+fzf
+clear
+brew install starship
+$nu.data-dir
+ls $nu.data-dir
+clear
+kgpo
+^kgpo
+clear
+kgpo
+path exists ~/.kubectl_aliases
+ls $nu.data-dir
+cd $nu.data-dir
+ls
+zed .
+clear
+kgpo
+kgns
+starship init nu
+http get https://raw.githubusercontent.com/ahmetb/kubectl-aliases/refs/heads/master/.kubectl_aliases.nu
+$nu.vendor-autoload-dirs
+kgpo
+kgns
+clear
+kgns
+$nu.vendor-autoload-dirs
+go version
+which go
+go version
+which go
+which go | length
+cd ..
+clear
+kgpo
+kgns
+starship init nu
+exec "starship init nu"
+nu "starship init nu"
+"starship init nu" | exec
+clear
+exec 'starship init nu'
+exec r#'starship init nu'#
+const command = [starship init nu]
+print $command
+pwd
+const command = [pwd]
+which do
+clear
+do pwd
+man
+man do
+const cmd = "pwd"
+cmd
+$cmd
+$cmd | nu
+let cmd = "ls"<\n>nu -c $cmd<\n>
+clear
+const cmd = "pwd"
+^cmd
+^$cmd
+$vendors
+ls
+rm kubectl_aliases.nu
+rm starship.nu
+ls
+history
+history | fzf
+clear
+$full_path
+ls
+rm kubectl_aliases.nu
+rm starship.nu
+clear
+ls
+cd spitikos/
+git status
+ls -a
+ls
+cd charts
+clear
+brew install font-hack-nerd-font
+brew install font-fira-code-nerd-font
+ls
+clear
+la
+clear
+ls
+tree
+clear
+tree
+clear
+$nu.config-path
+starship preset pure-preset
+cd ~
+zed .
+ls .config/
+cd .config
+zed .
+$nu.config-path
+cp /Users/ethantlee/Library/Application Support/nushell .
+cp "/Users/ethantlee/Library/Application Support/nushell/" .
+cp -r "/Users/ethantlee/Library/Application Support/nushell/" .
+$nu.user-autoload-dirs
+$nu.config-path
+clear
+ls
+starship preset pure-preset -o ~/.config/starship.toml
+brew list
+clear
+touch ~/.hushlogin<\n>
+config nu --doc
+ls
+ls -t
+ls | table
+ls | table -t default
+ls | table -t basic
+clear
+config nu --doc
+config nu --doc | fzf
+config nu --doc
+ls
+nul
+ls
+clear
+ls
+cd ~
+ls
+clear
+ls
+date
+date now
+clear
+zed ~/.config/starship.toml
+config nu --doc | fzf
+config nu --doc | zed
+cd ~
+cd $env.config-path
+cd $nu.config-path
+$nu.config-path
+cd /Users/ethantlee/Library/Application Support/nushell/
+cd "/Users/ethantlee/Library/Application Support/nushell/"
+config nu --doc > nuconfig.txt
+zed config nu --doc
+config nu --doc | save -f doc
+cd ..
+echo hello
+print hello
+$env.data-dir
+$nu.data-dir
+nu config --doc | save -f ($nu.data-dir | path join "docs.nu")<\n>
+history | fzf
+config nu --doc | save -f ($nu.data-dir | path join "docs.nu")<\n>
+clear
+brew install --cask nikitabobko/tap/aerospace<\n>
+echo $XDG_CONFIG_HOME
+cp /Applications/AeroSpace.app/Contents/Resources/default-config.toml ~/.aerospace.toml<\n>
+zed ~/.aerospace.toml
+defaults write com.apple.dock expose-group-apps -bool true && killall Dock<\n>
+^defaults write com.apple.dock expose-group-apps -bool true && killall Dock<\n>
+killall SystemUIServer
+aerospace list-apps
+zed ~/.aerospace.toml
+cd ~
+clear
+tmux ls
+clear
+zed
+zed ~/.aerospace.toml
+zed
+# Download the script and make it executable<\n>curl -O https://raw.githubusercontent.com/ifvictr/get-borderless-arc/master/get-borderless-arc.sh<\n>chmod +x get-borderless-arc.sh<\n><\n># Run it<\n>./get-borderless-arc.sh
+ls
+rm get-borderless-arc.sh
+ls
+clear
+tmux kill-session -t spitikos
+tmux ls
+ls
+cd spitikos/
+tmuxconf
+zsh
+tmuxconf
+clear
+tmux kill-server
+tmux ls
+ls
+clear
+tmuxconf
+^tmuxconf
+clear
+zed ~/.tmux.conf
+clear
+cat ~/.zshrc
+cat ~/.gemini/init.sh
+cat ~/.gemini/.env
+ls ~/.gemini
+gemini
+clear
+gemini
+clear
+clear
+gemini
+clear
+zed .
+cd apps/
+cd ..
+clear
+git clone git@github.com:spitikos/api.git
+cd api
+clear
+go mod init
+go mod init spitikos/api
+ls
+la
+clear
+brew install sk
+cat ~/.zshrc
+which sk
+clear
+which fd
+clear
+fd -t f . $env.HOME | sk
+fd -t d . $env.HOME | sk
+clear
+f
+clear
+f
+sk
+ls | sk
+sk --ansi -i -c 'rg --color=always --line-number "{}"'
+clear
+f
+clear
+sk --ansi -i -c 'ag --color "{}"' --preview "preview.sh {}"
+fd --type d . ~ | sk --prompt "Find directory: " --preview "ls -F {}" --ansi<\n>
+fd --type d . ~ | sk --prompt "Find directory: " --preview "ls {}" --ansi<\n>
+brew install bat
+clear
+clea
+rclear
+clear
+f
+clear
+f
+clear
+f
+clear
+f
+clear
+f
+clear
+f
+clear
+f
+clear
+f
+sk -h
+sk --ansi -i -c 'grep -rI --color=always --line-number "{}" .'
+clear
+f
+clear
+f
+clear
+f
+clear
+f
+cd "$(fd --type d . ~ | sk --prompt "Find directory: " --preview "ls -F {}" --ansi)"<\n>
+cler
+clear
+fd --type d . ~ | sk --prompt "Find directory: " --preview "ls -F {}" --ansi
+clear
+f
+clear
+f
+ear
+clear
+cd ~
+clear
+f
+ff
+clear
+ff
+clear
+ff
+fd -t d . $env.HOME | sk --preview 'tree -C {}' --height 40% --layout reverse --ansi --prompt "Find directory: "
+fd --type d . ~ | sk --prompt "Find directory: " --preview "ls -F {}" --ansi
+> [1 2 3 4 5] | input list 'Rate it'
+[1 2 3 4 5] | input list 'Rate it'
+[1 2 3 4 5] | input list 'Rate it' -f
+fd --type d . ~ | input list "find directory" -f
+ls
+ls -la
+ls -a
+clear
+ls -r
+ls -f
+ls subdir
+> ls -a **/*
+ls -a **/*
+ls -a
+cd spitikos/
+clear
+ls -a **/*
+ls **/*
+clear
+ls
+ls **/* | select name | input list -f
+> ls | input list --fuzzy 'Select the target'
+ls | input list --fuzzy 'Select the target'
+ls | input list --fuzzy 'Select the target' -d name
+ls **/* | input list -f -d name
+ls **/* | sort-by name --ignore-case | input list -f -d name
+ls **/* | input list -f -d name | echo
+ls **/* | input list -f -d name | sort-by name
+ls **/* | input list -f -d name
+ls **/* | sort-by name | input list -f -d name
+ls **/* | sort-by name --reverse | input list -f -d name
+curl https://sh.rustup.rs -sSf | sh<\n>
+> cargo install nu_plugin_skim
+which cargo
+clear
+f
+clear
+f
+clear
+f
+clear
+f
+clear
+ls
+f
+/Users/ethantlee/Sandbox/emorylife/src | cd
+"/Users/ethantlee/Sandbox/emorylife/src" | cd
+clear
+"/Users/ethantlee/Sandbox/emorylife/src" | cd $in
+f
+clear
+f
+clear
+f
+clear
+f
+f | cd $in
+clear
+f
+f | cd $in
+ls /usr/share/nvim/runtime/ | get name | find tutor | ansi strip | ^ls -al ...$in
+ls ~ | get name | find spitikos | ansi strip | ^ls -al ...$in
+ls ~ | get name | find spitikos | ansi strip
+ls ~ | get name | find spitikos
+ls ~ | get name | input list
+ls ~ | get name | input list | cd $in
+ls ~ | get name | input list -f | cd $in
+clear
+f
+ff
+clear
+ff
+clear
+f
+clear
+f
+f .
+clear
+f
+f .
+clear
+f
+f .
+ls
+clear
+f
+clear
+ff
+ff .
+f
+clear
+f
+ls ($path | default $env.HOME) **/* | where type == dir | get name | input list --fuzzy | ls $in
+clear
+home
+clear
+home
+f
+ls
+clear
+f
+clear
+f
+clear
+f
+clear
+f
+clear
+f.
+clear
+f
+clear
+f
+zed
+clear
+cd
+. | get name
+clear
+f
+ff
+f.
+clear
+f
+ls ~/Library/Accounts/
+cd ~/Library/
+tree
+cd Accounts/
+ls
+tree
+la
+ls
+clear
+f
+nu\
+clear
+f
+ff
+clear
+f
+clear
+f
+ls ~/.Trash/
+ls ~/.Trash/ | sort-by modified
+cp /Users/ethantlee/.Trash/config.nu $nu.config-path
+clear
+f
+clear
+f
+clear
+f
+f.
+f .
+clear
+f
+f.
+f .
+clear
+f .
+clear
+f
+f .
+clear
+f
+clear
+f
+const args = [1 2]
+print args
+print $args
+print ...$args
+clear
+const args = [**/*]
+ls $args
+ls ...$args
+ls
+print $args
+ls (...$args)
+ls ...$args
+clear
+const args = ["./"]
+ls ...$args
+clear
+const args = ["-l", "./"]
+ls ...$args
+ls ~ **/*
+ls
+clear
+const args = ["charts", "**/*"]
+ls ...$args
+ls ...[charts **/*]
+ls charts
+ls **/*
+cd charts
+clear
+ls **/*
+ls -s
+ls
+ls -s **./*
+ls -s **/*
+cd ..
+ls -D charts
+ls -D charts/*
+ls -D charts/**/*
+ls charts/**/*
+cd charts
+ls
+cd charts/
+ls
+ls homepage/**/*
+ls -D homepage/**/*
+clear
+f
+cd ..
+const args = ["charts/**/*"]
+ls ...$args
+ls charts/**/*
+ls "charts/**/*"
+pwd | path join "**/*"
+f
+f .
+f
+ls "charts/**/*"
+const args = ["charts"]
+ls ...$args
+ls "charts"
+ls ...$args
+const args = ["." | path join "charts"]
+args
+$args
+const args = [("." | path join "charts")]
+$args
+ls ...$args
+clear
+let args = [($env.HOME | path join "**/*")]
+$args
+ls ...$args
+clear
+f
+clear
+f
+f .
+f $env.pwd
+f
+"/Users/ethantlee/**/*" | path expand
+"/Users/ethantlee/**/*" | str expand
+nu]
+clear
+f
+cd /Users/ethantlee/Library/Application Support/LogiOptionsPlus/sentry_db_logioptionsplus_updater/
+cd "/Users/ethantlee/Library/Application Support/LogiOptionsPlus/sentry_db_logioptionsplus_updater/"
+ls
+cd ..
+ls -l
+f
+sudo ls
+ls
+$env.SHELL
+sudo ls
+clear
+sudo -s ls
+sudo visudo
+sudo ls
+clear
+f
+clear
+cd spitikos/
+ls
+f
+clear
+f
+sudo -s ls
+f
+clear
+f
+sudo f
+sudo -s f
+clear
+f
+f .
+f
+fd --type d . ~ | input list "find directory" -f
+fd --type d . .
+fd --type d . . | detect columns
+fd --type d . . | detect columns -n
+fd --type d . . | detect columns -n | input list -f
+fd --type d . . | detect columns -n | input list -f -d column0
+fd --type d . ~ | detect columns -n | input list -f -d column0
+fd --type d . ~ | sk
+fd --type d . ~ | sk --prompt "Find directory: " --preview "ls -F {}" --ansi
+f
+clear
+fd --type d . ~ | sk --prompt "Find directory: " --preview "ls -F {}" --ansi
+f
+job list
+which vim
+f
+clear
+f
+clear
+cd ~
+f
+clear
+f
+f .
+f
+clear
+ff
+clear
+f
+ff
+f .
+ff .
+ls
+bat GEMINI.md
+clear
+f
+clear
+ff
+f
+clear
+f
+clear
+f
+clear
+ff
+clear
+f .
+pwd
+cd ~/spitikos/api/
+clear
+cat ~/.config/starship.toml
+go get 	"github.com/prometheus/client_golang/api"<\n>
+go get "github.com/prometheus/client_golang/api/prometheus/v1"
+clear
+ls
+go run ./cmd/main.go
+go run ./cmd/main.go | jq
+go get "github.com/antonmedv/expr"
+go get github.com/expr-lang/expr
+clear
+go run ./cmd/main.go
+go get "github.com/lmittmann/tint"
+go get github.com/spf13/viper
+go run ./cmd/main.go
+go mod tidy
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+clear
+go get "connectrpc.com/connect"
+go mod tid
+go mod tidy
+which buf
+clear
+touch buf.yaml
+buf registry login buf.build
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250813062646-c3558f636f62.1
+go mod tidy
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250813161810-dd2c659fb0bb.1
+go mod tidy
+which grpcurl
+grpcurl localhost:50051 list
+grpcurl http://localhost:50051 list
+grpcurl localhost:50051 list
+grpcurl -plaintext localhost:50051 list
+grpcurl -plaintext localhost:50051 describe prometheus_proxy.v1.QueryService
+grpcurl -plaintext localhost:50051 prometheus_proxy.v1.QueryService
+grpcurl -plaintext localhost:50051 prometheus_proxy.v1.QueryService/Query
+grpcurl -plaintext localhost:50051 \prometheus_proxy.v1.QueryService/Query
+grpcurl -plaintext localhost:50051 -d '{"query": "node_os_info"}' prometheus_proxy.v1.QueryService/Query
+grpcurl -plaintext -d '{"query": "node_os_info}' prometheus_proxy.v1.QueryService/Query
+grpcurl -plaintext -d '{"query": "node_os_info}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+go run ./cmd/main.go
+clear
+go run ./cmd/main.go
+gemini
+clear
+f
+clear
+f
+clear
+f
+go run ./cmd/prometheus_proxy/main.go
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+clear
+go run ./cmd/prometheus_proxy/main.go
+clear
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+go run ./cmd/prometheus_proxy/main.go
+clear
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+clear
+go run ./cmd/prometheus_proxy/main.go
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+clear
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+buf push
+go run ./cmd/prometheus_proxy/main.go
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250813174611-4a8d6111f065.1
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250813175328-448edb49f0ec.1
+clear
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+go run ./cmd/prometheus_proxy/main.go
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+clear
+go run ./cmd/prometheus_proxy/main.go
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+clear
+f
+clear
+pnpm config set @buf:registry https://buf.build/gen/npm/v1/
+pnpm add @buf/spitikos_api.connectrpc_query-es@2.1.1-20250813175328-448edb49f0ec.1
+pnpm install
+pnpm config set @buf:registry https://buf.build/gen/npm/v1/
+pnpm add @buf/spitikos_api.bufbuild_es@2.6.3-20250813175328-448edb49f0ec.1
+go run ./cmd/prometheus_proxy/main.go
+clear
+clear
+pnpm dev
+clear
+cd ..
+zed .
+pnpm dev
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250813213039-98bd750d33d0.1
+npm install @buf/spitikos_api.connectrpc_query-es@2.1.1-20250813213039-98bd750d33d0.1
+pnpm add @buf/spitikos_api.connectrpc_query-es@2.1.1-20250813213039-98bd750d33d0.1
+pnpm add @connectrpc/connect-web
+pnpm add @connectrpc/connect-query
+pnpm add @buf/spitikos_api.connectrpc_query-es@2.1.1-20250813213039-98bd750d33d0.1
+pnpm config set @buf:registry https://buf.build/gen/npm/v1/
+npm install @buf/spitikos_api.bufbuild_es@2.6.3-20250813213039-98bd750d33d0.1
+pnpm add @buf/spitikos_api.bufbuild_es@2.6.3-20250813213039-98bd750d33d0.1
+buf push
+buf push
+buf lint
+buf push
+cd proto
+buf lint
+buf push
+cd ..
+buf push
+buf lint
+buf push
+pnpm add @buf/spitikos_api.connectrpc_query-es@2.1.1-20250813220305-817078849ba0.1
+pnpm add @buf/spitikos_api.bufbuild_es@2.6.3-20250813220305-817078849ba0.1
+buf generate
+buf push
+buf lint
+buf generate
+buf push
+pnpm add @buf/spitikos_api.bufbuild_es@2.6.3-20250813222125-b998b4541bf8.1
+buf lint
+npm install @buf/spitikos_api.connectrpc_query-es@2.1.1-20250813222125-b998b4541bf8.1
+pnpm add @buf/spitikos_api.connectrpc_query-es@2.1.1-20250813222125-b998b4541bf8.1
+$env.GEMINI_API_KEY
+pnpm add @connectrpc/connect
+go run ./cmd/prometheus_proxy/main.go
+buf lint
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250813230714-933714415278.1
+buf gen
+buf generate
+buf gen
+buf generate
+go mod tidy
+pnpm dev
+clear
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.PrometheusService/Query
+clear
+pnpm add @connectrpc/connect
+go run ./cmd/prometheus_proxy/main.go
+clear
+go run ./cmd/prometheus_proxy/main.go
+pnpm dev
+clear
+gemini
+cd ..
+..
+f
+clear
+cd spitikos/
+clear
+..
+cd charts
+git add .
+git commit -m "add prometheus proxy api"
+git push
+git pull
+git status
+git push
+..
+cd spitikos/
+git add .
+git commit -m "refactor chart update action"
+git push
+..
+cd homepage/
+git add .
+..
+cd api
+git add .
+git commit -m "add prometheus proxy api"
+git push
+git add .
+git commit -m "add dockerfile"
+git push
+../spitikos/
+git add .
+git commit -m "edit token"
+git push
+git add .
+..
+cd api
+git status
+git commit -m "fix workflow"
+git add .
+git commit -m "fix workflow"
+git push
+..
+cd charts/
+yq e '.image.tag = "de3d96cfb7dc64cb807e723accadd73696ce4184"' -i "charts/charts/api/prometheus-proxy/values.yaml"
+yq e '.image.tag = "de3d96cfb7dc64cb807e723accadd73696ce4184"' -i "charts/api/prometheus-proxy/values.yaml"
+git status
+cd ..
+cd charts
+git add .
+git status
+cd ..
+cd spitikos/
+git add .
+git commit -m "fix workflow"
+git push
+cd ..
+cd charts/
+yq e '.image.tag = "de3d96cfb7dc64cb807e723accadd73696ce4184"' -i "charts/api/prometheus-proxy/values.yaml"
+..
+cd spitikos/
+git add .
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+..
+cd api/
+git statsu
+git statuis
+git status
+git add .
+git commit -m "update dockerfile"
+git push
+..
+cd spitikos/
+git add .
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+..
+cd char
+cd charts/
+git pull
+git add .
+git commit -m "fix command"
+git push
+git add .
+git commit -m "fix command"
+git psuh
+git push
+kgpo
+clear
+kgns
+kgpo -n api
+klo prometheus-proxy-deployment-7557bdfb69-nlx69 -n api
+krm prometheus-proxy-deployment-7557bdfb69-nlx69 -n api
+kgpo -n api
+krm prometheus-proxy-deployment-7557bdfb69-nlx69 -n api
+krm pod/prometheus-proxy-deployment-7557bdfb69-nlx69 -n api
+krm pod/prometheus-proxy-deployment-c78cc6c9-qjv67 -n api
+kgpo
+kgpo -n api
+klo prometheus-proxy-deployment-c78cc6c9-lqqzw -n api
+git add .
+git commit -m "add prometheus proxy configmap"
+git push
+git add .
+git commit -m "refactor prometheus proxy chart"
+git push
+grpcurl -plaintext -d '{"query": "node_os_info"}' api.spitikos.dev/prometheus-proxy:50051 prometheus_proxy.v1.PrometheusService/Query
+grpcurl -plaintext -d '{"query": "node_os_info"}' api.spitikos.dev/prometheus-proxy prometheus_proxy.v1.PrometheusService/Query
+grpcurl -plaintext -d '{"query": "node_os_info"}' api.spitikos.dev/prometheus-proxy:50051 prometheus_proxy.v1.PrometheusService/Query
+git add .
+git commit -m "refactor prometheus proxy chart"
+git push
+grpcurl -d api.spitikos.dev/prometheus-proxy:50051 list
+grpcurl api.spitikos.dev/prometheus-proxy:50051 list
+grpcurl api.spitikos.dev:50051 list<\n>
+grpcurl api.spitikos.dev/prometheus-proxy:50051 list<\n>
+grpcurl api.spitikos.dev:50051/prometheus-proxy list<\n>
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+grpcurl api.spitikos.dev:50051/prometheus-proxy list<\n>
+grpcurl api.spitikos.dev/prometheus-proxy list<\n>
+grpcurl api.spitikos.dev/prometheus-proxy:50051 list<\n>
+grpcurl api.spitikos.dev:50051 list<\n>
+clear
+grpcurl api.spitikos.dev:50051 list<\n>
+grpcurl api.spitikos.dev:50051/prometheus-proxy list<\n>
+cd charts/
+git add .
+f
+clear
+go run ./cmd/server/main.go
+grpcurl localhost:50051 list
+grpcurl -plaintext localhost:50051 list
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.PrometheusService/Query
+git add .
+git commit -m "refactor for a centralized server"
+git push
+f
+git status
+git add .
+git commit -m "refactor for a centralized server"
+git push
+cd ..
+cd spitikos/
+git add .
+git status
+git commit -m "refactor for a centralized server"
+git push
+git add .
+git commit -m "rename api app"
+git push
+cd ../charts/
+git add .
+git commit -m "fix path"
+git push
+cd ../api/
+git add .
+git commit -m "fix path"
+git push
+grpcurl api.spitikos.dev:50051 list
+git add .
+cd ../charts/
+git add .
+git commit -m "remove command"
+git push
+git commit -m "expose from dockerfile"
+git push
+git pull
+git push
+git pull
+git add .
+git commit -m "expose from dockerfile"
+git push
+grpcurl api.spitikos.dev:50051 list
+git pull
+git add .
+git commit -m "expose from dockerfile"
+git push
+git add .
+git commit -m "optimize dockerfile"
+git push
+grpcurl api.spitikos.dev:50051 list
+kd svc -n api api
+grpcurl api.spitikos.dev:50051 list
+git add .
+git commit -m "fix chart"
+git push
+git pull
+git push
+grpcurl api.spitikos.dev:50051 list
+cd ../spitikos/
+git add .
+git commit -m "add quotes to urls"
+git push
+kgpo -n api
+krm pod/api-deployment-569bfd8845-kwvh4 -n api
+grpcurl api.spitikos.dev:50051 list
+pissh
+ssh spitikos.dev
+ssh ssh.spitikos.dev
+zconfig
+bat ~/.zshrc
+ssh pi.spitikos.dev
+c;ear
+clear
+ping api.spitikos.dev
+kg ingressroutes -A
+git status
+cd ../charts/
+git status
+git add .
+git commit -m "fix templates"
+git push
+kgpo -n api
+kd pod/api-deployment-6dcd5f7968-d9gcq -n api
+kgpo -n api
+klo api-deployment-6dcd5f7968-d9gcq -n api
+gemini
+clear
+clear
+grpcurl api.spitikos.dev:50051 list
+gemini
+cd ../charts/
+git status
+git add .
+git commit -m "fix templates"
+git push
+grpcurl api.spitikos.dev:50051 list
+kgpo -n api
+kgsvc
+kgsvc -n api
+git add .
+git commit -m "fix templates"
+git push
+k port-forward svc/api 50051:50051
+grpcurl localhost:50051 list
+grpcurl -plaintext localhost:50051 list
+k port-forward svc/api -n api 50051:50051
+clear
+grpcurl api.spitikos.dev:50051 list
+kgpo
+kgpo -n api
+krm pod/api-deployment-648557b4b-mb268 -n api
+grpcurl api.spitikos.dev:50051 list
+kg ingress -A
+kg ingressroutes -A
+kg ingressroutes -n api
+cd charts/
+helm template ./charts/api
+helm dependency build
+helm dependency build ./charts/api/Chart.yaml
+cd api
+cd charts/api
+ls
+helm dependency build
+helm template . --values ./values.yaml
+kg ingressroute -n api
+kg ingressroutes -n homepage
+gemini
+kg service api -n api -o yaml
+kg configmaps -A
+git add .
+git commit -m "fix templates"
+git push
+kg middleware -A
+kg service -A
+kg ingressroutes -A
+grpcurl api.spitikos.dev:50051 list
+clear
+k config get-contexts
+kubectl get ingressroutes -A
+git add .
+git commit -m "remove middleware"
+git push
+grpcurl api.spitikos.dev:50051 list
+git add .
+git commit -m "add replicas"
+git push
+kgpo -n api
+krm pods --all -n api
+kgpo -n api
+git add .
+git commit -m "fix configmap name"
+git push
+grpcurl api.spitikos.dev:50051 list
+git add .
+git commit -m "remove middleware"
+git push
+git add .
+git commit -m "add middlewares"
+git push
+grpcurl api.spitikos.dev:50051 list
+grpcurl -plaintext api.spitikos.dev
+grpcurl -plaintext api.spitikos.dev list
+grpcurl -plaintext api.spitikos.dev:50051 list
+gemini
+clear
+cd ..
+git add .
+git commit -m "configure grpc networking"
+git push
+ssh ssh.spitikos.dev
+ssh pi.spitikos.dev
+clear
+ssh pi.spitikos.dev
+kgpo -n traefik
+kgsvc -n traefik
+git status
+git add .
+git commit -m "fix traefik values"
+git push
+kgpo -n argocd
+kgsvc -n argocd
+k port-forward svc/argocd-server -n argocd 80:80
+which argocd
+brew install argocd
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+argocd login argocd.spitikos.dev --insecure
+ssh pi.spitikos.dev
+clear
+kgpo -n traefik
+krm pod/traefik-f465d9959-s9vv4 -n traefik
+kgpo -n traefik
+kgpo -n traefik --watch
+clear
+kgpo -n traefik
+git add .
+git status
+git commit -m "fix charts"
+git push
+git add .
+git commit -m "fix charts"
+git push
+kubectl patch app traefik -n argocd -p '{"metadata": {"annotations": {"argocd.argoproj.io/refresh": "hard"}}}' --type merge
+klo traefik-f465d9959-jt2pv -n traefik
+kgpo -n traefik
+krm pod/traefik-f465d9959-jt2pv -n traefki
+krm pod/traefik-f465d9959-jt2pv -n traefik
+kgpo -n traefik --watch
+clear
+kgpo -n traefik 
+git add .
+git commit -m "fix charts"
+git push
+git status
+klo traefik-f465d9959-hf62k -n traefik
+clear
+kubectl patch app traefik -n argocd -p '{"metadata": {"annotations": {"argocd.argoproj.io/refresh": "hard"}}}' --type merge
+kgpo -n traefik 
+krm pod/traefik-f465d9959-hf62k -n traefik
+gemini
+clear
+ssh pi.spitikos.dev
+clear
+cd ../..
+cd ..
+git add .
+git commit -m "add grpc entrypoint"
+git puhs
+git push
+kgpo
+kgpo -n traefik 
+ssh pi.spitikos.dev
+ssh ssh.spitikos.dev
+cat ~/.ssh/config
+ssh pi.spitikos.dev
+clear
+history
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+kgpo
+kgns
+git add .
+git commit -m "remove grpc"
+git push
+git add .
+git commit -m "add grpc"
+git push
+kgns
+clear
+kgns
+kg ingressroutes -A
+cd ..
+make dash-token
+argocd login argocd.spitikos.dev --insecure
+clear
+zed ~/.ssh/config
+make pi-off
+ssh spitikos
+ssh spitikos
+make pi-on
+clear
+clear
+ssh spitikos
+kgpo -n traefik --watch
+cd charts/
+git add .
+git commit -m "add grpc"
+git push
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+argocd login argocd.spitikos.dev --insecure
+argocd app sync traefik --hard-refresh
+argocd app sync -h
+clear
+argocd app get traefik
+argocd app sync traefik --refresh
+git add .
+git commit -m "remove expose"
+git push
+grpcurl -plaintext api.spitikos.dev:50051 list
+grpcurl  api.spitikos.dev:50051 list
+grpcurl  api.spitikos.dev:30051 list
+kg ingressroutes -A
+ssh spitikos
+kg svc -n traefik
+kd svc/traefik -n traefik
+helm list
+argocd app get traefik
+kg ingressroute
+kg ingressroute -A
+kd ingressroute.traefik.io/test-ingress
+kg ingressroute -A
+grpcurl api.spitikos.dev:50051 list
+kg ingressroute.traefik.io -A
+grpcurl api.spitikos.dev:443 list
+grpcurl -plaintext api.spitikos.dev:443 list
+grpcurl -vv api.spitikos.dev:443 list
+grpcurl -vv api.spitikos.dev:50051 list
+grpcurl -vv -plaintext api.spitikos.dev:50051 list
+curl api.spitikos.dev
+curl tcp://api.spitikos.dev
+git add .
+git commit -m "add ingress route tcp"
+git push
+argocd app sync traefik
+argocd app sync api
+grpcurl -vv api.spitikos.dev:50051 list
+grpcurl -vv api.spitikos.dev:443 list
+ssh spitikos
+nvim ~/.ssh/config
+clear
+grpcurl -vv api.spitikos.dev:443 list
+grpcurl -vv api.spitikos.dev:443 list
+grpcurl -plaintext 10.0.0.200:30051 list
+git add .
+git commit -m "fix charts"
+git push
+git add .
+ssh spitikos
+git commit -m "fix charts"
+git push
+argocd app sync traefik
+argocd app sync api
+kg svc -n traefik
+kg svc/traefik -n traefik -o yaml
+git add .
+git commit -m "fix charts"
+git push
+grpcurl -plaintext 10.0.0.200:30051 list
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:40041 list
+grpcurl api.spitikos.dev:50051 list
+grpcurl api.spitikos.dev:30080 list
+git add .
+git commit -m "fix charts"
+git push
+grpcurl api.spitikos.dev:80 list
+grpcurl -plaintext api.spitikos.dev:80 list
+grpcurl -plaintext api.spitikos.dev:443 list
+grpcurl  api.spitikos.dev:443 list
+clear
+grpcurl -plaintext 10.0.0.200:30080 list
+history | sk
+grpcurl -plaintext 10.0.0.200:30080 describe prometheus_proxy.v1.QueryService
+grpcurl -plaintext -d '{"query": "node_os_info"}' 10.0.0.200:50051 prometheus_proxy.v1.QueryService/Query
+grpcurl -plaintext -d '{"query": "node_os_info"}' 10.0.0.200:30080 prometheus_proxy.v1.QueryService/Query
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.QueryService/Query
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.PrometheusService/Query
+grpcurl -plaintext -d '{"query": "node_os_info"}' 10.0.0.200:30080 prometheus_proxy.v1.PrometheusService/Query
+grpcurl -plaintext localhost:50051 list
+clear
+kg svc/api -n api -o yaml
+git add .
+git commit -m "fix charts"
+git push
+kgpo -n api
+grpcurl -plaintext 10.0.0.200:30080 describe prometheus_proxy.v1.QueryService
+grpcurl -plaintext 10.0.0.200:30080 list
+git add .
+git commit -m "fix charts"
+git push
+grpcurl -plaintext 10.0.0.200:30080 list
+ping api.spitikos.dev
+grpcurl 104.21.112.1:443 list
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:80 list
+grpcurl -plaintext api.spitikos.dev:80 list
+grpcurl api.api.svc.cluster.local:50051 list
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+curl homepage.homepage.svc.cluster.local
+curl http://homepage.homepage.svc.cluster.local
+curl http://api.api.svc.cluster.local:50051
+ping http://homepage.homepage.svc.cluster.local
+ping homepage.homepage.svc.cluster.local
+kgsvc -n homepage
+k port-forward svc/api -n api 50051:50051
+ssh spitikos
+curl -v homepage.homepage.svc.cluster.local
+telepresence connect
+curl http://api.api.svc.cluster.local:50051
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+git status
+ssh spitikos
+grpcurl api.spitikos.dev:443 list
+git add .
+git commit -m "fix charts"
+git push
+grpcurl api.spitikos.dev:443 list
+git add .
+git commit -m "fix charts"
+git push]
+git push
+ssh spitikos
+grpcurl api.spitikos.dev:443 list
+git add .
+git commit -m "fix(api): rely solely on service annotation for h2c"
+git push
+grpcurl api.spitikos.dev:443 list
+git add .
+git commit -m "fix(api): rely solely on service annotation for h2c"
+git push
+grpcurl api.spitikos.dev:443 list
+telepresence connect
+grpcurl api.api.svc.cluster.local:50051 list
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:443 list
+brew install charmbracelet/tap/crush<\n>
+crush
+cd ..
+clear
+cd ../../..
+clear
+cd charts
+git status
+git add .
+git status
+git commit -m "add servertransport"
+git push
+grpcurl api.spitikos.dev:443 list
+gemini
+clear
+telepresence connect
+clear
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+grpcurl api.spitikos.dev:443 list
+git add .
+git status
+ssh spitikos
+git commit -m "set up websecure"
+git push
+grpcurl api.spitikos.dev:443 list
+git add .
+git commit -m "remove servertransport"
+git push
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:80 list
+git add .
+git commit -m "fix charts"
+git push
+kd svc/api -n api
+grpcurl api.spitikos.dev:80 list
+grpcurl api.spitikos.dev:443 list
+grpcurl -plaintext api.spitikos.dev:443 list
+grpcurl --grpc-client-tls-secure api.spitikos.dev:443 list
+git add .
+git commit -m "rebuild chart from scratch"
+git psuh
+git push
+git add .
+git commit -m "fix selector labels"
+git push
+grpcurl api.spitikos.dev:443 list
+git add .
+git commit -m "change to port 80"
+git push
+ping api.spitikos.dev
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:80 list
+grpcurl api.api.svc.cluster.local:80 list
+telepresence connect
+grpcurl api.api.svc.cluster.local:80 list
+grpcurl -plaintext api.api.svc.cluster.local:80 list
+git add .
+git commit -m "change port back to 50051"
+git push
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+ping api.api.svc.cluster.local
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+telepresence connect
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+clear
+grpcurl api.api.svc.cluster.local:50051 list
+kgpo -n api
+klo pod/api-deployment-6d45d66585-6cz6g -n api
+clear
+grpcurl api.api.svc.cluster.local:50051 list
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+k port-forward svc/api -n api 50051:50051
+kg svc/api -n api -o yaml
+kg svc -n api
+k port-forward svc/api -n api 50051:50051
+telepresence -h
+telepresence -hlist
+telepresence list
+telepresence quit
+clear
+k port-forward svc/api -n api 50051:50051
+git status
+cd ../api/
+git status
+git add .
+git commit -m "remove cors"
+git push
+go mod tidy
+git add .
+git commit -m "tidy"
+git push
+cd ../charts/
+git pull
+git add .
+git commit -m "update image"
+git push
+telepresence connect
+k port-forward svc/api -n api 50051:50051
+kgsvc -n api
+kg svc -n api
+kg svc/api -n api -o yaml
+kgpo -n api
+klo pod/api-deployment-656fc9c867-5z46w -n api
+git add .
+git commit -m "add labels"
+git push
+clear
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+k port-forward svc/api -n api 50051:50051
+clear
+grpcurl api.spitikos.dev:443 list
+git add .
+git commit -m "remove annotation"
+git push
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+ssh spitikos
+clear
+grpcurl api.spitikos.dev:443 list
+clear
+kgpo -n api
+klo pod/api-deployment-656fc9c867-5z46w -n api
+telepresence connect
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+grpcurl api.spitikos.dev:443 list
+git status
+git add .
+git commit -m "add passhostheader"
+git push
+git commit -m "add passhostheader"
+clear
+grpcurl api.spitikos.dev:443 list
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+grpcurl api.spitikos.dev:443 list
+git add .
+cd ../api
+git add .
+git commit -m "add read header timeout"
+git status
+git push
+cd ../charts/
+git pull
+git add .
+git commit -m "update image"
+git push
+grpcurl api.spitikos.dev:443 list
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+grpcurl api.spitikos.dev:443 list
+grpcurl -plaintext 10.0.0.200:30443 list
+ssh spitikos
+clear
+grpcurl -plaintext 10.0.0.200:30080 list
+grpcurl 10.0.0.200:30080 list
+grpcurl -insecure -H "Host: api.spitikos.dev" 10.0.0.200:30443 list
+grpcurl -insecure -H "Host: api.spitikos.dev" 10.0.0.200:30080 list
+grpcurl -insecure -H "Host: api.spitikos.dev" -d '{"query": "up"}' 10.0.0.200:30443 prometheus_proxy.v1.<\n>PrometheusService/Query
+grpcurl -insecure -H "Host: api.spitikos.dev" -d '{"query": "up"}' 10.0.0.200:30443 prometheus_proxy.v1.PrometheusService/Query
+grpcurl \<\n>-insecure \<\n>-H "Host: api.spitikos.dev" \<\n>-import-path ./api/proto \<\n>-proto ./api/proto/prometheus_proxy/v1/service.proto \<\n>-d '{"query": "up"}' \<\n>10.0.0.200:30443 \<\n>prometheus_proxy.v1.PrometheusService/Query
+grpcurl -insecure -H "Host: api.spitikos.dev" -import-path ./api/proto -proto ./api/proto/prometheus_proxy/v1/service.proto -d '{"query": "up"}' 10.0.0.200:30443 prometheus_proxy.v1.PrometheusService/Query
+grpcurl -insecure api.spitikos.dev:443 list
+grpcurl  api.spitikos.dev:443 list
+f
+ff
+cd ~/Downloads/
+ls
+ls /opt
+sudo cp ./evil-helix-aarch64-macos.tar.gz /opt
+cd /opt
+tree
+clear
+ls
+sudo tar -xf evil-helix-aarch64-macos.tar.gz
+ls
+rm evil-helix-aarch64-macos.tar.gz
+sudo rm evil-helix-aarch64-macos.tar.gz
+ls
+cd /usr/local/bin
+ls
+sudo ln -sv /opt/helix/hx .
+ls
+cd ~/spitikos/
+helix
+clear
+cd /opt
+ls
+sudo rm -rf helix
+ls
+cd /usr/local/bin
+ls hx
+sudo rm -rf hx
+clear
+cd ~/spitikos/
+brew install evil-helix
+tmux a
+clear
+helix
+evil-helix
+clear
+evil-helix
+ls /usr/local/bin
+ls /opt/homebrew/share/zsh/site-functions
+clear
+ls ~/.config
+cd ~/.config/helix/
+ls
+hx
+clear
+cd ~/.config/helix/
+hx .
+ls
+hx .
+nvim config
+nvim config.toml
+hx .
+mkdir themes
+touch themes/mydark.toml
+nvim .
+hx .
+clear
+f
+clear
+hx .
+clear
+f
+clear
+git add .
+git commit -m "remove common dep"
+git push
+hx .
+git status
+git add .
+git commit -m "remove common dep"
+git push
+grpcurl  api.spitikos.dev:443 list
+grpcurl 10.0.0.200:30080 list
+clear
+tmux ls
+tmux kill-session -t spitikos
+clear
+kg ingressroute.traefik.io -A
+zed .
+git status
+git add .
+git commit -m "add servertransport"
+git push
+telepresence connect
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+ssh spitikos
+git add .
+git commit -m "disable api ingress"
+git push
+git add .
+git commit -m "clean up"
+git push
+git add .
+git commit -m "fix dep"
+git push
+f
+clear
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+telepresence connect
+pnpm dev
+telepresence quit
+clear
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+telepresence connect
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+kgpo -n api
+argocd get app api
+argocd get api
+clear
+telepresence connect
+clear
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+grpcurl -plaintext -d '{"query": "node_os_info"}' api.api.svc.cluster.local:50051 prometheus_proxy.v1.PrometheusService/Query
+ear
+clear
+grpcurl -plaintext -d '{"query": "node_os_info"}' api.api.svc.cluster.local:50051 prometheus_proxy.v1.PrometheusService/Query
+cd ..
+make dash-token
+pnpm dev
+clear
+clear
+pnpm dev
+kgpo
+clear
+clear
+ssh spitikos
+kgns
+ls ~/.config
+cd ~/.config/nvim
+ls
+la
+ls -la
+clear
+ls
+ls -a
+ls .github
+nvim .
+clear
+cd ~/.config/nvim
+ls
+bat lazy-lock.json
+bat init.lua
+ls doc/
+ls lua
+clear
+cd ~/spitikos/
+rew install --cask karabiner-elements
+brew install --cask karabiner-elements
+hx .
+crush
+clear
+crush
+clear
+cd ~/.config/helix/
+la
+ls
+clear
+ghostty +list-keybinds --default<\n><\n>
+asd\
+asdfasd\
+asdf \
+clear
+ghostty +list-keybinds --default<\n><\n>
+cd ~
+fd --name karabiner_grabber
+cd ~
+clear
+fd karabiner_grabber
+tmux new-session -s spitikos
+hx .
+nvim .
+clear
+hx .
+clear
+tmux a
+tmux new-session -s spitikos
+hx --health
+hx --health | rg go
+clear
+ls
+hx .
+hx --health go
+go install golang.org/x/tools/cmd/goimports@latest
+brew install golangci-lint<\n>brew upgrade golangci-lint
+which goimport
+which goimports 
+clear
+hx --health go
+which golangci-lint 
+clear
+hx --health go
+clear
+hx --health go
+hx .
+clear
+hx .
+clear
+clear
+cd api
+git status
+git add .
+git commit -m "clean up"
+git push
+clear
+hx --health typescript
+npm install -g typescript-language-server typescript<\n>
+clear
+hx --health typescript
+ls ~/.config
+bat ~/.aerospace.toml
+mv ~/.aerospace.toml ~/aerospace/aerospace.toml
+mv ~/.aerospace.toml ~/aerospace/aerospace.toml -p
+ls ~/.aerospace.toml
+mkdir -p ~/.config/aerospace
+mkdir -h
+mkdir ~/.config/aerospace
+mv ~/.aerospace.toml ~/aerospace/aerospace.toml
+mv ~/.aerospace.toml ~/.config/aerospace/aerospace.toml
+cd ..
+cd aerospace/
+hx .
+tmux a
+cd ~/.config/helix/
+hx .
+hx --health typescript
+which prettier
+hx --health typescript
+npm install -g prettier
+hx --health typescript
+which prettier
+hx --health typescript
+hx --health go
+brew install golangci-lint
+cl
+clear
+hx --health go
+which golangci-lint-langserver
+which golangci-lint
+go install github.com/nametake/golangci-lint-langserver@latest
+which golangci-lint-langserver
+hx --health go
+which gofmt
+hx --health typescript
+hx --health go
+hx --health typescript
+hx .
+clear
+hx .
+cd charts/
+git status
+bat charts/api/templates/manifests.yaml
+git clean
+git clean -f
+git status
+git restore .
+git status
+clear
+cd ..
+clear
+hx .
+cd ..
+cd helix/
+ls
+which yazi
+brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide resvg imagemagick font-symbols-only-nerd-font
+which yazi
+clear
+hx .
+clear
+hx .
+git status
+git restore .
+cd ..
+cd homepage/
+clear
+git status
+git restore .
+git status
+brew install quantonganh/tap/snippets-ls
+which snippets-ls
+hx --health typescript
+hx --health ts
+hx --health typescriptreact
+hx --health tsx
+clear
+hx --health tsx
+hx --health typescript
+hx --health json
+brew install vscode-langservers-extracted
+hx --health json
+clear
+hx .
+clear
+hx .
+clear
+pnpm dev
+clear
+pnpm dev
+telepresence connect
+which telepresence
+brew install telepresenceio/telepresence/telepresence-oss<\n><\n>
+clear
+grpcurl -plaintext -d '{"query": "node_os_info"}' api.api.svc.cluster.local:50051 prometheus_proxy.v1.PrometheusService/Query
+pnpm dev
+clear
+hx .
+clear
+cd homepage/
+cd api/
+cd ../api
+clear
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250816042023-f749c869d664.1
+hx .
+clear
+cd ../homepage/
+pnpm add @buf/spitikos_api.bufbuild_es@2.6.3-20250816042023-f749c869d664.1
+grpcurl -plaintext -d '{"query": "node_os_info"}' api.api.svc.cluster.local:50051 prometheus_proxy.v1.PrometheusService/QueryRange
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.PrometheusService/QueryRange
+grpcurl -plaintext -d '{"query": "node_os_info"}' localhost:50051 prometheus_proxy.v1.PrometheusService/Query
+pnpm dev
+clear
+pnpm add google-protobuf/google/protobuf/timestamp_pb
+pnpm add google-protobuf
+pnpm add --save-dev @types/google-protobuf
+pnpm dev
+clear
+pnpm dev
+clear
+pnpm dev
+clear
+pnpm dev
+cd ~/spitikos/
+crush
+cleaer
+clear
+crush
+clear
+cd ../api
+git add .
+git commit -m "refactor query range parameters"
+git push
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+clear
+pnpm dev
+clear
+pnpm dev
+clear
+pnpm dev
+clear
+pnpm dev
+clear
+pnpm dev
+clear
+pnpm dev
+clear
+grpcurl -plaintext -d '{<\n>  "query": "node_os_info",<\n>  "since": "2024-08-16T10:00:00Z"<\n>}' api.api.svc.cluster.local:50051 prometheus_proxy.v1.PrometheusService/QueryRange<\n>
+grpcurl -plaintext -d '{<\n>  "query": "node_os_info",<\n>  "since": "2025-08-16T10:00:00Z"<\n>}' api.api.svc.cluster.local:50051 prometheus_proxy.v1.PrometheusService/QueryRange<\n>
+grpcurl -plaintext -d '{<\n>  "query": "node_os_info",<\n>  "since": "2025-08-15T10:00:00Z"<\n>}' api.api.svc.cluster.local:50051 prometheus_proxy.v1.PrometheusService/QueryRange<\n>
+pnpm dev
+clear
+pnpm add @bufbuild/protobuf
+pnpm dev
+clear
+pnpm dev
+clear
+pnpm dev
+brew uninstall evil-helix
+hx .
+hx .
+clear
+which hx
+hx .
+clear
+brew install helix<\n>
+clear
+pnpm dev
+clear
+pnpm add @trivago/prettier-plugin-sort-imports
+pnpm add @trivago/prettier-plugin-sort-imports --save-dev
+hx .
+clear
+npm install -g @tailwindcss/language-server@insiders
+hx --health toml
+brew install taplo
+hx --health toml
+npm install -g tombi
+hx --health toml
+hx .
+clear
+hx .
+clear
+hx --health toml
+which tombai
+hx --health toml
+npm uninstall -g tombai
+which snippets-ls
+hx .
+clear
+hx --health tsx
+bat ~/.cache/helix/helix.log
+clear
+watch bat ~/.cache/helix/helix.log
+bat ~/.cache/helix/helix.log
+clear
+bat ~/.cache/helix/helix.log
+clear
+bat ~/.cache/helix/helix.log --watch
+which watch
+watch bat ~/.cache/helix/helix.log
+watch cat "~/.cache/helix/helix.log"
+cat ~/.cache/helix/helix.log --watch
+cat --watch ~/.cache/helix/helix.log
+bat -h
+clear
+hx --health toml
+hx .
+hx --health toml
+hx --health tsx
+hx --health toml
+hx .
+hx .
+hx .
+clear
+brew uninstall taplo
+curl -fsSL https://tombi-toml.github.io/tombi/install.sh | sh
+which tombi
+hx --health toml
+hx .
+clear
+clear
+hx --health toml
+$env.PATH
+which tombi
+clear
+hx --health toml
+which prettier
+hx --health typescript
+hx --health tsx
+prettier -h
+prettier --parser -h
+prettier -h | rg parser
+which snippets-ls
+hx .
+clear
+hx --health toml
+clear
+grpcurl -plaintext -d '{<\n>  "query": "node_os_info",<\n>  "since": "2025-08-15T10:00:00Z"<\n>}' api.api.svc.cluster.local:50051 prometheus_proxy.v1.PrometheusService/QueryRange<\n>
+tmux a
+clear
+$nu.config-path
+cargo install --git https://github.com/nushell/nufmt<\n>
+which cargo
+curl https://sh.rustup.rs -sSf | sh<\n>
+which cargo
+$env.HOME
+which cargo
+$env.HOME
+clear
+which cargo
+ls $env.HOME/.cargo/bin
+ls $"$env.HOME/.cargo/bin"
+$env.HOME
+clear
+which cargo
+clear
+which cargo
+pnpm dev
+clear
+cargo install --git https://github.com/nushell/nufmt
+hx --health nu
+hx $nu.config-path
+clear
+cd ~/spitikos/
+clear
+hx .
+clear
+hx .
+clear
+cd $nu.config-path
+which nu
+cd $nu.config-path
+hx --health nu
+hx --health toml
+hx $nu.config-path
+clear
+clear
+pnpm dev
+clear
+pnpm dev
+pnpm add @connectrpc/connect-node
+hx .
+cd ~/spitikos/
+zed .
+clear
+zed .
+which zd
+which zed
+pnpm dev
+clear
+pnpm dev
+which typescript-language-server 
+pnpm dev
+curl \<\n>    --header 'Content-Type: application/json' \<\n>    --data '{"sentence": "I feel happy."}' \<\n>    https://demo.connectrpc.com/connectrpc.eliza.v1.ElizaService/Say
+curl \
+grpcurl -plaintext -d '{<\n>  "query": "node_os_info",<\n>  "since": "2025-08-15T10:00:00Z"<\n>}' api.api.svc.cluster.local:50051 prometheus_proxy.v1.PrometheusService/QueryRange<\n>
+telepresence connect
+cd ~/.Trash
+ls
+ls | sort-by modified
+mv ./use-prometheus.ts ~/spitikos/homepage/src/hooks/
+clear
+cd ../api
+which go
+clear
+go install golang.org/x/tools/gopls@latest
+cd ~/.config/helix/
+cd $nu.config-path
+zed $nu.config-path
+clear
+which zed
+$env.PATH
+clear
+which zed
+go env GOBIN
+go env GOPATH
+ls /Users/ethantlee/go
+$env.PATH
+ls /Users/ethantlee/go/bin
+go env GOPATH
+ls /Users/ethantlee/go
+ls /Users/ethantlee/go/pkg
+bat .zshrc
+zed $nu.config-path
+zed ~/spitikos/api
+cd api
+cd spitikos/api
+go get connectrpc.com/cors
+nu
+clear
+nu
+which brew
+ls
+$nu.config-path
+zed $nu.config-path
+nul
+nu
+clear
+$env.GOBIN
+f
+cler
+clear
+bug generate
+buf generate
+buf push
+buf lint
+clear
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250817022828-20bd09ecab35.1
+go mod tidy
+go run ./cmd/server/main.go
+lsof 50051
+sudo lsof -i 50051
+sudo lsof -i :50051
+kill 24890
+go run ./cmd/server/main.go
+sudo lsof -i :50051
+clear
+grpcurl -plaintext localhost:50051 list
+grpcurl -plaintext localhost:50051 hello.v1.HelloService/Hello
+grpcurl -plaintext localhost:50051 hello.v1.HelloService/Time
+git add .
+git commit -m "add hello service"
+git push
+cd ../charts/
+git pull
+git status
+git add .
+git commit -m "fix(api): move stream interval seconds to server config"
+git push
+go run ./cmd/server/main.go
+git add .
+git commit -m "enhancement: clarify comments"
+git push
+telepresence connect
+grpcurl -plaintext api.api.svc.cluster.local:50051 hello.v1.HelloService/Time
+grpcurl -plaintext api.api.svc.cluster.local:50051 hello.v1.HelloService/Hello
+git add .
+git commit -m "add ingress for api"
+git push
+git pull
+git push
+ping api.spitikos.dev
+clear
+cd ../
+git add .
+git commit -m "configure traefik entrypoints"
+git push
+grpcurl api.spitikos.dev:443 list
+git add .
+git commit -m "change api entrypoint to websecure"
+git push
+glow
+cd plans/
+cd ..
+clear
+ls
+clear
+kubectl create secret spitikos-dev-tls \
+clear
+ls (<\n>charts<\n>)
+(<\n>kubectl create secret tls spitikos-dev-tls<\n>--cert=./certs/cert.pem<\n>--key=./certs/key.pem<\n>-n traefik<\n>)
+kg secrets -n traefik
+cd charts
+git status
+git add .
+git commit -m "use websecure by default"
+git push
+ssh spitikos
+argocd get api
+which argocd
+argocd -h
+argocd app -h
+argocd app sync api
+clear
+kgpo -n traefik
+ssh spitikos
+kgpo
+kgns
+ping api.spitikos.dev
+curl -I https://spitikos.dev
+curl --http2 -I https://spitikos.dev
+curl --http2 -I https://api.spitikos.dev
+git add .
+git commit -m "use websecure by default"
+git push
+kgns
+ssh pi.local
+clear
+git add .
+git commit -m "use websecure"
+git add .
+git commit -m "use websecure"
+git push
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:80 list
+grpcurl api.spitikos.dev:443 list
+telepresence connect
+grpcurl api.api.svc.cluster.local:50051 list
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+curl --http2 -I https://api.spitikos.dev
+git add 
+git add .
+git commit -m "configure argocd websecure"
+git push
+cd ../spitikos/
+git add .
+git commit -m "configure argocd websecure"
+git push
+ssh spitikos
+clear
+kg ingressroute.traefik.io -A
+kd ingressroute.traefik.io/api-ingress
+kd ingressroute.traefik.io/api-ingress-route
+kd ingressroute.traefik.io/api-ingress-route -A
+kd ingressroute.traefik.io/api-ingress-route -n api
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:443 list
+git status
+cd charts
+cd ../charts/
+git add .
+git commit -m "enable access log"
+git push
+cd ../spitikos/
+git status
+curl --http2 -I https://api.spitikos.dev
+kgsvc -n argocd
+k port-forward svc/argocd-server -n argocd 80:80
+k port-forward svc/argocd-server -n argocd 443:443
+kg secrets -n argocd
+kg secret/argocd-initial-admin-secret -n argocd
+kg secret/argocd-initial-admin-secret -n argocd -o yaml
+"ZWR0alBMOXQ4Tm9SUGZydQ==" | base64
+history | sk
+kubectl -n argocd get secret argocd-initial-admin-secret -o
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+k port-forward svc/argocd-server -n argocd 8080:80
+git status
+git add .
+git commit -m "add argocd app"
+git push
+cd ../charts/
+git add .
+git commit -m "add argocd app"
+git push
+kgpo -n argocd
+kgsvc -n argocd
+git add .
+git commit -m "add argocd global domain"
+git push
+git add .
+git commit -m "remove unnecessary host"
+git push
+k port-forward svc/argocd-server -n argocd 8080:80
+clear
+grpcurl api.spitikos.dev:443 list
+curl -v --http2-prior-knowledge https://api.spitikos.dev
+curl 'https://api.ipify.org?format=json'<\n>
+grpcurl api.spitikos.dev:443 list
+clear
+telepresence connect
+ping api.spitikos.dev
+curl -v --http2-prior-knowledge https://api.spitikos.dev
+curl -vv https://api.spitikos.dev
+curl -k https://10.0.0.200:443
+curl -k https://10.0.0.200:30443
+curl -k https://10.0.0.200:30080
+kgns
+cd..
+..
+make dash-token
+klo pod/helm-install-traefik-crd-7gtnv -n kube-system
+kgpo -n kube-system
+kgns
+kgns
+hx ~/.kube/config
+clear
+kgno
+kubectl apply -f spitikos/argocd/root-app.yaml
+kgpo -n argocd
+argocd app get traefik
+make dash-token
+k port-forward svc/argocd-server -n argocd 8080:80
+kgsvc -n argocd
+k port-forward svc/argocd-server -n argocd 8080:80
+telepresence connect
+telepresence helm install
+telepresence connect
+k port-forward svc/argocd-server -n argocd 8080:80
+grpcurl api.spitikos.dev:443 list
+curl -vv https://api.spitikos.dev
+curl --http2 -I https://api.spitikos.dev
+kubectl delete -f spitikos/argocd/apps/argocd.yaml
+kubectl get application argocd -n argocd -o yaml --watch | yq '.status'
+kubectl get application argocd -n argocd -o yaml | yq '.status'
+kubectl patch application argocd -n argocd -p '{"metadata":{"finalizers":null}}' --type=merge
+kubectl get application argocd -n argocd
+kubectl delete --all pods -n argocd
+kgsvc -n argocd
+kgpo -n argocd
+kubectl apply -f spitikos/argocd/apps/argocd.yaml
+k port-forward svc/argocd-server -n argocd 8080:80
+kubectl patch application argocd -n argocd -p '{"metadata":{"finalizers":null}}' --type=merge
+kubectl delete --all deployments -n argocd
+kubectl delete --all statefulsets -n argocd
+kubectl delete --all services -n argocd
+kubectl delete --all configmaps -n argocd
+kgpo -n argocd
+kubectl apply -f spitikos/argocd/apps/argocd.yaml
+kgpo -n argocd
+kgpo
+kgpo -n argocd
+kubectl apply -f spitikos/argocd/apps/argocd.yaml
+kubectl get services -n argocd
+kubectl delete application argocd -n argocd
+kubectl patch application argocd -n argocd --type='json' -p='[{"op": "remove", "path": "/metadata/finalizers"}]'
+kubectl get application argocd -n argocd
+kubectl apply -f spitikos/argocd/apps/argocd.yaml
+kgsvc -n argocd
+ssh spitikos
+kgns
+clear
+krm namespace argocd
+clear
+kgns
+kgns
+kgns
+telepresence connect
+ls
+ssh spitikos
+ls ~/.kube/
+hx ~/.kube/config
+kgpo
+kgns
+ssh spitikos
+kgns
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml<\n>
+kgpo -n argocd -w
+clear
+kgpo -n argocd
+ls spitikos/argocd/root-app.yaml
+k apply -f spitikos/argocd/root-app.yaml -n argocd
+kgns
+kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+kubectl get svc argocd-server -n argocd -o=jsonpath='{.status.loadBalancer.ingress[0].ip}'
+clear
+ping argocd.spitikos.dev
+kgns
+clear
+kubectl get svc argocd-server -n argocd -o=jsonpath='{.status.loadBalancer.ingress[0].ip}'
+kg secret -n argocd
+kg secret/argocd-initial-admin-secret -n argocd
+kg secret/argocd-initial-admin-secret -n argocd -o yaml
+argocd login 10.0.0.200 --insecure
+$env.ARGOCD_OPTS = '--port-forward-namespace argocd'
+argocd login
+argocd get api
+argocd app get traefik
+k port-forward svc/argocd-server -n argocd 8080:80
+kg svc -n argocd
+clear
+kg svc -n argocd
+zed .
+cd charts
+git add .
+git commit -m "set argocd to cluster ip"
+git push
+kg svc -n argocd
+kgns
+k port-forward svc/argocd-server -n argocd 8080:443
+kgns
+kg svc -n argocd
+argocd app sync argocd
+$env.ARGOCD_OPTS = '--port-forward-namespace argocd'
+argocd app sync argocd
+zed ~/.kube/config
+kgns
+clear
+kgpo
+kgns
+argocd app sync argocd
+k port-forward svc/argocd-server -n argocd 8080:443
+kg svc -n argocd
+krm svc argocd-server -n argocd
+kg svc -n argocd
+kg svc -n argocd -w
+git add .
+git commit -m "change argocd ingress"
+git push
+krm namespace argocd
+kgns
+kg svc -n argocd -w
+kg svc -n argocd
+kgns
+kgns argocd -o yaml
+k patch namespace argocd -p '{"metadata":{"finalizers":[]}}' --type=merge
+k patch namespace argocd -p '{"spec":{"finalizers":[]}}' --type=merge
+kgns argocd -o yaml
+kubectl get applications.argoproj.io -n argocd<\n>
+kubectl patch application.argoproj.io api -n argocd \<\n>  --type=json -p='[{"op":"remove","path":"/metadata/finalizers"}]'<\n>
+kgns
+kubectl delete namespace argocd --force --grace-period=0<\n>
+kgns
+kgns argocd -o yaml
+ssh spitikos
+kubectl get applications.argoproj.io -n argocd<\n>
+kubectl patch application.argoproj.io api -n argocd --type=json -p='[{"op":"remove","path":"/metadata/finalizers"}]'<\n>
+kubectl get applications.argoproj.io -n argocd<\n>
+kubectl patch application.argoproj.io argocd -n argocd --type=json -p='[{"op":"remove","path":"/metadata/finalizers"}]'<\n>
+kubectl patch application.argoproj.io homepage -n argocd --type=json -p='[{"op":"remove","path":"/metadata/finalizers"}]'<\n>
+kubectl patch application.argoproj.io kube-dashboard -n argocd --type=json -p='[{"op":"remove","path":"/metadata/finalizers"}]'<\n>
+kubectl patch application.argoproj.io prometheus -n argocd --type=json -p='[{"op":"remove","path":"/metadata/finalizers"}]'<\n>
+kubectl patch application.argoproj.io traefik -n argocd --type=json -p='[{"op":"remove","path":"/metadata/finalizers"}]'<\n>
+kgns
+k create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml<\n>
+kgns
+kgsvc -n argocd
+kg secret/argocd-initial-admin-secret -n argocd -o yaml
+"d0xrTWFKM1Y0TnZXa2l1Yg==" | base64
+history | sk
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+history | sk
+k apply -f spitikos/argocd/root-app.yaml -n argocd
+k port-forward svc/argocd-server -n argocd 8080:443
+kgsvc -n argocd
+cd ../spitikos/
+git add .
+git commit -m "fix argocd"
+git push
+history | sk
+clear
+kubectl get applications.argoproj.io -n argocd<\n>
+krm namespace argocd
+history | sk
+make clean-argocd
+chmod +x ./clean-argocd.sh
+./clean-argocd.sh
+kgns
+./clean-argocd.sh
+clear
+./clean-argocd.sh
+kubectl get applications.argoproj.io -o name
+kubectl get applications.argoproj.io -n argocd<\n>
+kubectl get applications.argoproj.io -n argocd -o name
+./clean-argocd.sh
+kgns
+k create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml<\n>
+history | sk
+k apply -f spitikos/argocd/root-app.yaml -n argocd
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+cd ../charts/
+git add .
+git commit -m "fix argocd"
+git push
+cd ../spitikos/
+git add .
+git commit -m "fix argocd"
+git push
+k port-forward svc/argocd-server -n argocd 8080:443
+kg application -n argocd
+krm application argocd -n argocd
+history | sk
+kubectl patch applications.argoproj.io argocd -n argocd --type=json -p='[{"op":"remove","path":"/metadata/finalizers"}]'
+kg application -n argocd
+k apply -f spitikos/argocd/apps/argocd.yaml
+kg application -n argocd
+k port-forward svc/argocd-server -n argocd 8080:443
+ssh spitikos
+clear
+kgpo -n argocd
+kubectl get pods -n argocd -l<\n>     app.kubernetes.io/name=argocd-application-controller -o name
+kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-application-controller -o name
+k exec -it -n argocd pod/argocd-application-controller-0 -- /bin/sh
+kubectl get pods -n kube-system -l k8s-app=kube-dns
+kubectl logs -n kube-system -l k-8s-app=kube-dns
+kubectl logs -n kube-system -l k8s-app=kube-dns
+kubectl get service kube-dns -n kube-system
+kubectl exec -it -n argocd pod/argocd-application-controller-0 -- cat<\n>     /etc/resolv.conf
+kubectl exec -it -n argocd pod/argocd-application-controller-0 -- cat /etc/resolv.conf
+kubectl exec -it -n argocd pod/argococd-application-controller-0 -- /bin/sh
+kgpo -n argocd
+kubectl exec -it -n argocd pod/argocd-application-controller-0 -- /bin/sh
+ssh ethantlee@pi.local
+kgno
+zed ~/.kube/config
+kgnp
+kgno
+k create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml<\n>
+kgpo -n argocd
+kgpo -n argocd -2
+kgpo -n argocd -w
+kgpo -n argocd
+kgpo -n argocd -w
+kgpo -n argocd
+k apply -f spitikos/argocd/root-app.yaml -n argocd
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-repo-server -o wide
+kubectl describe service argocd-repo-server -n argocd
+cd ../charts/
+git add .
+git commit -m "fix argocd"
+git push
+$env.ARGOCD_OPTS = '--port-forward-namespace argocd'
+argocd app sync argocd
+kg application -n argocd
+k port-forward svc/argocd-server -n argocd 8080:443
+kgsvc -n argocd
+k apply -f spitikos/argocd/root-app.yaml -n argocd
+k apply -f spitikos/argocd/root-app.yaml -n argocd --force
+kgsvc -n argocd
+cd ../spitikos/
+git add .
+git commit -m "fix argocd"
+git push
+./clean-argocd.sh
+kgns
+k create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml<\n>
+k apply -f spitikos/argocd/root-app.yaml -n argocd
+kgsvc -n argocd
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+grpcurl api.spitikos.dev:443 list
+k port-forward svc/argocd-server -n argocd 8080:443
+clear
+clear
+kubectl get service traefik -n traefik
+kubectl get ingressroute api-ingress-route -n api -o yaml
+kubectl get ingressroute.traefik.io api-ingress-route -n api -o yaml
+kg ingressroute.traefik.io -A
+kubectl get ingressroute.traefik.io api-ingress-route -n api -o yaml
+kubectl get ingressroute.traefik.io api-ingress -n api -o yaml
+kubectl describe service api -n api
+curl -vv https://api.spitikos.dev
+curl --http2 -I https://api.spitikos.dev
+glow
+grpcurl 10.0.0.200:443 list
+grpcurl 10.0.0.200:50051 list
+curl --http2 -I https://10.0.0.200:443
+grpcurl localhost:50051 list
+grpcurl -plaintext localhost:50051 list
+grpcurl -plaintext 10.0.0.200:443 list
+grpcurl 10.0.0.200:443 list
+k port-forward svc/api -n api 50051:50051
+ssh spitikos ls
+ssh spitikos cat /etc/cloudflared/config.yml
+ssh spitikos
+clear
+glow
+clear
+clear
+ssh spitikos
+clear
+ssh pi.loca
+ssh pi.local
+history | sk
+ssh pi.local
+zed ~/.kube/config
+kgno
+clear
+ssh pi.local
+clear
+git status
+git add .
+git commit -m "remove argocd and traefik app"
+git push
+kubectl create namespace argocd<\n>kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+k apply -f spitikos/argocd/root-app.yaml -n argocd
+history | sk
+make argocd-token
+make argocd-auth
+cd ..
+make argocd-auth
+k port-forward svc/argocd-server -n argocd 8080:443
+clear
+cd spitikos/
+git status
+git add .
+cd ../charts/
+git add .
+git status
+git commit -m "add nginx"
+git push
+cd ../spitikos/
+git add .
+git commit -m "add nginx"
+git push
+cd charts/
+git add .
+git commit -m "use nginx ingress"
+git push
+kgns
+kgsvc -n nginx
+sudo hx /etc/hosts
+k port-forward svc/argocd-server -n argocd 8080:443
+ping spitikos.dev
+ping 10.0.0.200
+curl -v -k https://10.0.0.200
+curl -k --resolve spitikos.dev:443:10.0.0.200 https://spitikos.dev
+grpcurl 10.0.0.200:443 list
+grpcurl -insecure --connect-to api.spitikos.dev:443:10.0.0.200:443 api.spitikos.dev:443 list
+cat /etc/hosts
+curl https://github.com/cloudflare/cloudflared/issues/491#issuecomment-1643233485
+clear
+sudo hx /etc/hosts
+kubectl get service nginx-ingress-nginx-controller -n nginx-ingress -o jsonpath='{.spec.ports[?(@.name=="http")].nodePort}'
+kubectl get service nginx-nginx-controller -n nginx-ingress -o jsonpath='{.spec.ports[?(@.name=="http")].nodePort}'
+kgsvc -n nginx
+kubectl get service nginx-controller -n nginx -o jsonpath='{.spec.ports[?(@.name=="http")].nodePort}'
+git add .
+git commit -m "handle tls"
+git push
+ssh pi.local
+clear
+grpcurl api.spitikos.dev:443 list
+grpcurl -plaintext api.spitikos.dev:443 list
+ssh pi.local
+clear
+grpcurl 10.0.0.200:443 list
+ping api.spitikos.dev
+ping 10.0.0.200
+grpcurl -insecure 10.0.0.200:443 list
+grpcurl api.spitikos.dev:443 list
+ssh pi.local sudo systemctl status cloudflared
+ssh pi.local cat /etc/cloudflared/config.yml
+grpcurl api.spitikos.dev:443 list
+ssh pi.local
+kubectl get pods -n prometheus --show-labels
+kgsvc -n prometheus
+git add .
+git commit -m "fix prometheus ingress"
+git push
+curl --http2 -I https://api.spitikos.dev
+grpcurl api.spitikos.dev:443 list
+infocmp -x xterm-ghostty | ssh pi.local -- tic -x -<\n>
+ssh pi.local
+clear
+grpcurl api.spitikos.dev:443 list
+git add .
+git status
+git commit -m "change log level"
+git push
+grpcurl api.spitikos.dev:443 list
+zed ~/.config/aerospace/aerospace.toml
+kubectl logs -n nginx -l app.kubernetes.io/name=nginx -f
+ssh pi.local
+clear
+ping api.spitikos.dev
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:443 hello.v1.HelloService list
+grpcurl api.spitikos.dev:443 list hello.v1.HelloService
+grpcurl api.spitikos.dev:443 hello.v1.HelloService.Hello
+grpcurl api.spitikos.dev:443 hello.v1.HelloService.MyNameIs
+grpcurl api.spitikos.dev:443 hello.v1.HelloService.Time
+cd ..
+zed .
+glow
+git add .
+git commit -m "clean up"
+git push
+cd charts/
+git add .
+git commit -m "clean up"
+git push
+grpcurl api.spitikos.dev:443 hello.v1.HelloService.Time
+git add .
+git commit -m "improve common library"
+git push
+git status
+git add .
+git commit -m "add argocd"
+git push
+cd ../spitikos/
+git add .
+git commit -m "update docs and add argocd app"
+git push
+k port-forward svc/argocd-server -n argocd 8080:443
+k port-forward svc/argocd-server -n argocd 8080:443
+kubectl delete -f spitikos/argocd/apps/argocd.yaml
+cd ..
+kubectl delete -f spitikos/argocd/apps/argocd.yaml
+make clean-argocd
+kgns
+k create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml<\n>
+cd spitikos/
+git add .
+git commit -m "remove argocd"
+git push
+cd ../charts/
+git add .
+git commit -m "remove argocd"
+git push
+make argocd-auth
+cd ..
+make argocd-auth
+k apply -f spitikos/argocd/root-app.yaml -n argocd
+cd ..
+k apply -f spitikos/argocd/root-app.yaml -n argocd
+k apply -f spitikos/argocd/ingress.yaml -n argocd
+k port-forward svc/argocd-server -n argocd 8080:443
+clear
+cd charts/
+git add .
+git commit -m "clean up"
+git push
+cd ../spitikos/
+git add .
+git commit -m "add argocd ingress"
+git push
+kgsvc -n kube-dashboard
+kgsvc -n prometheus
+git add .
+git commit -m "fix ingress"
+git push
+cd ../chart
+cd ../charts/
+git add .
+git commit -m "fix ingress"
+git push
+grpcurl api.spitikos.dev:443 hello.v1.HelloService.Time
+gemini
+clear
+grpcurl api.spitikos.dev:443 hello.v1.HelloService.Time
+grpcurl api.spitikos.dev:443 list
+cd spitikos/
+make dash-token
+make dash-auth
+cd ~/.config/zed/
+ls
+cd themes
+ls
+cp `~/Downloads/Moxer Blur.json` .
+rm `Moxer Blur.json`
+cp `~/Downloads/Whale Theme.json` .
+ls
+rm `Whale Theme.json`
+cd ~/spitikos/homepage/
+clear
+pnpm dev
+cd ..
+make argocd-auth
+make dash-auth
+cargo install --locked typst-cli
+which typst
+ls
+f
+typst watch -h
+typst watch main.typ
+cargo install typst-live
+typst-live main.typ
+<\n>              typst init @preview/imprecv:1.0.1<\n>            
+<\n>              typst init @preview/basic-resume:0.2.8<\n>            
+typst-live basic-resume/main.typ
+typst-live imprecv/template.typ
+which tinymist
+brew search tinymist
+brew install tinymist
+cargo uninstall typst-live
+which tinymist
+clear
+tinymist preview /abs-path/to/main.typ --partial-rendering<\n>
+tinymist preview /abs-path/to/main.typ --partial-rendering true
+typst compile imprecv/template.typ
+tinymist preview ./imprecv/template.typ --partial-rendering true
+typst compile imprecv/template.typ
+tinymist preview ./imprecv/main.typ --partial-rendering true
+clear
+git clone git@github.com:jskherman/imprecv.git
+cd ~/.Trash
+ls
+ls | sort-by modified
+cat main.typ
+mv main.typ ~/Sandbox/resume/
+make preview
+clear
+make preview
+clear
+make preview
+clear
+make preview
+clear
+make preview
+clear
+tinymist -h
+tinymist preview -h
+make preview
+clear
+cd ~/Sandbox/resume/
+git remote add origin git@github.com:ethn1ee/resume.git<\n>git branch -M main<\n>git push -u origin main
+git init
+git remote add origin git@github.com:ethn1ee/resume.git<\n>git branch -M main<\n>git push -u origin main
+git add .
+git commit -m "initial commit"
+git push
+git push -u origin
+git push --set-upstream origin meain
+git push --set-upstream origin main
+make
+git pull
+git add .
+"generate a short commit message for current change" | gemini
+git commit -m "unsilence make"
+git push
+make compile
+git add .
+git commit -m "debugging workflow"
+git push
+git add .
+git commit -m "debugging workflow"
+git push
+typst compile -h
+git add .
+git commit -m "debugging workflow"
+git push
+git add .
+git commit -m "debugging workflow"
+git push
+git add .
+git commit -m "debugging workflow"
+git push
+git add .
+git commit -m "debugging workflow"
+git push
+git add .
+git commit -m "debugging workflow"
+git add .
+git push
+git add .
+git commit -m "debugging workflow"
+git push
+make
+git add .
+git commit -m "debugging workflow"
+git push
+git add .
+git commit -m "add package write permission"
+git push
+git add .
+git commit -m "debugging workflow"
+git push
+git add .
+git commit -m "debugging workflow"
+git push
+git add .
+git commit -m "debugging workflow"
+git push
+make preview
+clear
+git add .
+git commit -m "adjust page styling"
+git push
+make png
+make
+make png
+git add .
+git commit -m "create readme"
+git push
+git add .
+git commit -m "fix readme image"
+git push
+git pull
+git push
+make png
+git add .
+git commit -m "fix makefile"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+git pull
+git push
+git add .
+git commit -m "fix workflow"
+git push
+git pull
+git push
+git add assets/resume.png
+git add .
+git pull
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "improve clarity"
+git push
+git pull
+git push
+make
+git add .
+git commit -m "improve clarity"
+git push
+git add .
+git commit -m "add data science skills"
+git push
+git pull
+git push
+make
+git pull
+make
+git status
+make png
+git status
+make preview
+clear
+git add .
+git commit -m "unignore assets"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+git pull
+git push
+brew install go-task/tap/go-task
+which task
+task --init
+task pdf
+task -h
+task
+task compile pdf
+task compile -- pdf
+task compile:pdf
+task preview
+clear
+task compile:pdf
+task compile:html
+clear
+task compile:html
+clear
+$env.TYPST_FEATURES
+$env
+$env.TYPST_FEATURES = html
+TYPST_FEATURES = html
+$env.TYPST_FEATURES = "html"
+task compile:html
+git add .
+git commit -m "fix page setup"
+git push
+git pull
+git push
+git pull
+git add .
+git pull
+git commit -m "fix page setup"
+git pull
+git push
+task compile
+task compile:png
+task preview
+task compile
+task compile:html
+task compile
+git pull
+git add .
+git status
+git add .
+git commit -m "clean up"
+git push
+task preview
+cd ~/spitikos/homepage/
+clear
+pnpm dev
+pnpm add @buf/spitikos_api.bufbuild_es@2.7.0-20250817022828-20bd09ecab35.1
+pnpm upgrade @bufbuild/protobuf
+clear
+gemini
+clear
+cd ../api
+git status
+git add .
+git commit -m "allow cors any origin"
+git push
+pnpm dev
+grpcurl -plaintext localhost:50051 list
+go run ./cmd/server/main.go
+cd ../spitikos/
+git status
+git add .
+git commit -m "change github workflow user config"
+git push
+cd ../api
+go run ./cmd/server/main.go
+go get github.com/rs/cors
+go run ./cmd/server/main.go
+pnpm dev
+which go
+$env.PATH
+zed $nu.config-path
+go mod tidy
+go list
+git status
+go mod init
+zed .
+go get connectrpc.com/cors
+go run ./cmd/server/main.go
+git add .
+git commit -m "fix cors"
+go mod tidy
+git status
+git add .
+git commit -m "fix cors"
+git push
+git add .
+git commit -m "allow any origin"
+git push
+cd ../charts/
+git add .
+git commit -m "add cors annotations"
+git status
+git push
+git pull
+git add .
+git commit -m "add cors annotations"
+git push
+git add .
+git commit -m "fix cors"
+git push
+cd ../api
+go mod tidy
+git add .
+git status
+git commit -m "remove cors"
+git push
+git add .
+git commit -m "[skip ci] add more logs"<\n>
+git push
+pnpm dev
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250824145048-b94f08b81ed9.1
+grpcurl -plaintext localhost:50051 list
+grpcurl -plaintext localhost:50051 list prometheusproxy.v1.PrometheusProxyService
+grpcurl -plaintext localhost:50051 prometheusproxy.v1.PrometheusProxyService.Query
+go run ./cmd/server/main.go
+git add .
+git commit -m "separate prometheus stream and regular services"
+git push
+pnpm add @buf/spitikos_api.connectrpc_query-es@2.1.1-20250824145048-b94f08b81ed9.1
+pnpm add @buf/spitikos_api.bufbuild_es@2.7.0-20250824145048-b94f08b81ed9.1
+pnpm dev
+pnpm add @connectrpc/connect-query @connectrpc/connect-web
+cd ../homepage/
+npm i @tanstack/react-query-devtools
+pnpm add @tanstack/react-query-devtools
+pnpm dev
+cd ../charts/
+git status
+git add .
+git commit -m "change scrape interval"
+git pull
+git add .
+git commit -m "change scrape interval"
+git push
+cd ../api
+git status
+git add .
+git commit -m "[skip ci] change stream interval in local config"
+git push
+cd ../charts/
+git status
+git add .
+git commit -m "change stream interval to 5s"
+git push
+git add .
+git status
+git commit -m "add configmap checksum"
+git push
+git add .
+git commit -m "change casing of api configmap"
+git push
+cd ../api
+git status
+git add .
+git commit -m "change casing of api configmap"
+git push
+git status
+git add .
+git commit -m "fix config casing"
+git push
+git add .
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go
+git status
+go get buf.build/gen/go/spitikos/api/connectrpc/go
+go get buf.build/gen/go/spitikos/api/connectrpc/go@latest
+go get buf.build/gen/go/spitikos/api/connectrpc/go
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250824170143-f46f2b138594.1
+git add .
+git commit -m "change timestamp type"
+git push
+pnpm add @buf/spitikos_api.bufbuild_es@2.7.0-20250824170143-f46f2b138594.1
+pnpm add @buf/spitikos_api.connectrpc_query-es@2.1.1-20250824170143-f46f2b138594.1
+cd ../charts
+git pull
+git status
+pnpm dev
+clear
+git add .
+git commit -m "refactor for a centralized grpc server"
+git push
+cd ../spitikos/
+git pull
+git add .
+git commit -m "use github token"
+git push
+cd ../home
+cd ../homepage/
+git add .
+git commit -m "fix bugs"
+git push
+git add .
+git commit -m "fix bugs"
+git push
+git add .
+git commit -m "add display names"
+git push
+npx lint
+npx next lint
+npx next lint --fix
+npx next lint
+clear
+npx next lint
+clear
+pnpm lint
+zed homepage/
+clear
+pnpm lint
+pnpm lint:fix
+pnpm lint
+pnpm lint:fix
+pnpm lint
+git add .
+git commit -m "configure eslint"
+git push
+git add .
+git commit -m "fix package.json"
+git push
+git add .
+cd ../spitikos/
+git add .
+git commit -m "debugging workflow"
+git push
+git add .
+git commit -m "fix permissions"
+git push
+git add .
+git commit -m "fix permissions"
+git push
+git add .
+git commit -m "fix permissions"
+git push
+cd ../homepage/
+git add .
+git commit -m 
+git status
+cd ../spitikos/
+git add .
+git commit -m "fix permissions"
+git push
+git add .
+git commit -m "fix permissions"
+git push
+cd ../homep
+cd ../homepage/
+pnpm dev
+pnpm lint
+pnpm lint:fix
+git add .
+git commit -m "memoize stream"
+git push
+git add .
+git commit -m "improve clarity"
+git push
+pnpm prune
+pnpm add -D depcheck
+npx depcheck
+pnpm prune
+pnpm build
+git add .
+git commit -m "prune deps"
+git push
+pnpm lint
+git add .
+git commit -m "memoize client"
+git push
+git add .
+git commit -m "tweak animations"
+git push
+pnpm dev
+git status
+gemini
+zed homepage/
+pnpm lint
+npm install -g @tailwindcss/language-server<\n>
+npm install -g typescript-language-server typescript
+pnpm dev
+clear
+cd ../docs/
+git remote add origin git@github.com:spitikos/docs.git<\n>git branch -M main
+git init
+git remote add origin git@github.com:spitikos/docs.git<\n>git branch -M main
+git add .
+git commit -m "initial commit"
+git push
+git push --set-upstream origin main
+pnpm add config
+cd ../homepage/
+pnpm add config
+pnpm add yaml
+pnpm dev
+clear
+git status
+pnpm prune
+git add .
+git commit -m "setup config system"
+git push
+cd ../docs
+git status
+cd ../homepage/
+pnpm dev
+clear
+git submodule add git@github.com:spitikos/docs.git
+gemini
+clear
+api
+clear
+pnpm dev
+clear
+pnpm add react-markdown
+pnpm add remark-gfm
+pnpm add rehype-raw
+pnpm add -D prettier-plugin-tailwindcss
+ls ~/.Trash/ | sort-by modified
+ls ~/.Trash/ | sort-by modified | reverse
+ls ~/.Trash/ | sort-by modified 
+pnpm lint
+pnpm lint:fix
+glow
+cd ../docs
+git add .
+git commit -m "reorganize"
+git push
+cd ../homepage/
+git submodule update
+git submodule update --merge
+git submodule update --remote --merge<\n>
+gemini
+pnpm dev
+zed api
+clear
+k top node
+cd ..
+./clean-argocd.sh
+cd ../spitikos
+git add .
+git commit -m "migrate argocd to charts repo"
+git push
+git add .
+git commit -m "migrate workflow to charts repo"
+git push
+cd ../charts/
+git add .
+git commit -m "migrate workflow and argocd in"
+git push
+git pull
+git add .
+git commit -m "migrate workflow and argocd in"
+git push
+cd ../api
+git add .
+git commit -m "modify workflow target to charts repo"
+git push
+./scripts/clean-argocd.sh
+kgns
+kgsvc -n argocd
+kgns
+kd namespace argocd
+kubectl get applications.argoproj.io -n argocd<\n>
+for app in $(kubectl get applications.argoproj.io -n argocd -o jsonpath='{.items[*].metadata.name}'); do \<\n>  echo "Removing finalizer from application: $app"; \<\n>  kubectl patch application.argoproj.io "$app" -n argocd -p '{"metadata":{"finalizers":null}}' --type=merge; \<\n>done
+./scripts/clean-argocd.sh
+kgns
+k create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml<\n>
+cd ../charts
+cd charts/
+git add .
+git commit -m "convert argocd manifests to a helm chart"
+git push
+git pull
+git add .
+git push
+helm install charts/argocd/
+gemini
+kgns
+krm namespace argocd
+./scripts/install-argocd.sh
+task
+task argo-install
+kgns
+task argo-install
+task argo-clean
+task argo-install
+task argo-clean
+task argo-install
+task argo-clean
+task argo-install
+cd ..
+make argocd-auth
+cd charts/
+git add .
+git commit -m "add taskfile"
+git push
+git add .
+git commit -m "remove old apps dir"
+git push
+cd spitikos/api
+go lint
+buf push
+task buf:push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250826033615-5cad9569f3b3.1
+task buf:lint
+go run ./cmd/server/main.go
+cd ../charts/
+git add .
+git commit -m "rename prometheus config"
+git push
+git add .
+git commit -m "rename prometheusproxy to prometheus<\n>"
+git push
+cd ../homepage/
+npm install @buf/spitikos_api.bufbuild_es@2.7.0-20250826033615-5cad9569f3b3.1
+pnpm add @buf/spitikos_api.bufbuild_es@2.7.0-20250826033615-5cad9569f3b3.1
+pnpm add @buf/spitikos_api.connectrpc_query-es@2.1.1-20250826033615-5cad9569f3b3.1
+pnpm dev
+cd ../api
+task buf:lint
+git add .
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250826041306-1aa8ad31d4c0.1
+buf push
+buf lint
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250826041945-3c80217f1f2e.1
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250826043004-20f4595b7013.1
+git status
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250826043004-20f4595b7013.1
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250826044236-53ab66c982e8.1
+grpcurl -plaintext localhost:50051 prometheusproxy.v1.PrometheusProxyService.Query
+grpcurl -plaintext localhost:50051 list
+go run ./cmd/server/main.go
+git add .
+git commit -m "reorganize protobufs"
+git push
+clear
+cd plans
+glow
+cd ..
+git add .
+cd ../charts/
+git add .
+git commit -m "add redis chart and improve versioning and descriptions"
+git push
+git pull
+git add .
+git push
+task argo:update
+k top node
+git add .
+git commit -m "fix nginx values"
+git push
+git add .
+git commit -m "fix nginx values"
+git push
+git add .
+git commit -m "fix kuberntes-dashboard values"
+git push
+kgns
+kgsvc -n kubernetes-dashboard
+kg ingress -n kubernetes-dashboard
+grpcurl api.spitikos.dev:443 list
+kgsvc -n ingress-nginx
+kd svc ingress-nginx-controller -n ingress-nginx
+task argo:rm:kubernetes-dashboard
+task argo:rm:nginx
+kgns
+task argo:update
+kgsvc -n ingress-nginx
+git add .
+git commit -m "fix ingress-nginx values"
+git push
+task argo:update
+task argo:rm:ingress-nginx
+task argo:update
+kgns
+krm namespace kube-dashboard
+argo:rm:kube-dashboard
+task argo:rm:kube-dashboard
+kgns
+task argo:rm:nginx
+kgns
+clear
+kgns
+kg application -n nginx
+krm namespace nginx
+task argo:rm:nginx
+kgns
+kg applications.argoproj.io -n nginx
+kgns
+git add .
+git commit -m "add redis app"
+git push
+task argo:update
+git add .
+git commit -m "improve taskfile"
+git push
+git add .
+git commit -m "improve taskfile"
+git push
+go install github.com/lasorda/protobuf-language-server@master<\n>
+which protobuf-language-server 
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250826064211-0d5c0d70115a.1
+git add .
+git commit -m "add autoscaling"
+git push
+task argo:update
+k top node
+k top node -w
+k top node --watch
+k top node -h
+clear
+k top node
+git add .
+git commit -m "make keda apply server-side"
+git push
+task argo:rm:keda
+task argo:update
+git add .
+git commit -m "remove redundant enabled option"
+git push
+git add .
+git commit -m "set min replicas to 1"
+git push
+git add .
+git commit -m "add proto comments"
+gitp ush
+git push
+cd ../docs
+git add .
+git commit -m "update docs and add keda doc"
+git push
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250826072026-568905bdbf23.1
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250826072133-ad09a0a8a00b.1
+grpcurl -plaintext localhost:50051 list
+grpcurl -plaintext localhost:50051 list docs.DocsService
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+go run ./cmd/server/main.go
+git add .
+git commit -m "add demo docs service"
+git push
+git add ,.
+git add .
+git commit -m "setup webhook action"
+git push
+(<\n>          curl --header "Content-Type: application/json" \<\n>              --data '{"Slugs": ["test1", "test2"]}' \<\n>              https://api.spitikos.dev/docs.DocsService.Sync<\n>)
+(<\n>          curl --header "Content-Type: application/json" \<\n>              --data '{"Slugs": ["test1", "test2"]}' \<\n>              https://api.spitikos.dev/docs.DocsService/Sync<\n>)
+curl --header "Content-Type: application/json" \<\n>    --data '{"sentence": "I feel happy."}' \<\n>    https://demo.connectrpc.com/connectrpc.eliza.v1.ElizaService/Say
+(<\n>curl --header "Content-Type: application/json" \<\n>    --data '{"sentence": "I feel happy."}' \<\n>    https://demo.connectrpc.com/connectrpc.eliza.v1.ElizaService/Say<\n>)
+(<\n>          curl --header "Content-Type: application/json" \<\n>              --data '{"Slugs": ["test1", "test2"]}' \<\n>              https://api.spitikos.dev/docs.DocsService/Sync<\n>)
+grpcurl api.spitikos.dev:443 list
+cd ../charts
+git pull
+git add .
+git commit -m "fix workflow"
+git push
+git pull
+(<\n>          curl --header "Content-Type: application/json" \<\n>              --data '{"Slugs": ["test1", "test2"]}' \<\n>              https://api.spitikos.dev/docs.DocsService/Sync<\n>)
+cd ../docs
+git add .
+git commit -m "fix workflow"
+git push
+clear
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:443 hello.HelloService/Hello
+grpcurl api.spitikos.dev:443 hello.HelloService/Time
+cd ../charts
+git status
+git add .
+git commit -m "add prometheus metric"
+git push
+git add .
+git commit -m "add additional labels for servicemonitor discovery"
+git push
+grpcurl api.spitikos.dev:443 hello.HelloService/Hello
+grpcurl api.spitikos.dev:443 hello.HelloService/Time
+git add .
+git commit -m "fix autoscaling query"
+git push
+grpcurl api.spitikos.dev:443 hello.HelloService/Hello
+grpcurl api.spitikos.dev:443 hello.HelloService/Time
+git add .
+git commit -m "fix autoscaling query"
+git push
+k top node
+kgsvc -n redis
+cd ../docs
+git add .
+git commit -m "update autoscaling docs"
+git push
+cd ../api
+redis.redis.svc.cluster.local:6379
+go get github.com/redis/go-redis/v9
+go run ./cmd/server/main.go
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+cd ../api
+go get "github.com/redis/go-redis"
+go mod tidy
+telepresence connect
+telepresence helm install
+telepresence connect
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"Slugs": ["test1", "test2"]}' \<\n>              https://api.spitikos.dev/docs.DocsService/Sync<\n>)
+go run ./cmd/server/main.go
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+telepresence connect
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+gemini
+clear
+telepresence status
+kgns
+kd namespace ambasssador
+kd namespace ambassador
+kgsvc -n ambassador
+nslookup redis-master.redis.svc.cluster.local
+kubectl get service -n redis
+sudo mkdir /etc/resolver
+sudo ls /etc/resolver
+cat /etc/resolver/telepresence.cluster.local
+cat ~/Library/Application\ Support/telepresence/config.yml
+cat "~/Library/Application\ Support/telepresence/config.yml"
+cat "~/Library/Application Support/telepresence/config.yml"
+ls "~/Library/Application Support/telepresence"
+ls ~/.config
+f
+ls
+grpcurl -plaintext api.api.svc.cluster.local:50051 list
+nslookup api.api.svc.cluster.local
+telepresence config
+telepresence config view
+ls " /Users/ethantlee/Library/Application Support/telepresence/"
+sudo ls  /Users/ethantlee/Library/Application Support/telepresence/
+sudo ls " /Users/ethantlee/Library/Application Support/telepresence/"
+zed .
+telepresence list
+telepresence connect --namespace redis
+telepresence quit
+telepresence connect --namespace redis
+telepresence list
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"Slugs": ["test1", "test2"]}' \<\n>              https://api.spitikos.dev/docs.DocsService/Sync<\n>)
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"Slugs": ["test1", "test2"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+go run ./cmd/server/main.go
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"slugs": ["test1", "test2"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+go run ./cmd/server/main.go
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+go run ./cmd/server/main.go
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"slugs": ["dog/test1", "cat/test2"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250827040051-1a07efc22ac0.1
+go get github.com/google/go-github/v74
+go mod tidy
+task run
+source ./config/config.env
+clear
+task run
+clear
+task run
+$env.GITHUB_TOKEN="asdf"
+GITHUB_TOKEN = "asdf"
+$env.GITHUB_TOKEN = "asdf"
+task run
+$env.GITHUB_TOKEN = "asdf"
+task run
+$env.GITHUB_TOKEN
+task run
+source ./config/config.env
+cd ~/spitikos/api
+zed .
+task run
+$env.GITHUB_TOKEN
+task run
+$env.GITHUB_TOKEN
+task run
+$env.GITHUB_TOKEN
+task run
+$env.GITHUB_TOKEN
+task run
+source ./config/env.sh
+task run
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+telepresence connect
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"slugs": ["overview/architecture-overview", "cat/test2"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+clear
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"slugs": ["overview/architecture-overview", "cat/test2"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+task run
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"slugs": ["overview/architecture-overview.md", "cat/test2"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+task run
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"slugs": ["overview/architecture-overview.md", "cat/test2"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+task run
+(<\n>curl -L \<\n>  -H "Accept: application/vnd.github+json" \<\n>  -H "X-GitHub-Api-Version: 2022-11-28" \<\n>  https://api.github.com/rate_limit<\n>)
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"slugs": ["overview/architecture-overview.md", "cat/test2"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+clear
+task run
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"slugs": ["overview/architecture-overview.md"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+buf push
+buf lint
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250827180041-1acb3ebefee5.1
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250827181354-441e0099c59c.1
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250827181503-6747763fcd48.1
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250827182014-c8cb2eff940d.1
+buf push
+tring title = 1;<\n>  google.protobuf.Timestamp modified = 2;<\n>  string content = 3;
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250827182158-060771763a53.1
+go mod tidy
+cd ~/Sandbox/resume/
+task preview
+clear
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+task run
+clear
+task run
+zed ~/.kube/config
+kgns
+kgns
+clear
+kgns
+clear
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+grpcurl -plaintext -d '{<\n>"slug": "overview/architecture-overview"<\n>}' localhost:50051
+grpcurl -plaintext -d '{<\n>"slug": "overview/architecture-overview"<\n>}' localhost:50051 docs.DocsService.GetDoc
+task run
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250827202157-f4ea542c7d5f.1
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md"]<\n>}' localhost:50051 docs.DocsService.Sync
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+grpcurl -plaintext -d '{<\n>"slug": "overview/architecture-overview"<\n>}' localhost:50051 docs.DocsService.GetDoc
+task run
+clear
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250827204600-c6cde095821a.1
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md"]<\n>}' localhost:50051 docs.DocsService.Sync
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md, asdf/asdf"]<\n>}' localhost:50051 docs.DocsService.Sync
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md", "asdf/asdf"]<\n>}' localhost:50051 docs.DocsService.Sync
+task run
+clear
+task run
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md", "asdf/asdf"]<\n>}' localhost:50051 docs.DocsService.Sync
+task run
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md", "asdf/asdf"]<\n>}' localhost:50051 docs.DocsService.Sync
+task run
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md", "asdf/asdf"]<\n>}' localhost:50051 docs.DocsService.Sync
+task run
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md", "asdf/asdf"]<\n>}' localhost:50051 docs.DocsService.Sync
+task run
+go mod tidy
+clear
+cd ..
+make dash-token
+make argocd-auth
+grpcurl api.spitikos.dev:443 hello.HelloService/Time
+hx .
+clear
+clear
+cd api
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"slugs": ["overview/architecture-overview.md"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+task run
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"paths": ["overview/architecture-overview.md"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"paths": ["overview/architecture-overview.md", "asdf/asdf"]}' \<\n>              http://localhost:50051/docs.DocsService/Sync<\n>)
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md", "asdf/asdf"]<\n>}' localhost:50051 docs.DocsService.Sync
+grpcurl -plaintext -d '{<\n>"slug": "overview/architecture-overview"<\n>}' localhost:50051 docs.DocsService.GetDoc
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md"]<\n>}' localhost:50051 docs.DocsService.Sync
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+grpcurl -plaintext -d '{<\n>"slug": "overview/architecture-overview"<\n>}' localhost:50051 docs.DocsService.GetDoc
+clear
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md"]<\n>}' localhost:50051 docs.DocsService.Sync
+grpcurl -plaintext -d '{<\n>"slug": "overview/architecture-overview"<\n>}' localhost:50051 docs.DocsService.GetDoc
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+grpcurl -plaintext -d '{<\n>"paths": ["overview/architecture-overview.md", "asdf/asdf.asd"]<\n>}' localhost:50051 docs.DocsService.Sync
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+task run
+git add .
+git commit -m "implement docs service"
+git push
+cd ../docs
+find . -type f -name "*.md" | sed 's|^\./||' | jq -R . | jq -s .
+git add .
+git commit -m "fix workflow"
+git push
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"paths": ["overview/architecture-overview.md", "asdf/asdf"]}' \<\n>              https://api.spitikos.dev:50051/docs.DocsService/Sync<\n>)
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"paths": ["overview/architecture-overview.md", "asdf/asdf"]}' \<\n>              https://api.spitikos.dev:443/docs.DocsService/Sync<\n>)
+ls
+git status
+git add .
+git commit -m "fix workflow"
+cd ../charts/
+git pull
+git add .
+git pull
+git status
+git pull
+git add .
+git commit -m "add env to values"
+git pull
+git add .
+git push
+git pull
+git commit -m "add env to values"
+git push
+cd ../api
+task secret
+kg secret -n api
+kg secret -n api -o yaml
+git add .
+cd ../charts/
+git add .
+git commit -m "fix env"
+git push
+grpcurl -plaintext localhost:50051 docs.DocsService.GetSlugs
+grpcurl api.spitikos.dev docs.DocsService.GetSlugs
+grpcurl api.spitikos.dev:443 docs.DocsService.GetSlugs
+cd ../docs
+git push
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data {"paths": ["overview/architecture-overview.md", "asdf/asdf"]} \<\n>              https://api.spitikos.dev:443/docs.DocsService/Sync<\n>)
+(<\n>curl --header "Content-Type: application/json" \<\n>              --data '{"paths": ["overview/architecture-overview.md", "asdf/asdf"]}' \<\n>              https://api.spitikos.dev:443/docs.DocsService/Sync<\n>)
+git add .
+git commit -m "fix workflow"
+git push
+git add .
+git commit -m "fix workflow"
+git push
+grpcurl api.spitikos.dev:443 docs.DocsService.GetSlugs
+grpcurl -d '{"slug": "deployment/helm-charts"}' api.spitikos.dev:443 docs.DocsService.GetDoc
+cd ../homepage/
+pnpm add @buf/spitikos_api.bufbuild_es@2.7.0-20250827204600-c6cde095821a.1
+pnpm lint:fix
+pnpm dev
+pnpm i @connectrpc/connect-node
+pnpm add @connectrpc/connect-node
+pnpm dev
+pnpm add sass --save-dev
+pnpm add sass
+pnpm i
+pnpm dev
+clear
+cd ..
+zed .
+pnpm dev
+clear
+pnpm dev
+git add .
+git commit -m "add docs page"
+git push
+pnpm lint
+git add .
+git commit -m "fix chart"
+git push
+pnpm prune
+pnpm lint
+git add .
+git commit -m "clean up"
+git push
+pnpm build
+pnpm lint
+pnpm build
+git add .
+git commit -m "fix type errors"
+git push
+cd ../charts/
+git add .
+git commit -m "remove unnecessary jq install"
+git add .
+git commit -m "remove unnecessary yq install"
+git push
+git pull
+git push
+git pull
+cd docs
+tree
+git add .
+git commit -m "restructure docs"
+git push
+git add .
+git commit -m "change stat promqls to smooth out stat fluctuation"
+git push
+git status
+git add .
+git commit -m "fix yq command"
+git push
+git pull
+cd ../.github/
+git add .
+git commit -m "migrate assets from spitikos repo"
+git push
+git add 
+git add .
+git commit -m "re-point icons to .github repo"
+git push
+cd ../api
+git add .
+git commit -m "[skip ci] add secret generation task"
+git push
+ya
+clear
+zed $nu.config-path
+clear
+nuconfig
+clear
+nuconfig
+clear
+config nu
+y
+<\n>              typst init @preview/clean-acmart:0.0.1<\n>            
+tree
+zed .
+task preview
+tree
+cd cs-444/
+task preview
+clear
+task preview
+clear
+nuconfig
+clear
+nuconfig
+kgns
+kgns | detect columns
+kgpo
+clear
+kubectl get pods
+kubectl get pods -n api
+kubectl_col get pods -n api
+clear
+kgns
+kgpo -n api
+kgno
+clear
+kgsvc --all
+kgsvc -A
+clear
+kgns
+clear
+kgns
+ll
+kgns
+clear
+kgns
+clear
+kgns
+kgpo -n api
+clear
+kgns
+clear
+kgns
+print hello world
+clear
+kgns
+clear
+kgns
+y
+clear
+ls
+cd psyc-310
+y
+clear
+hx .
+ls
+tree
+y
+ls
+task preview
+nuconfig
+clear
+hx .
+clear
+gemini
+y
+clear
+ls
+cd psyc-310/
+clear
+task preview
+ls
+lsof 23625
+lsof -i 23625
+sudo lsof -i :23625
+kill 36408
+sudo lsof -i :23625
+task preview
+nuconfig
+clear
+y
+clear
+ghostty +list-keybinds --default<\n><\n>
+clear
+glow
+clear
+zed ~/.config/zed/
+ls ~/.Trash/ | sort-by modified 
+ls ~/.Trash/ | sort-by modified | find perf
+mv /Users/ethantlee/.Trash/Perf.json ~/.config/zed/themes/
+cd spitikos/api
+cd api
+git add .
+buf push
+go get buf.build/gen/go/spitikos/api/connectrpc/go@v1.18.1-20250828193138-e75a871f55a6.1
+git add .
+git commit -m "[skip ci] remove protobuf comments"
+git push
+nuconfig
+clear
+nuconfig
+y
+clear
+y
+nuconfig
+y
+which zoxide
+y
+clear
+f
+yazi plugin fzf
+clear
+ya plugin fzf
+ya -h
+ya emit -h
+ya emit plugin fzf
+zedconfig
+nuconfig
+clear
+config nu
+config zed
+which z
+brew install zoxide
+clear
+z spitikos
+zoxide spitikos
+z spitikos
+zi
+cd ..
+z api
+clear
+cd spitikos
+clear
+cd spitikos
+which z
+which z -h
+which -h
+clear
+zoxide spitikos
+clear
+which cd
+cd spitikos
+clear
+cd spitikos
+which __zoxide_z
+clear
+zd spitikos
+zoxide z
+zoxide -h
+z spitikos
+z api
+cd ../..
+z api
+clear
+gemini
+clear
+z ..
+clear
+gemini
+y
+clear
+f
+cd nushell
+clear
+ls
+clear
+cd spitikos
+$nu.user-autoload-dirs
+$nu.vendor-autoload-dirs
+$nu.user-autoload-dirs
+$nu.cle
+nnu
+clear
+$env.GEMINI_API_KEY
+cd spitikos
+^cd spitikos
+cd spitikos
+clear
+cd api
+git add .
+git commit -m "[skip ci] add newlines"
+git push
+which protobuf-language-server 
+$env.PATH
+gemini
+clear
+cd spitikos
+clear
+cd ../charts
+git pull
+git add .
+git status
+which helm
+task argo:update
+git add .
+git commit -m "change vault server to dev mode"
+git push
+clear
+kgns
+kgsvc -n vault
+git add .
+git commit -m "use custom ingress"
+git push
+git add .
+git commit -m "fix argo manifest"
+git push
+git add .
+git commit -m "add common ingress"
+git push
+git add .
+git commit -m "fix vault values"
+git push
+task argo:update
+k port-forward svc/vault-ui -n vault 8200:8200
+clear
+zed ~/.config/aerospace/
+cd ..
+clear
+cd sandbox/
+clear
+zed ./go-demo
+zed ./go-demo/
+mkdir ./go-demo
+zed go-demo/
+go mod init
+go mod init go-demo
+clear
+go run ./main.go
+clear
+go run ./main.go
+clear
+npm install -g leetcode-cli
+which leetcode
+clear
+clear
+rm -rf ./go-demo/
+mkdir leetcode
+zed leetcode/
+cd ~/sandbox/leetcode/
+clear
+go run
+go run .
+go mod init
+go mod init ethn1ee/leetcode
+go mod tidy
+clear
+go run .
+npm install --engine-strict -g @google/gemini-cli@latest
+go run two-sum.go
+leetcode test ./two-sum.go
+leetcode
+leetcode -h
+leetcode user
+leetcode list -s
+leetcode user -l
+clear
+leetcode user -l
+clear
+leetcode user -c
+npm install -g leetcode-tools/leetcode-cli
+brew uninstall leetcode
+brew uninstall leetcode-cli
+npm uninstall -g leetcode
+npm uninstall -g leetcode-cli
+npm install -g leetcode-tools/leetcode-cli
+leetcode user -l
+leetcode user -c
+leetcode user -c
+clear
+leetcode test ./two-sum.go
+rm -rf ./leetcode/
+gemini
+clear
+cd spitikos
+zed .
+$env.GEMINI_CLI_SYSTEM_DEFAULTS_PATH
+"GEMINI_CLI_SYSTEM_DEFAULTS_PATH" in $env
+config nu
+zed $nu.config-path
+zed $nu.config-path/..
+$nu.config-path
+zed "/Users/ethantlee/Library/Application Support/nushell"
+cfg nu
+clear
+kubectl get serviceaccount $KUBE_SERVICE_ACCOUNT -o jsonpath='{.secrets[0].name}'
+kubectl get serviceaccount default -o jsonpath='{.secrets[0].name}'
+which vault
+brew tap hashicorp/tap<\n>brew install hashicorp/tap/vault
+which vault
+clear
+vault login
+$env.VAULT_ADDR = "https://vault.spitikos.dev"
+$env.VAULT_TOKEN = "root"
+vault login
+vault list
+kubectl cluster-info | grep 'Kubernetes control plane' | awk '/is running at/ {print $NF}'<\n>
+k cluster-info
+cfg nu
+zed ~/.kube/config
+clear
+cfg kubernetes
+kubectl config view --raw -o jsonpath='{.clusters[?(@.name=="'$(kubectl config current-context)'")].cluster.certificate-authority-data}' | base64 --decode > ca.crt<\n>
+clear
+kgns
+cfg nu
+kubectl get nodes
+kgno
+clear
+kgno
+kgpo
+kgpo -n api
+clear
+kgno
+kgpo -n api
+klo api-deployment-6574b4f456-fnx8j -n api -c vault-agent-init
+clear
+cfg nu
+kgno
+clear
+kgno
+klo api-deployment-6574b4f456-fnx8j -n api -c vault-agent-init
+^kubectl log api-deployment-6574b4f456-fnx8j -n api -c vault-agent-init
+^kubectl logs api-deployment-6574b4f456-fnx8j -n api -c vault-agent-init
+clear
+klo api-deployment-6574b4f456-fnx8j -n api -c vault-agent-init
+kgpo -n api
+kgno
+kgpo -n api
+klo api-deployment-6574b4f456-fnx8j -n api -c vault-agent-init
+clear
+cd spitikos/
+cfg nu
+clear
+kgpo -n api
+task vault:config:api
+cd spitikos/
+task vault:config:api
+clear
+task vault:config:api
+kgpo -n api
+klo api-deployment-6574b4f456-gxz8s -n api -c vault-agent-init
+task vault:config:api
+krmpo -l app.kubernetes.io/name=api -n api
+kgpo -n api
+klo api-deployment-6574b4f456-g6v6z -n api -c vault-agent-init
+task vault:config:api
+kubectl delete pods -l app.kubernetes.io/name=api -n api<\n>
+kgpo -n api
+klo api-deployment-69bc486dfb-bssgw -n api -c vault-agent-init
+klo api-deployment-6574b4f456-9tnf2 -n api -c vault-agent-init
+clear
+kgpo -n api
+kdpo api-deployment-6574b4f456-9tnf2 -n api | grep "Service Account:"
+task vault:auth
+task vault:config:api
+kubectl delete pods -l app.kubernetes.io/name=api -n api<\n>
+kgpo -n api
+klo api-deployment-6574b4f456-x5sg8 -n api -c vault-agent-init
+kubectl get clusterrolebinding vault-auth-delegator -o yaml<\n>
+^kubectl get clusterrolebinding vault-auth-delegator -o yaml<\n>
+kubectl delete serviceaccount vault-auth -n kube-system<\n>kubectl delete clusterrolebinding vault-auth-delegator<\n>
+kubectl create serviceaccount vault-auth -n kube-system<\n>kubectl create clusterrolebinding vault-auth-delegator \<\n>  --clusterrole=system:auth-delegator \<\n>  --serviceaccount=kube-system:vault-auth<\n>
+task -a
+task vault:svcaccount
+task vault:config:api
+cd charts
+git add .
+git commit -m "fix api values"
+git push
+kgpo -n api
+klo api-deployment-85f95d96f6-cdsnf -n api -c vault-agent-init
+git add .
+git commit -m "add commands"
+git push
+task vault:config:api
+clear
+kgpo -n api
+klo api-deployment-5dd95cfbbd-lp9jc -n api -c vault-agent-init
+task vault:config:api
+krmpo -l app.kubernetes.io/name=api -n api
+kgpo -n api
+klo api-deployment-5dd95cfbbd-vr7vt -n api -c vault-agent-injector
+klo api-deployment-5dd95cfbbd-vr7vt -n api -c vault-agent-init
+task vault:config:api
+vault kv get api
+config nu
+cfg nu
+vault kv get api
+clear
+vault kv get api
+$env.VAULT_ADDR
+$env.GEMINI_API_KEY
+f
+clear
+$env.VAULT_ADDR
+clear
+$env.VAULT_ADDR
+$env.GEMINI_API_KEY
+$env.GEMINI_API_KEY
+clear
+$env.VAULT_ADDR
+$env.GEMINI_API_KEY
+$env.VAULT_ADDR
+clear
+$env.VAULT_ADDR
+clear
+$env.VAULT_ADDR
+vault kv get api
+vault kv get -mount="secret" api
+cd charts
+git add .
+git commit -m "change vault path"
+git push
+clear
+task vault:config:api
+git add .
+git commit -m "fix commands"
+git push
+git add .
+git commit -m "use vault configmap"
+git push
+cd charts
+git add .
+git commit -m "use vault env"
+git push
+kgpo -n api
+klo api-deployment-86688cd7fb-h2p85 -n api -c vault-agent-init
+task vault:auth
+task vault:config:api
+klo api-deployment-86688cd7fb-j8xq6<\n> -n api -c vault-agent-init
+cfg kubernetes
+kg serviceaccount -n api
+task vault:auth
+task vault:config:api
+klo api-deployment-86688cd7fb-j8xq6 -n api -c vault-agent-init
+kgpo -n api
+klo api-deployment-86688cd7fb-7lm5r -n api -c vault-agent-init
+kubectl cluster-info
+k cluster-info
+task vault:config:api
+echo '{"apiVersion": "authentication.k8s.io/v1", "kind": "TokenRequest"}' \<\n>  | kubectl create -f- --raw /api/v1/namespaces/default/serviceaccounts/default/token \<\n>  | jq -r '.status.token' \<\n>  | cut -d . -f2 \<\n>  | base64 -D
+task vault:config:api
+kgpo -n api
+klo api-deployment-86688cd7fb-28qrh -n api -c vault-agent-init
+task vault:config:api
+kgpo -n api
+klo api-deployment-86688cd7fb-28mhj -n api
+klo api-deployment-86688cd7fb-28mhj -n api -c vault-agent
+cfg nu
+clear
+config nu
+zed $nu.default-config-dir
+config zed
+config nu
+clear
+conf nu
+clear
+fh
+clear
+fh
+sk --ansi -i -c 'rg --color=always --line-number "{}"'
+man history
+history -h
+clear
+fh
+clear
+fh
+history
+fh
+history | select command
+history | into string
+history | describe
+history
+history | get command
+history | get command | sk
+history | get command | describe
+history | get command | into string
+ls
+ls | get name | describe
+ls | get name | into string
+history | get command | enumerate
+history | get command | enumerate | describe
+history | get command
+history | input list -d command
+history | input list -d command | describe
+history | input list -d command -f
+clear
+fh
+sk --ansi -i -c 'ack --color "{}"'<\n>
+sk --ansi -i -c 'rg --color=always --line-number "{}"'<\n>
+sk --ansi -i -c 'history'<\n>
+sk --ansi -i -c 'history | into text'<\n>
+history | into text
+history | into string
+history | get command | into string
+history | get command | into string | describe
+history | select command | into string
+history | get command | to text
+history | to text
+history | get command | to text | sk "search history"
+history | get command | to text | sk
+clear
+fh
+sk
+fh
+clear
+vault read -field disable_iss_validation auth/kubernetes/config
+vault write auth/kubernetes/login role=demo jwt=test
+vault write auth/kubernetes/login role=api jwt=test
+vault write auth/kubernetes/login role=api jwt=root
+klo api-deployment-86688cd7fb-28mhj -n api -c vault-agent-init
+clear
+k create token vault-auth -n kube-system
+vault write auth/kubernetes/login role=api jwt=eyJhbGciOiJSUzI1NiIsImtpZCI6IjBqWVpTMC1rR3lyeDBERmc1ZUJFeXozaDh0ZGZ6ZFFxTGxlajRob3pjQnMifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzU2NjgzMTUyLCJpYXQiOjE3NTY2Nzk1NTIsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZWYxMzgyODktMzc1YS00ZDJhLTk4OGItNDVhNWFkZDA4YTdjIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJ2YXVsdC1hdXRoIiwidWlkIjoiYTM3NTQ3M2YtYmY5MC00MTYzLTkyMTAtOWIxZGY3OGU0Y2Q5In19LCJuYmYiOjE3NTY2Nzk1NTIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTp2YXVsdC1hdXRoIn0.IO0BinPVbVEGWP8gH_Jad2apu0tCbI4DHC2JPHpnDjR6w-q8fu8mcHYVfNkIxaFgoVDR2ZsK_8gCR7eEpyqZteXfNHak7o027NA7ekU9mRtHCkNYzyW3bnEWxvDKix9hgcQnLpJsnPX5E8PJopwWu-HOjfX8_cumwcb975CWMzu1XlIjGMYfPoLpr9JYQ0EtjCt-oTT7wKSD-EFX_6aotK8hLme1liGCtm-gQPm80RlIk1Txc3k8M2QbE6HBZs2Yntsnkxs9IXj6-FwKf015pekarujn1vSz96xCm4Dnrg-pJ25jBFtE1jo14j3Ia-ZupUEsunQHh020FM2Xm90J7g
+clear
+vault write auth/kubernetes/login role=api jwt=eyJhbGciOiJSUzI1NiIsImtpZCI6IjBqWVpTMC1rR3lyeDBERmc1ZUJFeXozaDh0ZGZ6ZFFxTGxlajRob3pjQnMifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzU2NjgzMTUyLCJpYXQiOjE3NTY2Nzk1NTIsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZWYxMzgyODktMzc1YS00ZDJhLTk4OGItNDVhNWFkZDA4YTdjIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJ2YXVsdC1hdXRoIiwidWlkIjoiYTM3NTQ3M2YtYmY5MC00MTYzLTkyMTAtOWIxZGY3OGU0Y2Q5In19LCJuYmYiOjE3NTY2Nzk1NTIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTp2YXVsdC1hdXRoIn0.IO0BinPVbVEGWP8gH_Jad2apu0tCbI4DHC2JPHpnDjR6w-q8fu8mcHYVfNkIxaFgoVDR2ZsK_8gCR7eEpyqZteXfNHak7o027NA7ekU9mRtHCkNYzyW3bnEWxvDKix9hgcQnLpJsnPX5E8PJopwWu-HOjfX8_cumwcb975CWMzu1XlIjGMYfPoLpr9JYQ0EtjCt-oTT7wKSD-EFX_6aotK8hLme1liGCtm-gQPm80RlIk1Txc3k8M2QbE6HBZs2Yntsnkxs9IXj6-FwKf015pekarujn1vSz96xCm4Dnrg-pJ25jBFtE1jo14j3Ia-ZupUEsunQHh020FM2Xm90J7g
+$env.VAULT_ADDR = "https://localhost:6443"
+vault write auth/kubernetes/login role=api jwt=eyJhbGciOiJSUzI1NiIsImtpZCI6IjBqWVpTMC1rR3lyeDBERmc1ZUJFeXozaDh0ZGZ6ZFFxTGxlajRob3pjQnMifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzU2NjgzMTUyLCJpYXQiOjE3NTY2Nzk1NTIsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZWYxMzgyODktMzc1YS00ZDJhLTk4OGItNDVhNWFkZDA4YTdjIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJ2YXVsdC1hdXRoIiwidWlkIjoiYTM3NTQ3M2YtYmY5MC00MTYzLTkyMTAtOWIxZGY3OGU0Y2Q5In19LCJuYmYiOjE3NTY2Nzk1NTIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTp2YXVsdC1hdXRoIn0.IO0BinPVbVEGWP8gH_Jad2apu0tCbI4DHC2JPHpnDjR6w-q8fu8mcHYVfNkIxaFgoVDR2ZsK_8gCR7eEpyqZteXfNHak7o027NA7ekU9mRtHCkNYzyW3bnEWxvDKix9hgcQnLpJsnPX5E8PJopwWu-HOjfX8_cumwcb975CWMzu1XlIjGMYfPoLpr9JYQ0EtjCt-oTT7wKSD-EFX_6aotK8hLme1liGCtm-gQPm80RlIk1Txc3k8M2QbE6HBZs2Yntsnkxs9IXj6-FwKf015pekarujn1vSz96xCm4Dnrg-pJ25jBFtE1jo14j3Ia-ZupUEsunQHh020FM2Xm90J7g
+kg serviceaccount -n api
+clear
+vault write auth/kubernetes/login role=api jwt=(kubectl create token api -n api)
+kubectl create token api -n api
+kubectl create token api -n api | base64 --decode
+kubectl create token api -n api | cut -d'.' -f2 | base64 --decode
+task vault:config:api
+vault write auth/kubernetes/login role=api jwt=(kubectl create token api -n api)
+git add .
+git commit -m "add vault svcaccount"
+git push
+task vault:test
+$env.VAULT_ADDR
+task vault:test
+task vault:auth
+kubectl config view --raw --minify --flatten -o jsonpath='{.clusters[].cluster.certificate-authority-data}' | base64 --decode
+fh
+kubectl config view --raw -o jsonpath='{.clusters[?(@.name=="'$(kubectl config current-context)'")].cluster.certificate-authority-data}' | base64 --decode > ca.crt
+kubectl config view --raw -o jsonpath='{.clusters[?(@.name=="'$(kubectl config current-context)'")].cluster.certificate-authority-data}' | base64 --decode
+kubectl config current-context
+kubectl config view --raw -o jsonpath='{.clusters}'
+kubectl config view --raw -o jsonpath='{.clusters[].name="default"}'
+kubectl config view --raw -o jsonpath='{.clusters[]}'
+kubectl config view --raw -o jsonpath='{.clusters[].name}'
+kubectl config view --raw -o jsonpath='{.clusters[?\(@.name=="default"\)]}'
+kubectl config view --raw -o jsonpath=`{.clusters[?@.name=="default"]}`
+clear
+task vault:auth
+kubectl config view --raw -o jsonpath="{.clusters[?\(@.name=="(kubectl config current-context)"\)].cluster.certificate-authority-data}" | base64 --decode
+kubectl config view --raw -o jsonpath="{.clusters[?(@.name==default)].cluster.certificate-authority-data}" | base64 --decode
+clear
+task vault:auth
+clear
+task vault:config:api
+vault write auth/kubernetes/login role=api jwt=(kubectl create token api -n api)
+kgpo -n api
+git add .
+git commit -m "fix vault path"
+git push
+klo api-deployment-86688cd7fb-fhpqm -n api -c vault-agent-init
+kgpo -n api
+git add .
+git commit -m "fix svcaccount name"
+gi tpush
+git push
+klo api-deployment-fb9c958c4-wsvmt -n api -c vault-agent-init
+kgpo -n api
+klo api-deployment-fb9c958c4-nf2mk -n api -c vault-agent-init
+vault kv get -mount="secret" api
+vault kv get -mount="secret" spitikos
+vault kv get -mount="secret" spitikos/api
+vault -h
+vault secrets list
+task vault:config:api
+kgpo -n api
+klo api-deployment-fb9c958c4-kcnfv -n api -c vault-agent-init
+task vault:config:api
+klo api-deployment-fb9c958c4-kcnfv -n api -c vault-agent-init
+kgpo -n api
+klo api-deployment-fb9c958c4-kcnfv -n api
+git add 
+git add .
+git commit -m "configure vault configmap"
+git push
+kgpo -n api
+klo api-deployment-7c8d48c6c8-npgvx -n api
+klo api-deployment-7c8d48c6c8-npgvx -n api -c vault-agent-init
+kd api-deployment-7c8d48c6c8-npgvx -n api
+kdpo api-deployment-7c8d48c6c8-npgvx -n api
+kubectl get pod api-deployment-7c8d48c6c8-npgvx -n api -o yaml
+^kubectl get pod api-deployment-7c8d48c6c8-npgvx -n api -o yaml
+git add .
+git commit -m "fix vault config"
+git push
+kgpo -n api
+kdpo api-deployment-7949589678-xfcnx -n api
+git add .
+git commit -m "create helm hook configmap"
+git push
+kgpo -n api
+klo api-deployment-7949589678-4lkq4 -n api -c vault-agent-init
+git add .
+git commit -m "troubleshooting vault configmap"
+git push
+kgpo -n api
+klo api-deployment-76fbd6866c-rmq2h -n api -c vault-agent-init
+kgpo -n api
+git add .
+git commit -m "troubleshooting vault configmap"
+git push
+kgpo -n api
+klo api-deployment-fb9c958c4-l9vrk -n api -c vault-agent-init
+clear
+kgpo -n api
+kgpo api-deployment-fb9c958c4-l9vrk -n api -o yaml
+^kgpo api-deployment-fb9c958c4-l9vrk -n api -o yaml
+^kubectl get pod api-deployment-fb9c958c4-l9vrk -n api -o yaml
+^kubectl get pod api-deployment-fb9c958c4-l9vrk -n api -o yaml | pbcopy
+git add .
+git commit -m "troubleshooting vault configmap" && git push
+git commit -m "troubleshooting vault configmap"; git push
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+vault kv get -mount="secret" spitikos/api
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+git push
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+vault agent generate-config -type="env-template" -path="spitikos/api" config.hcl
+vault agent generate-config -type="env-template" -path="secrets/data/spitikos/api" config.hcl
+vault agent generate-config -type="env-template" -path="/secrets/data/spitikos/api" config.hcl
+vault agent generate-config -type="env-template" -path="/secret/data/spitikos/api" config.hcl
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+task vault:config:api
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+kgpo -n api
+klo api-deployment-57d96b549-zqjw5 -n api -c vault-agent-init
+task vault:auth
+task vault:config:api
+kgpo -n api
+klo api-deployment-57d96b549-c86kk -n api -c vault-agent-init
+git add .
+git commit -m "troubleshooting vault configmap"; git push
+kgpo -n api
+klo api-deployment-657c785d65-z7cgd -n api
+klo api-deployment-657c785d65-z7cgd -n api -c vault-agent-init
+task vault:auth
+task vault:config:api
+cd api
+git add .
+git commit -m "change runner to alpine"
+git push
+cd charts
+git pull
+kgpo -n api
+git add .
+git commit -m "fix configmap mount path"
+git push
+git status
+git add .
+git commit -m "add command"
+git push
+git add .
+git commit -m "fix commands"
+git push
+cd docs
+cd ../docs
+git add .
+git commit -m "add vault doc"
+git push
+cd charts
+git add .
+git commit -m "remove unnecessary env"
+git push
+conf nu
+vault kv put personal/google GEMINI_API_KEY="AIzaSyDaIe1kkt6mhr4j8GyK_WfQ2DJjdSuxeRQ"
+mkdir ~/.config/vault
+zed ~/.config/vault
+vault kv get -mount="secret" spitikos/api
+vault kv put -mount="secret" personal/google GEMINI_API_KEY="AIzaSyDaIe1kkt6mhr4j8GyK_WfQ2DJjdSuxeRQ"
+zed ~/taskfile.yaml
+task -g -a
+task -g -a 
+task -g secret:get:google
+conf nu
+task -g secret:put:google GOOGLE_CLOUD_PROJECT 487659069330
+task -g "secret:put:google GOOGLE_CLOUD_PROJECT 487659069330"
+task -g secret:put:google:GOOGLE_CLOUD_PROJECT:487659069330
+task -g secret:get:google
+task -g secret:put:google:GEMINI_API_KEY:AIzaSyDaIe1kkt6mhr4j8GyK_WfQ2DJjdSuxeRQ
+task -g secret:get:google
+task -g secret:add:google:GOOGLE_CLOUD_PROJECT:487659069330
+vault kv get -mount="secret" spitikos/api
+task -g secret:get:google
+vault kv get -mount="secret" personal/google/GEMINI_API_KEY
+vault kv get -mount="secret" personal/google -field=GEMINI_API_KEY
+vault kv get -mount="secret" -field=GEMINI_API_KEY personal/google
+$env | keys
+$env
+$env | columns
+$env.VAULT_ADDR
+$env.GEMINI_API_KEY
+nnu
+clear
+job list
+clear
+$env.GEMINI_API_KEY
+clear
+$env.GEMINI_API_KEY
+clear
+clear
+$env.GEMINI_API_KEY
+clear
+$env.GEMINI_API_KEY
+$env.VAULT_ADDR
+$env.GEMINI_API_KEY
+clear
+job list
+$env.GEMINI_API_KEY
+clear
+job list
+clear
+$env.GEMINI_API_KEY
+clear
+vault kv get -mount="secret" -field=GEMINI_API_KEY personal/google
+clear
+$env.GEMINI_API_KEY
+$env.VAULT_ADDR
+vault kv get -mount="secret" -field=GOOGLE_CLOUD_PROJECT personal/google
+vault kv get -mount="secret" -field=GEMINI_API_KEY personal/google
+clear
+$env.VAULT_ADDR
+$env.GEMINI_API_KEY
+job list
+clear
+$env.GEMINI_API_KEY
+clear
+$env.GEMINI_API_KEY
+$env
+clear
+envs
+$env.GEMINI_API_KEY
+envs
+$e
+$env.GEMINI_API_KEY
+clear
+env
+$env.GEMINI_API_KEY
+env
+$env.GEMINI_API_KEY
+clear
+$env.GEMINI_API_KEY
+clear
+conf nu
+vault kv list -mount="secret"
+vault kv list -mount="secret" -format="table"
+vault kv get -mount="secret" -format="table" -field=GEMINI_API_KEY personal/google
+vault kv get -mount="secret" -format="table" personal/google
+vault kv get -mount="secret" -format="json" personal/google
+vault kv get -mount="secret" -format="json" 
+vault kv get -mount="secret" -format="json" personal
+vault kv list -mount="secret" -format="json" personal
+vault kv put -mount="secret" personal GEMINI_API_KEY="AIzaSyDaIe1kkt6mhr4j8GyK_WfQ2DJjdSuxeRQ"
+$env.GEMINI_API_KEY
+secret
+rm taskfile.yaml
+secret
+{foo: "bar"} | to text
+{foo: "bar"} | transpose key val
+vault kv patch -mount="secret" personal foo=bar bar=foo
+"foo" + "=" + "bar"
+secret
+clear
+secret
+secret get
+clear
+secret add
+secret add {bara: "asdf"}
+{foo: "bar", bar: "foo"} | transpose key val | each {|pair| $pair.key + "=" + $pair.val}
+clear
+secret add {bara: "asdf"}
+secret add {bara: "asdf", "foo": "bar"}
+secret add {bara: "", "foo": ""}
+vault kv list -mount="secret" -format="json" personal
+vault kv get -mount="secret" -format="json" personal
+secret
+secret get
+vault kv get -mount="secret" -format="json" personal/google
+secret get
+task -a
+task vault:auth:github
+vault auth list
+vault read auth/github/config
+task vault:auth:github
+vault read auth/github/config
+task vault:auth:github
+vault read auth/github/config
+task vault:auth:github
+cd spitikos/
+clear
+task vault:auth:github
+vault read auth/github/config
+task vault:auth:github
+vault read auth/github/config
+task vault:auth:github
+vault read auth/github/config
+task vault:auth:github
+vault read auth/github/config
+task vault:auth:github
+vault write auth/github/config organization=spitikos client_id=Ov23lihguASsv6GzHWDY client_secret=5159425f094a05c771341632b9e420dc7b7e1a8d
+vault read auth/github/config
+vault token lookup
+task vault:auth:github
+vault read auth/github/config
+task vault:auth:github
+task vault:auth:userpass
+vault read auth/userpass/users/ethantlee
+task vault:auth:userpass
+vault read auth/userpass/users/ethantlee
+task vault:auth:userpass
+vault read auth/userpass/users/ethantlee
+vault read auth/userpass/users/ethantlee -a
+vault read -a auth/userpass/users/ethantlee
+vault read -h
+vault read -format=json auth/userpass/users/ethantlee
+task vault:auth:userpass
+vault token revoke -self
+vault login
+task vault:auth:login
+task vault:login
+vault kv get -mount="secret" -format="json" personal
+vault kv get -mount="secret" -format="json" personal | from json
+vault kv get -mount="secret" -format="json" personal | from json | get data.data
+secret
+secret get
+clear
+fh
+clear
+task -a
+task auth:argocd
+cd resume
+cd ../sandbox/resume/
+clear
+task preview
+git add .
+git commit -m "improve structure"
+git push
+git pull
+git push
+git pull
+git add .
+git commit -m "improve readme"
+git push
+cd ..
+clear
+cd ..
+ls
+cd career
+zed .
+cd resume
+task preview
+git add .
+git commit -m "edit ukg highlightS"
+git push
+git pull
+git push
+git pull
+cd sandbox
+mkdir committer
+zed committer/
+cd sandbox/commiter
+cd
+cd sandbox
+cd committer/
+clear
+git init
+gh repo create ethn1ee/committer
+gh repo create
+brew upgrade gh
+go mod init
+go mod init github.com/ethn1ee/committer
+mkdir cmd/main
+go get google.golang.org/genai
+go get -u github.com/spf13/cobra@latest
+go install github.com/spf13/cobra-cli@latest
+cobra-cli
+cobra-cli init
+go run
+go run .
+go build . -o demo
+go build
+./committer
+./committer -t
+./committer -tasd
+./committer -h
+./committer -t
+go mod init github.com/ethn1ee/committer
+cobra-cli init --viper
+cobra-cli add message
+committer
+go run .
+go run . completion -h
+go run . completion zsh
+clear
+go build
+./committer
+./committer message
+cobra-cli add generate
+cobra-cli -h
+go build
+./committer gen
+go build
+./committer gen
+git add .
+git commit -m "boilerplate"
+git push
+git push --set-upstream origin main
+go get google.golang.org/genai
+ls ~/.config
+ls ~/.config/zed
+clear
+secret get
+go run .
+go run . gen
+zed 
+zed .
+$env.XDG_CONFIG_HOME
+go build
+./committer
+./committer gen
+$env.HOME
+$env.XDG_CONFIG_HOME = ($env.HOME | path join .config)
+./committer gen
+$env.XDG_CONFIG_HOME
+ls /Users/ethantlee/Library/Application Support
+ls "/Users/ethantlee/Library/Application Support"
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go mod tidy
+go build
+go mod tidy
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+cd committer/
+clear
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+clear
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+go build
+./committer gen
+git add .
+git commit -m (./committer gen)
+git push
+git add .
+git commit -m (./committer gen)
+./committer gen
+git push
+git log
+git pull
+./committer gen
+zed .
+go build
+./committer gen
+git add .
+git commit -m "feat: add release workflow<\n><\n>- Adds a GitHub workflow for automated releases."
+git push
+git add .
+git commit -m (./committer gen)
+git push
+git add . && git commit -m (./committer gen) && git push
+git add .; git commit -m (./committer gen); git push
+./committer gen
+git add .
+./committer gen
+git status
+git commit -m (./committer gen); git push
+kubectl completion nushell
+kubectl completion -h
+git add .
+./committer gen
+zed .
+go run . gen
+go run . gen > output
+go run . gen | save -f output
+go run . gen | save -f output.json
+go build
+./committer gen
+go build
+./committer gen
+zed .
+git add .; git commit -m (./committer gen); git push
+go build
+git add .; git commit -m (./committer gen); git push
+git push
+git push origin v0.1.0
+git add .; git commit -m (./committer gen); git push
+git tag -a v0.1.1
+git tag -a v0.1.1 -m "debugging workflow"; git push origin v0.1.1
+git add .; git commit -m (./committer gen); git push
+git tag -a v0.1.2 -m "release v0.1.2"
+git push origin v0.1.2
+git add .; git commit -m (./committer gen); git push
+git tag -a v0.1.3 -m "release v0.1.3"
+git push origin v0.1.3
+git add .; git commit -m (./committer gen); git push
+git tag -a v0.1.4 -m "release v0.1.4"
+git push origin v0.1.3
+git push origin v0.1.4
+secret add {HOMEBREW_TAP_TOKEN: "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"}
+secret get
+gh -h
+gh repo -h
+gh secret -h
+git secret set -h
+gh secret set -h
+gh secret set HOMEBREW_TAP_TOKEN --body "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"
+sudo ls /usr/bin
+ls ~/bin
+ls /usr/local/bin
+cd ~/Downloads/
+ls
+ls committer_0.1.4_darwin_arm64/
+sudo mv committer_0.1.4_darwin_arm64/committer /usr/local/bin
+which committer
+clear
+committer gen
+cd committer
+committer gen
+xattr -d com.apple.quarantine /usr/local/bin/committer
+committer gen
+git add .; git commit -m (committer gen); git push
+git tag -a v0.1.5 -m "release v0.1.5"
+git push origin v0.1.5
+git add .; git commit -m (committer gen); git push
+git tag -a v0.1.6 -m "release v0.1.6"
+git push origin v0.1.6
+gh repo create ethn1ee/homebrew-committer
+gh repo create ethn1ee/homebrew-committer --public
+git tag -a v0.1.7 -m "release v0.1.7"
+git push origin v0.1.7
+git add .; git commit -m (committer gen); git push
+git tag -a v0.1.8 -m "release v0.1.8"
+git push origin v0.1.8
+gh actions -h
+git add .; git commit -m (committer gen); git push
+git tag -a v0.1.9 -m "release v0.1.9"
+git push origin v0.1.9
+git tag -h
+git tag -l
+git tag -v
+git add .; git commit -m (committer gen); git push
+brew tap ethn1ee/homebrew
+git add .; git commit -m (committer gen); git push
+brew tap ethn1ee/committer
+brew install committer
+committer -v
+git add .; git commit -m (committer gen); git push
+which committer
+ls /usr/local/bin/committer
+sudo rm /usr/local/bin/committer
+which committer
+date
+date now
+date now | describe
+date humanize
+date now | format date "%Y-%m-%d"
+^date +%Y-%m-%d<\n>
+cd psyc-310
+cd 2025-fall
+cd ~/Documents/
+ls
+cd emory-university/
+ls
+cd academics/
+ls
+cd 2025-fall/
+ls
+task note:psyc-310
+task -a
+ls
+taks -a
+task -a
+ls
+task -a
+task note:psyc-310
+cd 2025-fall
+clear
+task note:psyc-310
+clear
+task note:psyc-310
+task note:preview:psyc-330/notes/2025-09-02.typ
+clear
+committer -h
+task note:psyc-310
+clear
+cd committer
+zed .
+git status
+git add .
+git status
+git add .
+git status
+go run .
+go run . gen
+go run . gen -p
+go mod tidy
+go run . gen -p
+go lint
+go run . gen -p
+git status
+clear
+brew upgrade committer
+brew uninstall committer
+brew install committer
+committer -v
+brew -h
+brew info committer
+brew tap ethn1ee/committer
+brew upgrade committer
+brew uninstall committer
+brew tap ethn1ee/committer
+brew install committer
+go run . gen -p
+task tag:v0.1.11
+brew untap
+brew untap ethn1ee/committer
+brew uninstall committer
+brew untap ethn1ee/committer
+brew tap ethn1ee/committer
+brew install committer
+git describe --tags --abbrev=0
+task tag:latest
+task -a
+committer gen -h
+committer gen -p
+(<\n>curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent" \<\n>  -H 'Content-Type: application/json' \<\n>  -H 'X-goog-api-key: GEMINI_API_KEY' \<\n>  -X POST \<\n>  -d '{<\n>    "contents": [<\n>      {<\n>        "parts": [<\n>          {<\n>            "text": "Explain how AI works in a few words"<\n>          }<\n>        ]<\n>      }<\n>    ]<\n>  }'<\n>)
+go mod tidy
+go run . gen
+clear
+go run . gen
+clear
+go run . gen
+clear
+go run . gen
+go mod tidy
+clear
+go run main.go
+go run . gen
+claer
+clear
+go run . gen -c
+go run . gen
+go run . gen -c
+clear
+go run . gen -c
+clear
+go run . gen -c
+go run . gen
+go get github.com/fatih/color
+clear
+go mod tidy
+go run . gen
+go run . gen -p
+clear
+go run . gen -p
+go run . gen
+go run . gen -p
+go run . gen
+zed .
+go mod tidy
+go run . gen
+go run . gen -p
+task -a
+task tag:latest
+task tag:v0.1.12
+committer gen -p
+go run . gen -p
+brew upgrade committer
+brew update
+brew upgrade committer
+committer gen
+committer gen -p
+task tag:v0.1.13
+committer gen -p
+task tag:v0.1.14
+committer gen -p
+brew upgrade committer
+brew update
+brew upgrade committer
+clear
+committer gen
+which ghostty
+brew install --cask ghostty<\n>
+gemini
+brew install --cask ghostty<\n>
+conf zed
+ls
+which ghostty
+clear
+kgno
+kgpo -n api
+clear
+cd spitikos
+hx .
+clear
+cd committer
+clear
+committer gen
+committer gen -p
+cd 2025-fall
+clear
+zoxide query -l
+conf nu
+clear
+conf nu
+cd /Users/ethantlee/sandbox/committer
+committer gen -p
+task note:cs-470
+clear
+cd sandbox
+ls
+cd emory-hacks/
+clear
+zed .
+git pull
+celar
+clear
+git branch
+git fetch
+git branch]
+git branch
+git fetch -a
+git branch
+cd ..
+rm -rf emory-hacks/
+git clone git@github.com:project-emory/emory-hacks.git
+cd /Users/ethantlee/sandbox/emory-hacks
+clear
+conf nu
+brew info leetcode
+brew info leetcode-cli
+clear
+f
+clear
+conf nu
+clear
+conf nu
+cd sandbox
+$env.GEMINI_API_KEY
+clear
+secret env
+$env.GEMINI_API_KEY
+secret get
+secret get | load-env
+$env.GEMINI_API_KEY
+clear
+$env.GEMINI_API_KEY
+secret env
+$env.GEMINI_API_KEY
+clear
+gemini
+$env.GEMINI_API_KEY
+clear
+$env.VAULT_ADDR
+git branch
+git switch 2025/fall
+pnpm dev
+npm run dev
+clear
+npm dev
+npm run dev
+npm i
+f
+ls
+cd 1-landing/
+ls
+ls | get name
+clear
+committer gen
+git status
+committer gen
+clear
+cd committer
+clear
+ze d.
+zed .
+clear
+committer gen
+committer gen -p
+cd emory-hacks/
+cd sandbox
+cd /Users/ethantlee/sandbox/emory-hacks
+clear
+committer gen
+npm i motion
+git add .
+committer gen
+clear
+$env.GEMINI_API_KEY
+clear
+secret env
+committer gen
+committer gen -p
+npm run dev
+clear
+zed .
+hx .
+ls
+hx .
+clear
+git status
+ls
+f
+clear
+git status
+celar
+which stow
+clea
+asdf
+clea
+$env.COLUMS
+$env.LINES
+clear
+cargo install rustlings
+cd sandbox
+mkdir rustlings
+rm -r rustlings
+ls
+rustlings init
+cd rustlings
+rustlings
+clear
+cd rustlings
+clear
+zed .
+conf zed
+gh repo create ethn1ee/rustlings --public
+git remote add origin git@github.com:ethn1ee/rustlings.git
+git add .
+committer gen -p
+git remote -v
+clear
+secret env
+conf nu
+clear
+secret env
+committer gen -p
+git commit -m "initial commit"
+git push
+git push --set-upstream origin main
+clear
+committer gen
+cd resume
+cd ~/sandbox/resume
+cd sandbox
+cd resume
+cd ~/resume
+cd ~
+ls
+cd career
+ls
+cd resume
+ls
+committer gen
+committer gen -p
+celar
+clear
+cd career
+clear
+cd sandbox
+cd leetcode
+ls
+which leetcode
+cd career
+cd /Users/ethantlee/Documents/emory-university/academics/2025-fall
+clear
+cd sandbox
+ls
+cd leetcode
+mkdir leetcode
+cd /Users/ethantlee/sandbox/leetcode
+clear
+zed .
+task note:psyc-310
+clear
+cd leetcode
+leetcode test ./solutions/find-the-number-of-ways-to-place-people-ii.go
+leetcode session
+leetcode list
+leetcode user 
+clear
+leetcode test ./solutions/find-the-number-of-ways-to-place-people-ii.go
+clear
+go run ./solutions/find-the-number-of-ways-to-place-people-ii.go
+go mod init github.com/ethn1ee/leetcode
+go mod tidy
+rustlings
+cd /Users/ethantlee/sandbox/leetcode
+clear
+zed .
+clear
+go test ./...
+go test solutions/3027
+go test ./...
+go test ./solutions/3027/3027_test.go
+go test ./solutions/3027
+which testfmt
+go install github.com/gotesttools/gotestfmt/v2/cmd/gotestfmt@latest
+go test -json ./...
+gotestfmt -h
+task -a
+clear
+task test:all
+clear
+task test:all
+task -a
+task test:3027
+git init
+gh repo create ethn1ee/leetcode --private --source .
+git add .
+committer gen
+git commit -m "initial commit"
+git push
+gh repo -h
+gh sync -h
+gh repo sync -h
+gh repo sync
+git push --set-upstream origin main
+committer gen -p
+clear
+grpcurl -d '{"slug": "deployment/helm-charts"}' api.spitikos.dev:443 docs.DocsService.GetDoc
+grpcurl api.spitikos.dev:443 docs.DocsService.GetSlugs
+grpcurl api.spitikos.dev:443 list
+grpcurl api.spitikos.dev:443 list prometheus.PrometheusService
+cd /Users/ethantlee/sandbox/rustlings
+zed .
+rustlings
+gemini
+clear
+clear
+committer gen
+secret env
+clear
+committer gen
+clear
+committer gen
+clear
+committer gen --push
+clear
+committer gen --push
+secret env
+committer gen --push
+zed .
+cd committer
+committer gen --push
+conf nu
+$env.HOME
+path join $env.HOME .kube
+$env.HOME | path join .kube
+clear
+conf aerospace
+conf kubernetes
+conf nu
+conf nu
+def conf-apps [] { ["nu", "zed", "starship", "kubernetes", "aerospace"] }
+conf-apps
+conf-apps | describe
+conf asdf
+fh
+history | get command | to text
+cd sandbox
+gh repo -h
+gh repo create school-cli/school-cli --public
+gh repo clone school-cli/school-cli
+ls
+cd school-cli/
+zed .
+clear
+cobra-cli init --viper
+go mod init github.com/school-cli/school-cli
+cobra-cli init --viper
+go mod tidy
+gh
+clear
+go build
+./school-cli
+./school-cli -h
+task -a
+task build
+which school
+school
+go build -o ./bin/school
+eval 
+conf nu
+clear
+which t
+clear
+t build
+which school
+clear
+school
+./school
+npm i -g taskbook
+which tb
+tb
+tb -h
+tb -t @cs-485 accessibility and aging reading assignment
+tb
+tb -l
+tb -h
+tb -n asdf
+tb
+tb -n @cs-485 asdf
+tb
+tb --timeline
+npm uninstall -g taskbook
+which tb
+clear
+secret get
+secret env
+$env."CREDIT_CARD_6739"
+conf nu
+secret get
+secret get | get env
+secret eng
+secret env
+secret get
+secret get | get cards
+secret get | get env
+secret get | get env.GEMINI_API_KEY
+secret get | get env
+secret get | get cards.0
+secret get | get cards[0]
+secret get | get cards
+secret get | get cards | describe
+secret get | get cards.credit_6739
+secret get
+clear
+cd spitikos
+clear
+gemini
+clear
+cd plans
+grpcurl api.spitikos.dev:443 list prometheus.PrometheusService
+ssh pi.local
+cd ../charts
+clear
+committer gen --push
+secret env
+clear
+committer gen --push
+cd spitikos
+task -a
+task auth:argocd
+grpcurl api.taehoonlee.cloud:443 list prometheus.PrometheusService
+conf nu
+clear
+conf ssh
+ssh cloud
+cd homepage
+committer gen --push
+cd docs
+committer gen --push
+cd api
+committer gen --push
+cd charts
+committer gen --push
+cd .github
+cd ../..
+cd /Users/ethantlee/spitikos/charts/.github
+committer gen --push
+ls
+cd ../..
+cd ./.github
+clear
+ls
+committer gen --push
+conf nu
+clear
+cd ~/Library/LaunchAgents/
+ls
+zed .
+launchctl load -w ~/Library/LaunchAgents/com.cloudflare.cloudflared.k8s-proxy.plist
+sudo launchctl load -w ~/Library/LaunchAgents/com.cloudflare.cloudflared.k8s-proxy.plist
+plutil -lint ~/Library/LaunchAgents/com.cloudflare.cloudflared.k8s-proxy.plist
+id -u
+sudo launchctl bootstrap gui/(id -u) ~/Library/LaunchAgents/com.cloudflare.cloudflared.k8s-proxy.plist
+sudo launchctl bootstrap ~/Library/LaunchAgents/com.cloudflare.cloudflared.k8s-proxy.plist
+launchctl load -w ~/Library/LaunchAgents/com.cloudflare.cloudflared.k8s-proxy.plist
+zed .
+launchctl load -w ~/Library/LaunchAgents/com.cloudflare.cloudflared.k8s-proxy.plist
+^launchctl load -w ~/Library/LaunchAgents/com.cloudflare.cloudflared.k8s-proxy.plist
+ls
+launchctl load -w ./com.cloudflare.cloudflared.k8s-proxy.plist
+ll
+which cloudflared
+exit
+sudo -E nu
+launchctl load -w ./com.cloudflare.cloudflared.k8s-proxy.plist
+clear
+kgpo -n api
+cd charts
+committer gen --push
+git push
+git pull
+git push
+task -a
+task argo:update
+task auth:argocd
+kgpo -n api -o yaml
+^kgpo -n api -o yaml
+clear
+cd spitikos
+task -a
+task vault:auth:kubernetes
+task vault:login
+clear
+task vault:auth:kubernetes
+committer gen --push
+kubectl exec -it vault-0 -n vault -- /bin/sh
+clear
+kgpo -n vault
+$env.GEMINI_API_KEY
+kubectl exec -it vault-0 -n vault -- /bin/sh
+task -a
+vault login root
+$env.HOMEBREW_TAP_TOKEN
+committer gen --push
+kg all -n vault
+task argo:rm:vault
+task argo:sync
+kubectl exec -it vault-0 -n vault -- /bin/sh
+kg job -n vault
+vault login
+task vault:auth:kubernetes
+kubectl exec -it vault-0 -n vault -- /bin/sh
+kgpo -n api
+task -a
+task vault:auth:userpass
+klo api-deployment-6bcf899d58-4knjq -n api -c vault-agent-init
+committer gen --push
+vault secrets enable -path=spitikos kv-v2
+vault secrets enable -path=personal kv-v2
+vault secrets list
+committer gen --push
+kgpo -n api
+klo api-deployment-87d74567b-ps6bf -n api -c vault-agent-init
+committer gen --push
+k create secret generic vault-root-token -n vault --from-literal=token=hvs.e0XMhss4MBNIK8yPiXjfz4cR
+committer gen --push
+kgpo -n api
+klo api-deployment-87d74567b-qsfgh -n api -c vault-agent-init
+vault login root
+kg serviceaccount -n vault
+task argo:rm:vault
+task argo:sync
+kubectl get pod vault-0 -n vault -o jsonpath='{.spec.serviceAccountName}'
+kgpo -n vault
+kgpo vault-0 -n vault
+kgpo vault-0 -n vault -o json
+kgpo vault-0 -n vault -o json | from json
+kgpo vault-0 -n vault
+kubectl exec -it vault-0 -n vault -- /bin/sh
+kgpo -n api
+klo api-deployment-87d74567b-84rxd -n api -c vault-agent-init
+committer gen --push
+k create secret generic vault-root-token -n vault --from-literal=token=hvs.wWY66niRybJmW6Aof9ezgxPL
+kgpo -n api
+klo api-deployment-87d74567b-cw6qd -n api -c vault-agent-init
+kg job -n vault
+kubectl exec -it vault-0 -n vault -- /bin/sh
+klo api-deployment-87d74567b-cw6qd -n api -c vault-agent-init
+vault login hvs.wWY66niRybJmW6Aof9ezgxPL
+vault read auth/kubernetes/config
+task auth:userpass
+task vault:auth:userpass
+task vault:auth:kubernetes
+kg serviceaccount -n vault
+kg serviceaccount -n kube-system
+task vault:auth:kubernetes
+cd ..
+task vault:auth:kubernetes
+task vault:config:api
+kgpo -n api
+cd charts
+git status
+committer gen --push
+cd docs
+committer gen --push
+cd resume
+committer gen --push
+git pull
+git push
+git pull
+klo api-deployment-87d74567b-9zf55 -n api
+clear
+conf nu
+secret get
+vault auth list
+vault login hvs.wWY66niRybJmW6Aof9ezgxPL
+secret get
+vault kv get -mount="personal"
+vault kv get -mount="secret" personal 
+vault kv get -mount="personal" env 
+vault kv get -mount="personal" *
+vault kv list -mount="personal"
+kubectl get pvc -n vault
+krm pvc data-vault-0 -n vault
+kubectl exec -it vault-0 -n vault -- /bin/sh
+task -a
+task vault:config
+secret get
+secret env
+vault kv list -mount="personal"
+vault kv list -mount="personal" -format=json
+vault kv list -mount="personal" -format=json | lines
+vault kv list -mount="personal" -format=json | from json
+vault kv list -mount="personal" -format=json | from json | each |path| { path }
+vault kv list -mount="personal" -format=json | from json | each {|path| path }
+vault kv list -mount="personal" -format=json | from json | each {|p| p }
+vault kv list -mount="personal" -format=json | from json | each { |p| p }
+vault kv list -mount="personal" -format=json | from json | each { |p| $p }
+vault kv list -mount="personal" -format=json | from json | each { |path| $path }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json } | get data
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json } | get data.data
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data } | describe
+secret get
+secret get | describe
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data } | flatten
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data | transpose key val | inspect }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data | transpose key val }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data | transpose key val } | describe
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data | transpose key val } | get 0
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data }
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data } | table
+vault kv list -mount="personal" -format=json | from json | each { |path| vault kv get -mount="personal" -format="json" $path | from json | get data.data } | merge
+let first = [[a b]; [1 2]]<\n>let second = [[c d]; [3 4]]<\n>$first | merge $second
+$first
+clear
+secret get
+mut my_record = {<\n> name: "Sam"<\n> age: 30<\n> }<\n>$my_record | update age { $in + 1 }
+$my_record
+mu
+secret get
+export
+export foo = 12
+clear
+secret
+secret -h
+secret get
+secret
+secret 
+secret -h
+secret
+secret t
+secret
+secrets
+secret
+secret | get env
+secret env
+$env.VAULT_UNSEAL_KEYS
+secret
+vault kv list -mount="personal"
+vault kv list -mount="personal" -format=json
+vault kv list -mount="personal" -format=json | from json
+clear
+secret paths
+secret add
+secret add -h
+secret add asdf asdf
+secret add -h
+clear
+secret
+secret get
+clear
+secret get env
+secret get bank
+clear
+f
+f ~
+which mktemp
+clear
+secret get bank
+clear
+secret
+secret get bank
+clear
+secret
+cd sandbox
+ls
+rm -rf ysap
+rm -rf school-cli
+rm -rf portfolio-v3/
+rm -rf poc-intercepting-route/
+rm -rf go-crawler/
+rm -rf ascii/
+clear
+ls
+git clone git@github.com:ethn1ee/portfolio.git
+git checkout --orphan v2
+cd portfolio/
+git checkout --orphan v2
+git status
+zed .
+git status
+git add .
+git commit -m "initial commit"
+git add .
+git commit -m "initial commit"
+git push
+git push --set-upstream origin v2
+pnpm create next app@latest .
+ls
+ls -a
+cd ..
+la
+ll
+ls -a
+cd /Users/ethantlee/sandbox/portfolio
+clear
+ls
+pnpm create next app@latest .
+ls
+pnpm create next app@latest ./
+pwd
+which npx
+which pnpx
+pnpx create-next-app@latest ./
+clear
+cd homepage
+ls
+cp ./src/lib/fonts ~/sandbox/portfolio/src/
+cp -r ./src/lib/fonts ~/sandbox/portfolio/src/
+cp ./public/noise.webp ~/sandbox/portfolio/public
+pnpm dlx shadcn@latest init
+cd /Users/ethantlee/sandbox/portfolio
+clear
+pnpm dlx shadcn@latest init
+pnpm dev
+clear
+pnpm add motion
+pnpm dev
+glow
+celar
+clear
+f
+cd sandbox
+ls
+clear
+ls
+cd learn-go-prep/
+ls
+tree
+zed .
+cd portfolio
+cler
+clear
+la
+ls -a
+rm -rf .next/
+clear
+cd portfolio
+clear
+committer gen
+clear
+committer gen --push
+clear
+git status
+clear
+committer gen
+clear
+committer gen --push
+pnpm dev
+gemini
+cd learn-go-prep/
+cd /Users/ethantlee/sandbox/learn-go-prep
+clear
+zed .
+python3
+clear
+ls
+cd
+clear
+f
+cd committer
+committer gen --push
+secret env
+committer gen --push
+git push
+cd leetcode
+zed .
+cd /Users/ethantlee/Documents/emory-university/academics/2025-fall
+clear
+task note:cs-485
+clear
+cd resume
+task -a
+task compile
+task compilt
+task compile
+committer gen --push
+git pull
+task compile
+committer gen --push
+cd 2025-fall
+clear
+task -a
+cd cs-485-5/assignments/
+clear
+ls
+go mod init cs485_5
+go mod tidy
+clear
+cd ..
+zed .
+go run ./cs-485-5/assignments/a1.go
+go mod tidy
+cd cs-485-5/assignments/
+clear
+go mod tid
+go mod tidy
+go run .
+clear
+go run .
+go mod tidy
+go run .
+go run a1/a1.go
+clear
+a:5 b:1 c:4 d:4 e:22 f:31 g:27 h:12 i:10 k:29 l:24 m:1 n:6 o:31 q:28 r:14 s:14 t:39 u:8 v:5 w:7 x:9 y:6 z:34 | into string
+"a:5 b:1 c:4 d:4 e:22 f:31 g:27 h:12 i:10 k:29 l:24 m:1 n:6 o:31 q:28 r:14 s:14 t:39 u:8 v:5 w:7 x:9 y:6 z:34" | detect columns
+clear
+task -a
+task note:cs-485-5
+clear
+task note:preview:a1/a1.typ
+task note:preview:./a1/a1.typ
+go run a1/a1.go
+clear
+go run a1/a1.go
+go run a1/a1.go | pbcopy
+go run a1/a1.go
+clear
+go run a1/a1.go
+clear
+go run a1/a1.go
+clear
+go run a1/a1.go
+task note:preview:cs-485-5/assignments/a1/a1.typ
+cd leetcode
+zed 
+zed .
+go test ./...
+task -a
+task test:3495
+go mod tidy
+clear
+task test:3495
+clear
+task test:3495
+clear
+task test:3495
+cd /Users/ethantlee/sandbox/emory-hacks
+pnpm dev
+git pull
+npm dev
+git status
+pnpm dev
+time git status
+clear
+time committer gen
+secret env
+committer gen
+conf zed
+cd leetcode
+zed .
+committer gen -p
+secret env
+committer gen -p
+go mod tidy
+go test ./...
+task -a
+task test:2749
+task test:2749clear
+clear
+task test:2749clear
+clear
+task test:2749
+go mod tidy
+task test:2749
+go mod tidy
+task test:2749
+cd spitikos
+task -a
+task auth:argocd
+cd portfolio
+clear
+zed .
+f
+cd /Users/ethantlee/sandbox/portfolio
+cd spitikos
+task auth:argocd
+f
+cd portfolio
+clear
+secret env
+committer gen -p
+pnpm dev
+clear
+k version
+which bootdev
+go install github.com/bootdotdev/bootdev@latest
+bootdev login
+bootdev run b0cebf37-7151-48db-ad8a-0f9399f94c58
+bootdev run b0cebf37-7151-48db-ad8a-0f9399f94c58 -s
+cd sandbox
+mkdir bootdev/httpgo
+cd bootdev
+cd httpgo
+zed .
+clear
+go mod tidy
+go mod init httpgo
+go mod tidy
+bootdev run 908a9916-ca63-49ae-9bca-b12f411e0b89
+bootdev run 908a9916-ca63-49ae-9bca-b12f411e0b89 -s
+go run .
+clear
+go run .
+bootdev run 83e169b2-51ce-4fa8-96a0-031505e1008e
+bootdev run 83e169b2-51ce-4fa8-96a0-031505e1008e -s
+go run .
+bootdev run 83e169b2-51ce-4fa8-96a0-031505e1008e -s
+go run .
+bootdev run 81c640bb-ef8b-4f7e-a090-e527da635330 -s
+go run .
+zed .
+clear
+go run .
+clear
+bootdev run 835c6a37-7156-4112-886d-126cf25c1c45 -s
+go run .
+printf "Do you have what it takes to be an engineer at TheStartup™?\r\n" | nc -w 1 127.0.0.1 42069
+cat /tmp/tcp.txt
+clear
+go run . | tee /tmp/tcp.txt
+tee -h
+printf "Do you have what it takes to be an engineer at TheStartup™?\r\n" | nc -w 1 127.0.0.1 42069
+cat /tmp/tcp.txt
+bootdev run 552ab1e9-85ca-4396-b69a-6be1bccceab7
+bootdev run 552ab1e9-85ca-4396-b69a-6be1bccceab7 -s
+go run . | tee { save /tmp/tcp.txt }
+nc -v localhost 42069
+clear
+go run . | tee { save /tmp/tcp.txt }
+nc -v localhost 42069
+go run ./cmd/tcplistener
+clear
+nc -v localhost 42069
+bootdev run f774d7e2-bb99-4c95-b47a-fae860d8b670
+clear
+bootdev run f774d7e2-bb99-4c95-b47a-fae860d8b670 -s
+go run ./cmd/tcplistener | tee { save /tmp/tcplistener.txt }
+clear
+clear
+go run ./cmd/udpsender
+nc -u -l 42069
+clear
+curl http://localhost:42069/coffee
+curl --http2 http://localhost:42069/coffee
+go run ./cmd/tcplistener | tee { save /tmp/rawget.http }
+curl http://localhost:42069/coffee
+bootdev run cf7815cb-5692-4011-a1ab-da592cccb9e8 -s
+curl -X POST -H "Content-Type: application/json" -d '{"flavor":"dark mode"}' http://localhost:42069/coffee
+clear
+f
+cd /Users/ethantlee/Documents/emory-university/academics/2025-fall/cs-485-5/assignments
+go list
+cd a1
+go list
+zed .
+cd ..
+zed .
+go run a1
+ls
+go run .
+go run ./a1
+clear
+go run ./a1
+go run ./a1 1
+go run ./a1 2
+go run ./a1 3
+go run ./a1 4
+go run ./a1 5
+go run ./a1 6
+go run ./a1 7
+go run ./a1 0
+go run ./a1 12
+go run ./a1 0
+go run ./a1 1
+go run ./a1 2
+go run ./a1 3
+go run ./a1 4
+go run ./a1 5
+go run ./a1 6
+go run ./a1
+clear
+go run ./a1
+cd sandbox
+ls
+zoxide query
+zoxide query -l
+zoxide query .
+zoxide query sandbox
+zoxide query -l sandbox
+cd /Users/ethantlee/sandbox/bootdev
+clear
+ls
+cd httpgo
+zed .
+go run .
+go test ./...
+cd httpgo
+go test ./...
+clear
+go test ./...
+go test -v ./...
+clear
+go test -v ./...
+go test ./...
+go test ./... -v
+clear
+go test ./... -v
+go test ./...
+cd httpgo
+go test -v ./...
+clear
+curl http://localhost:42069/prime/agen
+go run ./cmd/tcplistener | tee { save /tmp/requestline.txt }
+clear
+go run ./cmd/tcplistener | tee { save /tmp/requestline.txt }
+cleaer
+clear
+go test -v ./...
+go test -v ./internal/headers/headers_test.go
+go test -v ./internal/headers
+claer
+clear
+go test -v ./internal/headers
+go test -v -json ./internal/headers | gotestfmt
+go test -v -json ./internal/headers
+go test -v ./internal/headers
+cd /Users/ethantlee/Documents/emory-university/academics/2025-fall
+ls
+cd cs-444
+ls
+cd survey/
+ls
+rm ./*
+ls
+<\n>              typst init @preview/clean-acmart:0.0.1<\n>            
+ls
+cd clean-acmart/
+ls
+cd ..
+mv ./clean-acmart/* .
+ls
+rm clean-acmart/
+ls
+zed .
+tinymist preview ./main.typ
+clear
+tinymist preview ./main.typ
+clear
+tinymist preview ./main.typ
+cd portfolio
+committer gen -p
+secret env
+committer gen -p
+cd a1
+clear
+ls
+go run .
+zed .
+go run .
+clear
+go run .
+open a1.pdf
+clear
+open ./a1.pdf
+clear
+open ./a1.pdf
+go run .
+bootdev
+f
+ls
+zed .
+tinymist preview ./main.typ
+tinymist preview ./main2.typ
+tinymist preview ./main.typ
+clear
+hx .
+~
+clea
+clear
+ls -a
+ls | find tutor
+ls | find hx
+ls | find h
+ls | find .
+ls | find vim
+clear
+cd resume
+clear
+task -a
+task preview
+clear
+committer gen -p
+secret env
+committer gen -p
+git push
+git pull
+git push
+git pull
+zed .
+task -a
+git status
+committer gen -p
+secret env
+committer gen -p
+git pull
+typst compile ./src/cover-letter.typ ./assets/cover-letter.pdf --root . --format pdf
+task preview:cover-letter
+cd resume
+zed .
+f
+cd ..
+zed .
+cd career
+zed .
+cd career
+cd /Users/ethantlee/sandbox/emory-hacks
+clear
+pnpm dev
+committer gen -p
+secret env
+committer gen -p
+pnpm dev
+committer gen -p
+pnpm dev
+committer gen -p
+pnpm dev
+clear
+f
+cd emory-hacks/
+cd emory-hacks
+clear
+git status
+committer gen -p
+git switch main
+git status
+git switch 2025/spring
+git switch 2025/fall
+git switch main
+committer gen -p
+git pull
+git push
+git switch 2025/fall
+git pull
+committer gen -p
+npm build
+pnpm build
+git status
+pnpm build
+git clean
+git clean -f
+git pull
+git restore .
+pnpm build
+committer gen -p
+gemini
+clear
+hx --tutor
+clear
+cd 2025-fall
+ls
+brew install --cask wezterm<\n>
+ls
+pwd
+clear
+ls
+ls -a
+$env.WEZTERM_EXECUTABLE
+$env.WEZTERM_PANE
+cd .config
+ls
+conf nu
+$env.config
+$env.XDG_CONFIG_HOME
+clear
+ls -a
+clear
+$env.XDG_CONFIG_HOME
+cp ./* ~/.config/nushell --recursive
+clear
+f
+clear
+cd ~
+clear
+la
+zed .zshrc
+clear
+config nu
+$nu.config-path
+cd $nu.config-path/..
+zed /Users/ethantlee/.config/nushell/
+$nu.default-config-dir
+clear
+conf nu
+conf wezterm
+conf nu
+cd .config
+la
+mkdir wezterm
+clear
+conf wezterm
+clear
+cd ~
+cd .config
+cd wezterm
+hx .
+la
+hx --health lua
+brew uninstall wezterm
+which wezterm
+cd .config
+ls
+cd ..
+ls
+cd library
+cd /Users/ethantlee/Library/Application Support
+la
+ls
+la
+cd com.mitchellh.ghostty/
+la
+mkdir ~/.config/ghostty
+cp config ~/.config/ghostty/
+mv config config.bak
+conf all
+clear
+$env.XDG_CONFIG_HOME
+$nu.default-config-dir
+clear
+conf nu
+conf all
+conf nu
+cd $env.XDG_CONFIG_HOME
+git init
+gh repo create ethn1ee/.config --source .
+gh repo create ethn1ee/.config --source . --private
+brew upgrade gh

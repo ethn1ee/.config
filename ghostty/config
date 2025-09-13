@@ -1,0 +1,25 @@
+# font
+font-family = Fira Code
+
+# background
+background = #13121A
+
+# foreground
+# foreground = #f0f1f2
+
+# window
+window-padding-x = 20
+window-padding-y = 20
+window-padding-balance = true
+
+theme = NVimDark
+
+scrollback-limit = 4294967296
+
+# quick-terminal
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
+quick-terminal-position = center
+quick-terminal-screen = mouse
+quick-terminal-animation-duration = 0
+
+clipboard-paste-protection = false

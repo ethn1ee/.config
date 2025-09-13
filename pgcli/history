@@ -1,0 +1,54 @@
+
+# 2025-06-03 19:18:40.411068
++\d items
+
+# 2025-06-03 19:19:10.591337
++alter table items alter column price type money
+
+# 2025-06-03 19:19:28.172712
++alter table items alter column price type money using price::money
+
+# 2025-06-03 19:19:57.933202
++alter table items alter column price type money using (price::NUMERIC(18,2))::money;
+
+# 2025-06-03 19:20:04.381071
++\d items
+
+# 2025-06-03 19:20:17.253669
++clear
+
+# 2025-06-03 19:20:43.029859
++\! clear
+
+# 2025-06-03 19:22:45.848702
++CREATE TABLE categories (
++  name          TEXT       PRIMARY KEY,
++  subcategories TEXT[]     DEFAULT ARRAY[]::TEXT[]
++);
+
+# 2025-06-03 19:22:52.925819
++\d categories
+
+# 2025-06-03 19:27:52.426305
++alter table items alter column subcategory type text[] using array[subcategory]
+
+# 2025-06-03 19:27:57.344738
++\d items
+
+# 2025-06-03 19:28:35.055922
++alter table items rename column subcategory to subcategories
+
+# 2025-06-03 19:28:39.645934
++\d items
+
+# 2025-06-03 20:36:30.057077
++quit
+
+# 2025-06-05 18:58:04.288080
++\d items
+
+# 2025-06-05 18:58:13.945266
++select name from items
+
+# 2025-06-05 18:59:57.721274
++exit

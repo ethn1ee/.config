@@ -1,0 +1,51 @@
+[[language]]
+name = "go"
+roots = ["go.work", "go.mod"]
+auto-format = true
+formatter = ["gofumpt"]
+language-servers = ["gopls"]
+
+[[language]]
+name = "typescript"
+auto-format = true
+formatter = { command = "prettier", args = [
+  "--parser",
+  "typescript",
+] }
+language-servers = ["typescript-language-server", "tailwindcss-ls"]
+
+[[language]]
+name = "tsx"
+auto-format = true
+formatter = { command = "prettier", args = [
+  "--parser",
+  "typescript",
+] }
+language-servers = [
+  "typescript-language-server",
+  "tailwindcss-ls",
+]
+
+[[language]]
+name = "html"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "html"] }
+language-servers = ["vscode-html-language-server", "tailwindcss-ls"]
+
+[[language]]
+name = "css"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "css"] }
+language-servers = ["vscode-css-language-server", "tailwindcss-ls"]
+
+[[language]]
+name = "toml"
+auto-format = true
+language-servers = ["tombi"]
+
+[[language]]
+name = "nu"
+file-types = ["nu"]
+auto-format = true
+formatter = { command = "nufmt", args = ["--stdin"] }
+# language-servers = ["/opt/homebrew/bin/nu"]

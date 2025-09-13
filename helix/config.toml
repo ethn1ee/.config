@@ -1,0 +1,41 @@
+theme = "catpuccin-mocha"
+
+[editor]
+line-number = "relative"
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "hint"
+
+[editor.auto-save]
+after-delay.enable = true
+after-delay.timeout = 500
+
+[editor.lsp]
+snippets = true
+
+[keys.normal]
+"C-f" = [
+  ":sh rm -f /tmp/files2open",
+  ":set mouse false",
+  ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/files2open',
+  ":redraw",
+  ":set mouse true",
+  ":open /tmp/files2open",
+  "select_all",
+  "split_selection_on_newline",
+  "goto_file",
+  ":buffer-close! /tmp/files2open",
+]

@@ -1,0 +1,26 @@
+2025-07-16 18:48:32,350 DEBUG    root            Running [gcloud] with arguments: [-v: "None"]
+2025-07-16 18:48:32,351 DEBUG    root            Loaded Command Group: ['gcloud', 'version']
+2025-07-16 18:48:32,351 DEBUG    root            Running [gcloud.version] with arguments: []
+2025-07-16 18:48:32,353 DEBUG    root            Chosen display Format:flattened[no-pad,separator=" "]
+2025-07-16 18:48:32,353 INFO     root            Display format: "flattened[no-pad,separator=" "]"
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ Google Cloud SDK
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___  
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ 530.0.0
+
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ bq
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___  
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ 2.1.19
+
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ core
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___  
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ 2025.07.11
+
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ gcloud-crc32c
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___  
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ 1.0.0
+
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ gsutil
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___  
+2025-07-16 18:48:32,369 INFO     ___FILE_ONLY___ 5.35
+
+2025-07-16 18:48:32,374 DEBUG    root            Metrics reporting process started...

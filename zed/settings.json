@@ -1,0 +1,212 @@
+{
+  "agent_servers": {},
+  "ssh_connections": [
+    {
+      "host": "spitikos",
+      "username": "ethantlee",
+      "projects": [
+        {
+          "paths": ["/home/ethantlee"]
+        },
+        {
+          "paths": ["/home/ethantlee/pi"]
+        }
+      ],
+      "nickname": "pi"
+    }
+  ],
+
+  "extend_comment_on_newline": false,
+
+  // theme
+  "icon_theme": "Catppuccin Mocha",
+
+  "gutter": {
+    "min_line_number_digits": 3,
+    "runnables": false
+  },
+
+  // "experimental.theme_overrides": {
+  //   "background": "#13121A",
+  //   "editor.background": "#13121A",
+  //   "editor.gutter.background": "#13121A",
+  //   "editor.active_line.background": "#13121A",
+  //   "terminal.background": "#13121A",
+  //   "toolbar.background": "#13121A",
+  //   "panel.background": "#13121A",
+  //   "title_bar.background": "#13121A",
+  //   "status_bar.background": "#13121A",
+  //   "tab_bar.background": "#13121A",
+  //   "tab.inactive_background": "#13121A",
+  //   "tab.active_background": "#13121A",
+  //   "syntax": {
+  //     "comment": {
+  //       "font_style": "italic"
+  //     },
+  //     "comment.doc": {
+  //       "font_style": "italic"
+  //     }
+  //   },
+  //   "background.appearance": "blurred"
+  // },
+
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "lsp_pull_diagnostics": {
+      "enabled": true,
+      "debounce_ms": 50
+    },
+    "inline": {
+      "enabled": true,
+      "padding": 4
+    }
+  },
+
+  // bars
+  "tab_bar": {
+    "show": false,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+  },
+  "tabs": {
+    "git_status": true
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false,
+    "selections_menu": false,
+    "agent_review": false,
+    "code_actions": false
+  },
+
+  // panels
+  "notification_panel": {
+    "button": false
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "right",
+    "indent_size": 16,
+    "indent_guides": {
+      "show": "never"
+    }
+  },
+  "outline_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "terminal": {
+    "button": true,
+    "toolbar": {
+      "breadcrumbs": false
+    }
+  },
+  "debugger": {
+    "button": false
+  },
+
+  // AI
+  "agent": {
+    "single_file_review": true,
+    "default_profile": "ask",
+    "always_allow_tool_actions": false,
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.5-pro"
+    },
+    "model_parameters": [],
+    "dock": "left"
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
+
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Bunker"
+  },
+  "inline_code_actions": false,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 500
+    }
+  },
+
+  "format_on_save": "on",
+
+  "code_actions_on_format": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true,
+    "source.removeUnusedImports": true
+  },
+
+  "languages": {
+    "CSS": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "language_servers": ["tailwindcss-language-server"]
+    },
+    "Make": {
+      "tab_size": 4,
+      "hard_tabs": true
+    },
+    "YAML": {
+      "enable_language_server": false,
+      "formatter": "auto",
+      "tab_size": 2,
+      "hard_tabs": false
+    },
+    "Helm": {
+      "enable_language_server": true,
+      "formatter": "auto",
+      "tab_size": 2,
+      "hard_tabs": false
+    },
+    "Proto": {
+      "formatter": "language_server",
+      "tab_size": 2,
+      "hard_tabs": false,
+      "language_servers": ["protobuf-language-server"]
+    },
+    "Typst": {
+      "tab_size": 2,
+      "hard_tabs": false
+    },
+    "HCL": {
+      "tab_size": 4,
+      "hard_tabs": true
+    }
+  },
+
+  "file_types": {
+    "Helm": [
+      "**/templates/**/*.tpl",
+      "**/templates/**/*.yaml",
+      "**/templates/**/*.yml",
+      "**/helmfile.d/**/*.yaml",
+      "**/helmfile.d/**/*.yml",
+      "**/values*.yaml"
+    ],
+    "Typst": ["*.typ"]
+  }
+}
