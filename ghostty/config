@@ -1,18 +1,12 @@
 # font
-font-family = Fira Code
-
-# background
-background = #13121A
-
-# foreground
-# foreground = #f0f1f2
+font-family = Fira Code Nerd Font
 
 # window
 window-padding-x = 20
 window-padding-y = 20
 window-padding-balance = true
 
-theme = NVimDark
+theme = rose-pine
 
 scrollback-limit = 4294967296
 

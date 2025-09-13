@@ -6283,3 +6283,15 @@ git init
 gh repo create ethn1ee/.config --source .
 gh repo create ethn1ee/.config --source . --private
 brew upgrade gh
+git add .
+git commit -m "initial commit"
+git push
+git push --set-upstream origin main
+ghostty +list-themes<\n>
+clear
+conf
+conf 
+conf null
+conf "null"
+clear
+secret env
