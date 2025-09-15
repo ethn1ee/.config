@@ -6295,3 +6295,394 @@ conf null
 conf "null"
 clear
 secret env
+committer gen -p
+git status
+git commit -m "change themes to rose pine"
+git push
+fzf
+..
+fzf
+sk
+f
+fh
+cd cs-444
+clear
+task -a
+task preview
+clear
+task preview
+clear
+task compile:pdf
+task -a
+cd ~
+clear
+kubectl get nodes
+cd sandbox
+clear
+mkdir llog
+cd llog
+go mod init github.com/ethn1ee/llog
+zed .
+cobra-cli init --viper
+go mod tidy
+go run .
+git init
+git status
+gh repo create ethn1ee/llog --source . --public
+git add .
+git commit -m "initial commit"
+git push
+git push --set-upstream origin main
+zed .
+clear
+go run .
+zed .
+go run . --config ./log
+go run . --config=./log
+go run . --config=llog.yaml
+go run . --config llog.yaml
+go run .
+go run . -h
+go run . --config llog.yaml
+go run .
+clear
+go run .
+go run . --config llog.yaml
+go run .
+task -a
+task run
+$env.LLOG_FOO = asdf
+$env.LLOG_FOO = "asdf"
+go run .
+task -a
+task run:env
+clear
+$env.LLOG_FOO
+hide-env LLOG_FOO
+$env.LLOG_FOO
+clear
+task run:env
+$env.LLOG_FOO
+task run:env
+task run
+task run:config
+clear
+task run
+task run config
+clear
+task run
+task run:config
+task run:env
+task run
+fh
+cobra-cli
+cobra-cli init -h
+task run
+task run:env
+task run:config
+task run
+cobra-cli -h
+cobra-cli -a Ethan Lee
+cobra-cli -a Ethan
+cobra-cli add -h
+cobra-cli add -a "Ethan Lee"
+cobra-cli add add -a "Ethan Lee"
+clear
+task run
+task run -- add
+clear
+task run -- add
+task run:env -- add
+secret env
+committer gen -p
+task run -- add asdf asdf
+task run -- add "asdf asdf"
+task run -- add asdf asdf
+go get github.com/tursodatabase/turso-go<\n>
+go mod tidy
+task run
+task run -- add
+$env.RUST_BACKTRACE = 1
+task run -- add
+git status
+clear
+task run
+task run -- add asdf adsf
+clea
+clear
+task run -- add asdf adsf
+conf all
+clear
+conf helix
+zed ~/.config/helix/
+hx .
+zed ~/.config/helix/
+hx .
+conf helix
+clear
+task run -- add asdf adsf
+task run -- add fdsa asdff
+go get -u gorm.io/gorm<\n>go get -u gorm.io/driver/sqlite<\n>
+touch -h
+^touch -h
+task run -- add fdsa asdff
+task run
+task -a
+go run .
+task -a
+go run .
+clear
+go mod tidy
+go run .
+go build
+which go
+clear
+go build
+./llog
+go run .
+task run
+task run -- add asdf
+task run -- add asdfa asdf
+cobra-cli add get -a "Ethan Lee <ethantlee21@gmail.com>"
+clear
+task run -- get
+clear
+task build
+./bin/llog get
+./bin/llog add resting
+./bin/llog get
+task run -- get
+task run -- get all
+task run -- get
+task run
+go run .
+task run
+task run -- get
+task run -- get all
+go get github.com/fatih/color
+go mod tidy
+task run -- get all
+go run .
+go build
+task run
+task run -- add in bed with katie
+task run -- get all
+task run -- get
+task run -- get all
+task run -- in bed, katie sleeping
+task run -- add in bed, katie sleeping
+task run -- get all
+committer gen -p
+task run -- get all
+task run -- add coding llog
+task run -- get all
+committer gen -p
+task run -- get all
+task run -- add coding at cox
+task run -- get all
+task run -- get
+task run -- add coding at cox
+task run -- get
+task run -- get -t
+task run -- get --from 2024-01-01
+task run -- get -t
+task run -- get --to 2025-01-01
+committer gen -p
+task run -- add leaving cox for emory hacks meeting
+task run -- add turns out the meeting is virtual lol
+task run -- get
+clear
+conf helix
+hx .
+ls
+cd /Users/ethantlee/sandbox/emory-hacks
+committer gen -p
+clear
+$nu.default-config-dir
+$nu.config-path
+conf all
+clear
+conf all
+$env.config.buffer_editor
+conf nu
+clear
+conf nu
+$nu.config-path
+clear
+tmux ls
+clear
+tmux ls
+conf helix
+cd httpgo
+conf aerospace
+tmux ls
+hx .
+clear
+tmux a llog
+cd llog
+clear
+$nu.config-path
+bat .zshrc
+clear
+ls
+la
+cd .config
+la
+open .gitignore
+f
+config nu
+conf nu
+f
+conf nu
+f
+cd ethantlee/
+clear
+tmux a -t llog
+clear
+cd llog
+clear
+asdf
+hx .
+task -a
+task run -- get
+task clean
+la
+task clean
+la
+tree
+ls bin
+rm -r bin
+la
+tree
+task build
+ls
+./llog get
+./llog add had carbonara pasta
+./llog get
+task build
+./llog get
+./llog add testing llog
+./llog add "testing args"
+./llog get
+./llog get -t
+./llog get -h
+./llog get
+./llog get --from 2025-09-14
+./llog get --from 2025-09-15
+./llog get --to 2025-09-15
+./llog get --to 2025-09-14
+./llog get --to 2025-09
+hx.
+gemini
+conf all
+cd ~
+ls .gemini
+cd .gemini
+la
+bat .env
+rm .env
+conf helix
+secret env
+gemini
+la
+$nu.default-config-dir
+$env.XDG_CONFIG_HOME
+conf nu
+la
+clear
+conf gemini
+la
+cd .config
+la
+conf nui
+conf nu
+cd ..
+la
+mv .gemini ./.config/
+cd .config
+mv .gemini/ gemini
+la
+secret env
+gemini
+hx gemini/
+cd gemini
+la
+rm init.sh
+ls scripts/
+rm scripts/
+la
+gemini
+conf nu
+gemini
+secret env
+gemini
+gemin
+gemini
+conf nu
+clear
+cd ..
+mv gemini/ ../.gemini
+la
+cd ..
+la
+cd .gemini
+conf nu
+cd ..
+cd /Users/ethantlee/.config
+la
+mkdir gemini
+cp ~/.gemini/settings.json ./gemini/
+clear
+gemini
+clear
+gemini
+cd .gemini
+secret get
+clear
+secret get env
+hx .
+gemini
+clear
+geminni
+gemini
+clear
+secret
+conf nu
+cd .config
+hx .
+secret get
+secret 
+secret | to text
+secret | to text | save --append ~/.config/nushell/autoload/env.nu
+config
+config flatten 
+secret | save --append ~/.config/nushell/autoload/env.nu
+secret
+secret env
+secret env | to text
+secret get env | to text
+secret get env
+clear
+secret get env
+secret add -h
+clear
+secret get env
+secret get env | into string
+secret get env | to nuon | into string
+secret get env | to nuon | into string | save --append ~/.config/nushell/autoload/env.nu
+conf nu
+zed nushell/
+$env.GEMINI_API_KEY
+clear
+secret env
+secret
+secret env
+clear
+secret env
+$nu.user-autoload-dirs
+$nu.user-autoload-dirs[0]
+$nu.user-autoload-dirs | get 0
+$nu.user-autoload-dirs.0
+clear
+secret env
+conf nu

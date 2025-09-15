@@ -1,0 +1,14 @@
+*
+
+!.gitignore
+
+!aerospace
+!gh
+!ghostty
+!helix
+!karabiner
+!nushell
+!zed
+!starship.toml
+
+nushell/autoload/env.nu

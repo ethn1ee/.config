@@ -1,19 +1,20 @@
 alias la = ls -a
 alias ll = ls -la
 
-def conf-apps [] { ["all", "nu", "zed", "starship", "kubernetes", "aerospace", "ssh", "wezterm"] }
+def conf-apps [] { ["all", "nu", "zed", "starship", "kubernetes", "aerospace", "ssh", "helix"] }
 # Open config files for various applications
 def conf [app: string@conf-apps] {
     match $app {
-        "all" => { zed $env.XDG_CONFIG_HOME },
-        "nu" => { zed $nu.default-config-dir },
-        "zed" => { zed ($env.HOME | path join .config/zed) },
-        "starship" => { zed ($env.HOME | path join .config/starship.toml) },
-        "kubernetes" => { zed ($env.HOME | path join .kube) },
-        "aerospace" => { zed ($env.HOME | path join .config/aerospace) },
-        "ssh" => { zed ($env.HOME | path join .ssh) },
-        "wezterm" => { zed ($env.HOME | path join .config/wezterm) },
-        _ => { error make --unspanned { msg: $"Unknown app: $app. Supported apps: (conf-apps)" } }
+        "all" => { ^($env.config.buffer_editor) $env.XDG_CONFIG_HOME },
+        "nu" => { ^($env.config.buffer_editor) $nu.default-config-dir },
+        "zed" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME zed ] | path join) },
+        "starship" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME starship.toml ] | path join ) },
+        "kubernetes" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME .kube ] | path join) },
+        "aerospace" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME aerospace ] | path join) },
+        "ssh" => { ^($env.config.buffer_editor) ([ $env.HOME .ssh ] | path join) },
+        "helix" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME helix ] | path join) },
+        _ => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME $app ] | path join) }
+        # _ => { error make --unspanned { msg: $"Unknown app: $app. Supported apps: (conf-apps)" } }
     }
 }
 
@@ -51,8 +52,9 @@ def --env secret [cmd?:string@secret-cmds, path?: string@secret-paths, data?: re
         return $secrets
     }
 
+    let secret_file = ([ $nu.user-autoload-dirs.0 secret.nu ] | path join)
     match $cmd {
-        "env" => { $secrets | get env | load-env },
+        "env" => { $secrets | get env | to nuon | into string | $"($in) | load-env" | save $secret_file },
         "paths" => { $paths },
         "get" => {
             if $path == null {

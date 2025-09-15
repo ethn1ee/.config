@@ -137,7 +137,7 @@
     "edit_prediction_provider": "copilot"
   },
 
-  "vim_mode": true,
+  "helix_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "theme": {
@@ -195,6 +195,11 @@
     "HCL": {
       "tab_size": 4,
       "hard_tabs": true
+    },
+    "JSONL": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "language_servers": null
     }
   },
 
@@ -207,6 +212,7 @@
       "**/helmfile.d/**/*.yml",
       "**/values*.yaml"
     ],
-    "Typst": ["*.typ"]
+    "Typst": ["*.typ"],
+    "JSONL": ["*.jsonl"]
   }
 }

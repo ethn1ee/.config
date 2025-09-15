@@ -1,5 +1,4 @@
-$env.config.buffer_editor = "zed"
-$env.EDITOR = "zed"
+$env.config.buffer_editor = "hx"
 $env.config.edit_mode = 'vi'
 $env.config.show_banner = false
 $env.config.table.mode = "compact"
