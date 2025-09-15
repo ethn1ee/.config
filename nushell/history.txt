@@ -4,3 +4,14 @@ git add .
 git commit -m "fix"
 git pull
 git status
+git add .
+git commit -m "fix"
+la
+tree
+cd ..
+zed .
+cd .config
+git status
+git add .
+cd ~/.config
+clear

@@ -12,4 +12,5 @@
 !starship.toml
 
 nushell/autoload/env.nu
+nushell/autoload/secret.nu
 nushell/history.txt
