@@ -6692,3 +6692,24 @@ git commit -m "more config"
 git push
 git status
 hx .
+git add .
+git commit -m "hide history.txt"
+git push
+git status
+git fetch
+git status
+hx .
+clear
+git status
+cd /Users/ethantlee/Library/Application Support/nushell
+cd .config
+clear
+la
+cd nushell
+clear
+la
+hx .
+cp autoload/env.nu autoload/env.nu.bak
+la
+tree
+git pull
