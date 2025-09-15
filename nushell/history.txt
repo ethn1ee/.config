@@ -6686,3 +6686,9 @@ $nu.user-autoload-dirs.0
 clear
 secret env
 conf nu
+git add .
+git commit -m 
+git commit -m "more config"
+git push
+git status
+hx .
