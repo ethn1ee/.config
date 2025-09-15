@@ -1,2 +1,6 @@
 rm history.txt
 git pull
+git add .
+git commit -m "fix"
+git pull
+git status
