@@ -13,8 +13,7 @@ def conf [app: string@conf-apps] {
         "aerospace" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME aerospace ] | path join) },
         "ssh" => { ^($env.config.buffer_editor) ([ $env.HOME .ssh ] | path join) },
         "helix" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME helix ] | path join) },
-        _ => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME $app ] | path join) }
-        # _ => { error make --unspanned { msg: $"Unknown app: $app. Supported apps: (conf-apps)" } }
+        _ => { error make --unspanned { msg: $"Unknown app: $app. Supported apps: (conf-apps)" } }
     }
 }
 
