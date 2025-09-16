@@ -1,16 +1,28 @@
 *
 
 !.gitignore
-
-!aerospace
-!gh
-!ghostty
-!helix
-!karabiner
-!nushell
-!zed
 !starship.toml
 
+!aerospace/
+!aerospace/**
+
+!gh/
+!gh/**
+
+!ghostty/
+!ghostty/**
+
+!helix/
+!helix/**
+
+!karabiner/
+!karabiner/**
+
+!nushell/
+!nushell/**
+nushell/history.txt
 nushell/autoload/env.nu
 nushell/autoload/secret.nu
-nushell/history.txt
+
+!zed/
+!zed/**
