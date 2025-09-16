@@ -1,7 +1,0 @@
-{
-  "Funtional Component": {
-    "prefix": "sfc",
-    "body": ["const $1 = () => {\n\t$0\n}\n\nexport default $1"],
-    "description": "New functional component"
-  }
-}
