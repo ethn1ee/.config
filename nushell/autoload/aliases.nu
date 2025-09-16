@@ -1,18 +1,23 @@
 alias la = ls -a
 alias ll = ls -la
+alias cd = z
+alias t = task
+alias pip = pip3
+alias python = python3
 
-def conf-apps [] { ["all", "nu", "zed", "starship", "kubernetes", "aerospace", "ssh", "helix"] }
+def conf-apps [] { ["all", "nu", "zed", "starship", "kubernetes", "aerospace", "ssh", "helix", "gemini"] }
 # Open config files for various applications
 def conf [app: string@conf-apps] {
     match $app {
         "all" => { ^($env.config.buffer_editor) $env.XDG_CONFIG_HOME },
         "nu" => { ^($env.config.buffer_editor) $nu.default-config-dir },
-        "zed" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME zed ] | path join) },
-        "starship" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME starship.toml ] | path join ) },
-        "kubernetes" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME .kube ] | path join) },
-        "aerospace" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME aerospace ] | path join) },
-        "ssh" => { ^($env.config.buffer_editor) ([ $env.HOME .ssh ] | path join) },
-        "helix" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME helix ] | path join) },
+        "zed" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, zed ] | path join) },
+        "starship" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, starship.toml ] | path join ) },
+        "kubernetes" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, .kube ] | path join) },
+        "aerospace" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, aerospace ] | path join) },
+        "ssh" => { ^($env.config.buffer_editor) ([ $env.HOME, .ssh ] | path join) },
+        "helix" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, helix ] | path join) },
+        "gemini" => { ^($env.config.buffer_editor) ([ $env.HOME, .gemini ] | path join) },
         _ => { error make --unspanned { msg: $"Unknown app: $app. Supported apps: (conf-apps)" } }
     }
 }
@@ -111,7 +116,3 @@ def z-completion [context: string] {
 def --env --wrapped z [...rest: string@z-completion] {
     __zoxide_z ...$rest
 }
-
-alias cd = z
-
-alias t = task
