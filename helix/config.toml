@@ -1,13 +1,13 @@
-theme = "rose_pine"
+theme = "rose-pine"
 
 [editor]
 line-number = "relative"
 mouse = true
-bufferline = "always"
 end-of-line-diagnostics = "hint"
+clipboard-provider = "pasteboard"
 
 [editor.statusline]
-left = ["mode", "file-name", "spinner"]
+left = ["mode", "file-absolute-path", "spinner"]
 
 [editor.cursor-shape]
 insert = "bar"
@@ -24,7 +24,6 @@ enable = true
 
 [editor.indent-guides]
 render = true
-skip-levels = 1
 
 [editor.inline-diagnostics]
 cursor-line = "hint"

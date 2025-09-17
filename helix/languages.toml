@@ -18,6 +18,7 @@ language-servers = [
   "typescript-language-server",
   "tailwindcss-ls",
   "vscode-eslint-language-server",
+  "emmet-ls",
 ]
 
 [[language]]
@@ -35,12 +36,13 @@ language-servers = [
   "typescript-language-server",
   "tailwindcss-ls",
   "vscode-eslint-language-server",
+  "emmet-ls",
 ]
 
 [[language]]
 name = "html"
 formatter = { command = "prettier", args = ["--parser", "html"] }
-language-servers = ["vscode-html-language-server", "tailwindcss-ls"]
+language-servers = ["vscode-html-language-server", "tailwindcss-ls", "emmet-ls"]
 
 [[language]]
 name = "css"
@@ -61,15 +63,18 @@ formatter = { command = "typstyle" }
 
 [[language]]
 name = "yaml"
+file-types = ["yml", "yaml"]
 formatter = { command = "prettier", args = ["--parser", "yaml"] }
 
 [[language]]
-name = "yaml"
+name = "github-actions"
+scope = ".github"
 file-types = [
   { glob = ".github/workflows/*.yml" },
   { glob = ".github/workflows/*.yaml" },
 ]
-language-servers = ["gh-actions-language-server"]
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+language-servers = ["gh-actions-language-server", "yaml-language-server"]
 roots = [".github", ".git"]
 
 [[language]]
@@ -105,8 +110,8 @@ command = "docker-language-server"
 args = ["start"]
 
 [language-server.gh-actions-language-server]
-command = 'gh-actions-language-server'
-args = ['--stdio']
+command = "gh-actions-language-server"
+args = ["--stdio"]
 config = { sessionToken = "" }
 
 [language-server.yaml-language-server.config.yaml]
@@ -116,3 +121,7 @@ validation = true
 [language-server.yaml-language-server.config.yaml.schemas]
 "https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
 "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json" = "roles/{tasks,handlers}/*.{yml,yaml}"
+
+[language-server.emmet-ls]
+command = "emmet-ls"
+args = ["--stdio"]

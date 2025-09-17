@@ -1,7 +1,5 @@
 alias la = ls -a
 alias ll = ls -la
-alias cd = z
-alias t = task
 alias pip = pip3
 alias python = python3
 
@@ -113,6 +111,31 @@ def z-completion [context: string] {
     }
 }
 
-def --env --wrapped z [...rest: string@z-completion] {
+def --env --wrapped cd [...rest: string@z-completion] {
     __zoxide_z ...$rest
 }
+
+def tmux-sessions [] { tmux ls -F '#{session_name}' | split words }
+def --env t [session?: string@tmux-sessions] {
+    if $session == null {
+        tmux ls
+    } else {
+        tmux a -t $session
+    }
+}
+
+def tmake [name: string] {
+    let detect_session = (tmux has-session -t $name | complete)
+
+    if ($detect_session.exit_code != 0) {
+        tmux new-session -s $name -d
+        tmux send-keys -t $"($name):1.1" "hx ." C-m
+        tmux new-window -t $name
+        tmux select-window -t $"($name):1.1"
+
+        print $"session '($name)' created"
+    } else {
+        print $"session '($name)' already exists"
+    }
+}
+

@@ -1,3 +1,5 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 format = """
 $username\
 $hostname\
@@ -7,24 +9,38 @@ $git_state\
 $git_status\
 $cmd_duration\
 $line_break\
-$python\
-$character"""
+$character
+"""
+
+add_newline = false
+
+palette = "rose-pine"
+
+[palettes.rose-pine]
+subtle = '#908caa'
+text = '#e0def4'
+overlay = '#26233a'
+love = '#eb6f92'
+gold = '#f6c177'
+rose = '#ebbcba'
+pine = '#31748f'
+foam = '#9ccfd8'
+iris = '#c4a7e7'
 
 [directory]
-style = "blue"
+style = "text"
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[❯](foam)"
+error_symbol = "[❯](love)"
 
 [git_branch]
 format = "[$branch]($style)"
-style = "bright-black"
+style = "pine"
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
+style = "pine"
 conflicted = "​"
 untracked = "​"
 modified = "​"
@@ -35,12 +51,8 @@ stashed = "≡"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+style = "subtle"
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "yellow"
-
-[python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+style = "rose"

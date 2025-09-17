@@ -1,3 +1,5 @@
+auto-update-channel = tip
+
 # font
 font-family = Fira Code Nerd Font
 
@@ -6,7 +8,8 @@ window-padding-x = 20
 window-padding-y = 20
 window-padding-balance = true
 
-theme = rose-pine
+theme = Rose Pine
+background = "#14121d"
 
 scrollback-limit = 4294967296
 

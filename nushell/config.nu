@@ -76,3 +76,8 @@ def --wrapped kubectl [...rest] {
         ^kubectl ...$rest
     }
 }
+
+# --- newline between prompts ---
+$env.config.hooks = {
+    pre_prompt: [{ $env.config.hooks.pre_prompt = [{ print "" }] }]
+}
