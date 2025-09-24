@@ -115,7 +115,7 @@ def --env --wrapped cd [...rest: string@z-completion] {
     __zoxide_z ...$rest
 }
 
-def tmux-sessions [] { tmux ls -F '#{session_name}' | split words }
+def tmux-sessions [] { tmux ls -F '#{session_name}' | split row "\n" }
 def --env t [session?: string@tmux-sessions] {
     if $session == null {
         tmux ls

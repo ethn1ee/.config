@@ -84,6 +84,7 @@ formatter = { command = "ruff", args = ["format", "--line-length", "88", "-"] }
 [[language]]
 name = "markdown"
 formatter = { command = 'prettier', args = ["--parser", "markdown"] }
+language-servers = ["marksman", "mdpls"]
 
 [[language]]
 name = "json"
@@ -125,3 +126,7 @@ validation = true
 [language-server.emmet-ls]
 command = "emmet-ls"
 args = ["--stdio"]
+
+[language-server.mdpls]
+command = "mdpls"
+config = { markdown.preview.auto = true }

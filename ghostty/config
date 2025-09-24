@@ -8,9 +8,11 @@ window-padding-x = 20
 window-padding-y = 20
 window-padding-balance = true
 
+# theme
 theme = Rose Pine
 background = "#14121d"
 
+# scrollback
 scrollback-limit = 4294967296
 
 # quick-terminal
