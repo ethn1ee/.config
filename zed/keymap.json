@@ -36,5 +36,11 @@
     "bindings": {
       "cmd-\\": null
     }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-f": "editor::Format"
+    }
   }
 ]

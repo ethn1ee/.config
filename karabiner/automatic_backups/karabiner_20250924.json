@@ -82,14 +82,6 @@
                             "to": [{ "key_code": "right_option" }]
                         }
                     ]
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 9760,
-                        "vendor_id": 6645
-                    },
-                    "ignore_vendor_events": true
                 }
             ],
             "name": "Default profile",

@@ -1,15 +1,4 @@
 {
-  "formatter": [
-    {
-      "code_action": "source.organizeImports"
-    },
-    {
-      "code_action": "source.fixAll.eslint"
-    },
-    {
-      "code_action": "source.removeUnusedImports"
-    }
-  ],
   "context_servers": {
     "mcp-server-github": {
       "source": "extension",
@@ -171,6 +160,12 @@
   },
 
   "format_on_save": "on",
+
+  "code_actions_on_format": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true,
+    "source.removeUnusedImports": true
+  },
 
   "languages": {
     "CSS": {

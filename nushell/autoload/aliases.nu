@@ -118,7 +118,8 @@ def --env --wrapped cd [...rest: string@z-completion] {
 def tmux-sessions [] { tmux ls -F '#{session_name}' | split row "\n" }
 def --env t [session?: string@tmux-sessions] {
     if $session == null {
-        tmux ls
+        let selected = tmux-sessions | input list
+        tmux a -t $selected
     } else {
         tmux a -t $session
     }

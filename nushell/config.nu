@@ -18,7 +18,8 @@ path add /usr/local/bin/
 path add /opt/homebrew/bin
 $env.GOBIN = (go env GOPATH | path join bin)
 path add $env.GOBIN
-path add ($env.HOME | path join ".cargo/bin")
+path add ([ $env.HOME .cargo bin ] | path join )
+path add ([ $env.HOME google-cloud-sdk bin] | path join )
 
 # --- load vendors ---
 # schema:
@@ -41,17 +42,26 @@ const apps = [
         name: "kubectl_aliases"
         path: "kubectl_aliases.nu"
         install: "http get https://raw.githubusercontent.com/ahmetb/kubectl-aliases/refs/heads/master/.kubectl_aliases.nu"
+        post_install: null
     },
     {
         name: "zoxide"
         path: "zoxide.nu"
         pre_install: "brew install zoxide"
         install: "zoxide init nushell"
+        post_install: null
+    },
+    {
+        name: "jj"
+        path: "jj.nu"
+        pre_install: "brew install jj"
+        install: "jj util completion nushell"
+        post_install: null
     }
 ];
 
 $apps | each { |app|
-    let full_path = ($nu.vendor-autoload-dirs | path join $app.path)
+    let full_path = ([ $nu.default-config-dir vendor autoload ]| path join $app.path)
 
     if (not ($full_path | path exists)) {
         if ($app.pre_install != null) {

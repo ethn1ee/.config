@@ -98,6 +98,20 @@ formatter = { command = 'prettier', args = ["--parser", "jsonc"] }
 name = "dockerfile"
 language-servers = ["docker-language-server"]
 
+[[language]]
+name = "sql"
+language-servers = ["sql-language-server"]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "sqlformat", args = [
+  "--reindent",
+  "--indent_width",
+  "4",
+  "--keywords",
+  "upper",
+  "--identifiers",
+  "lower",
+  "-",
+] }
 
 [language-server.gopls.config]
 gofumpt = true
@@ -130,3 +144,13 @@ args = ["--stdio"]
 [language-server.mdpls]
 command = "mdpls"
 config = { markdown.preview.auto = true }
+
+[language-server.sql-language-server]
+command = "sql-language-server"
+args = ["up", "--method", "stdio"]
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[language-server.rust-analyzer.config.cargo]
+features = "all"

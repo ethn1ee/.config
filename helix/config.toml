@@ -1,7 +1,7 @@
 theme = "rose-pine"
 
 [editor]
-line-number = "relative"
+# line-number = "relative"
 mouse = true
 end-of-line-diagnostics = "hint"
 clipboard-provider = "pasteboard"
@@ -39,14 +39,17 @@ snippets = true
 [keys.normal]
 "C-j" = ["scroll_down"]
 "C-k" = ["scroll_up"]
-"C-r" = [":config-reload", ":reload-all"]
+"C-r" = [":config-reload", ":reload-all", ":lsp-restart"]
 "C-f" = [":format"]
+"C-p" = [':sh cat "%sh{pwd}/%{buffer_name}" | pbcopy']
 
 [keys.normal.space]
 e = [
-  ":sh rm -f /tmp/unique-file-h21a434",
-  ":insert-output yazi '%{buffer_name}' --chooser-file=/tmp/unique-file-h21a434",
-  ":insert-output echo \"x1b[?1049h\" > /dev/tty",
-  ":open %sh{cat /tmp/unique-file-h21a434}",
-  ":redraw",
+  ':sh rm -f /tmp/unique-file',
+  ':set mouse false',
+  ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-file',
+  ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  ':open %sh{cat /tmp/unique-file}',
+  ':redraw',
+  ':set mouse true',
 ]
