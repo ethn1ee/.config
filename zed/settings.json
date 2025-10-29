@@ -1,15 +1,9 @@
 {
-  "formatter": [
-    {
-      "code_action": "source.organizeImports"
-    },
-    {
-      "code_action": "source.fixAll.eslint"
-    },
-    {
-      "code_action": "source.removeUnusedImports"
-    }
-  ],
+  "code_actions_on_format": {
+    "source.removeUnusedImports": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
   "context_servers": {
     "mcp-server-github": {
       "source": "extension",
@@ -134,7 +128,7 @@
   "agent": {
     "single_file_review": true,
     "default_profile": "ask",
-    "always_allow_tool_actions": false,
+    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "google",
       "model": "gemini-2.5-pro"

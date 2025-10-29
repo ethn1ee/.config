@@ -1,5 +1,5 @@
-alias la = ls -a
-alias ll = ls -la
+alias la = ls -la
+alias ll = ls -l
 alias pip = pip3
 alias python = python3
 

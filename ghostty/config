@@ -10,15 +10,17 @@ window-padding-balance = true
 
 # theme
 theme = Rose Pine
-background = "#14121d"
 
 # scrollback
 scrollback-limit = 4294967296
 
-# quick-terminal
+# quick terminal
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
 quick-terminal-position = center
 quick-terminal-screen = mouse
 quick-terminal-animation-duration = 0
 
 clipboard-paste-protection = false
+
+# shader
+custom-shader = "./shaders/bloom.glsl"
