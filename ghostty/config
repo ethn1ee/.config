@@ -1,7 +1,7 @@
-auto-update-channel = tip
+auto-update-channel = stable
 
 # font
-font-family = Fira Code Nerd Font
+font-family = Iosevka
 
 # window
 window-padding-x = 20
@@ -10,12 +10,15 @@ window-padding-balance = true
 
 # theme
 theme = Rose Pine
+background-opacity = 0.85
+background-opacity-cells = true
+background-blur = 20
 
 # scrollback
 scrollback-limit = 4294967296
 
 # quick terminal
-keybind = global:ctrl+grave_accent=toggle_quick_terminal
+keybind = global:ctrl+`=toggle_quick_terminal
 quick-terminal-position = center
 quick-terminal-screen = mouse
 quick-terminal-animation-duration = 0
@@ -23,4 +26,5 @@ quick-terminal-animation-duration = 0
 clipboard-paste-protection = false
 
 # shader
-custom-shader = "./shaders/bloom.glsl"
+# custom-shader = "./shaders/bloom.glsl"
+

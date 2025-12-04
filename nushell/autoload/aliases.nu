@@ -2,6 +2,7 @@ alias la = ls -la
 alias ll = ls -l
 alias pip = pip3
 alias python = python3
+alias tailscale = /Applications/Tailscale.app/Contents/MacOS/Tailscale
 
 def conf-apps [] { ["all", "nu", "zed", "starship", "kubernetes", "aerospace", "ssh", "helix", "gemini"] }
 # Open config files for various applications
@@ -56,7 +57,7 @@ def --env secret [cmd?:string@secret-cmds, path?: string@secret-paths, data?: re
 
     let secret_file = ([ $nu.user-autoload-dirs.0 secret.nu ] | path join)
     match $cmd {
-        "env" => { $secrets | get env | to nuon | into string | $"($in) | load-env" | save $secret_file },
+        "env" => { $secrets | get env | to nuon | into string | $"($in) | load-env" | save $secret_file -f },
         "paths" => { $paths },
         "get" => {
             if $path == null {

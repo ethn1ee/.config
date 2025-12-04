@@ -20,6 +20,7 @@ $env.GOBIN = (go env GOPATH | path join bin)
 path add $env.GOBIN
 path add ([ $env.HOME .cargo bin ] | path join )
 path add ([ $env.HOME google-cloud-sdk bin] | path join )
+path add ([ $env.HOME .local bin ] | path join)
 
 # --- load vendors ---
 # schema:

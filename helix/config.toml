@@ -1,10 +1,10 @@
 theme = "rose-pine"
 
 [editor]
-# line-number = "relative"
 mouse = true
 end-of-line-diagnostics = "hint"
 clipboard-provider = "pasteboard"
+text-width = 100
 
 [editor.statusline]
 left = ["mode", "file-absolute-path", "spinner"]
@@ -21,6 +21,7 @@ ignore = true
 
 [editor.soft-wrap]
 enable = true
+wrap-at-text-width = true
 
 [editor.indent-guides]
 render = true

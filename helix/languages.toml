@@ -5,7 +5,11 @@ formatter = { command = "goimports" }
 
 [[language]]
 name = "typescript"
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = 'biome', args = [
+  "format",
+  "--stdin-file-path",
+  "buffer.ts",
+] }
 language-servers = [
   "typescript-language-server",
   "vscode-eslint-language-server",
@@ -13,7 +17,11 @@ language-servers = [
 
 [[language]]
 name = "tsx"
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = 'biome', args = [
+  "format",
+  "--stdin-file-path",
+  "buffer.tsx",
+] }
 language-servers = [
   "typescript-language-server",
   "tailwindcss-ls",
@@ -23,7 +31,11 @@ language-servers = [
 
 [[language]]
 name = "javascript"
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = 'biome', args = [
+  "format",
+  "--stdin-file-path",
+  "buffer.js",
+] }
 language-servers = [
   "typescript-language-server",
   "vscode-eslint-language-server",
@@ -31,13 +43,27 @@ language-servers = [
 
 [[language]]
 name = "jsx"
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = 'biome', args = [
+  "format",
+  "--stdin-file-path",
+  "buffer.jsx",
+] }
 language-servers = [
   "typescript-language-server",
   "tailwindcss-ls",
   "vscode-eslint-language-server",
   "emmet-ls",
 ]
+
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+roots = ["pom.xml", "build.gradle"]
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "google-java-format", args = ["-"] }
+language-servers = ["jdtls"]
 
 [[language]]
 name = "html"
@@ -154,3 +180,7 @@ command = "clippy"
 
 [language-server.rust-analyzer.config.cargo]
 features = "all"
+
+[language-server.jdtls]
+command = "jdtls"
+args = ["-data", "~/.cache/jdtls/workspace"]
