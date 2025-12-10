@@ -20,6 +20,16 @@ def conf [app?: string@conf-apps] {
     ^($env.config.buffer_editor) $app_path
 }
 
+# Open instant note
+def note [] {
+    let note_path = [ $env.HOME note.typ ] | path join
+    if not ($note_path | path exists) {
+        touch $note_path
+    }
+
+    ^($env.config.buffer_editor) $note_path
+}
+
 # Explore files with yazi
 def --env f [...args] {
 	let tmp = (mktemp -t "yazi-cwd.XXXXXX")
@@ -129,9 +139,9 @@ def --env t [session?: string@tmux-sessions] {
 }
 
 def tmake [name: string] {
-    let detect_session = (tmux has-session -t $name | complete)
+    let session_exists = (tmux has-session -t $name | complete).exit_code != 0
 
-    if ($detect_session.exit_code != 0) {
+    if $session_exists {
         tmux new-session -s $name -d
         tmux send-keys -t $"($name):1.1" "hx ." C-m
         tmux new-window -t $name

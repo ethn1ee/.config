@@ -42,7 +42,8 @@ snippets = true
 "C-k" = ["scroll_up"]
 "C-r" = [":config-reload", ":reload-all", ":lsp-restart"]
 "C-f" = [":format"]
-"C-p" = [':sh cat "%sh{pwd}/%{buffer_name}" | pbcopy']
+"C-p" = [":sh cat '%sh{pwd}/%{buffer_name}' | pbcopy"]
+"C-q" = [":write", ":quit"]
 
 [keys.normal.space]
 e = [

@@ -3,11 +3,14 @@ auto-update-channel = stable
 # font
 font-family = Iosevka
 font-size = 16
+window-title-font-family = Iosevka
 
 # window
 window-padding-x = 20
-window-padding-y = 20
+window-padding-y = 20,0
 window-padding-balance = true
+window-colorspace = display-p3
+window-save-state = always
 
 # theme
 theme = Rose Pine
