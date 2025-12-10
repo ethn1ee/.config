@@ -2,6 +2,7 @@ auto-update-channel = stable
 
 # font
 font-family = Iosevka
+font-size = 16
 
 # window
 window-padding-x = 20
@@ -10,9 +11,9 @@ window-padding-balance = true
 
 # theme
 theme = Rose Pine
-background-opacity = 0.85
-background-opacity-cells = true
-background-blur = 20
+# background-opacity = 0.9
+# background-opacity-cells = true
+# background-blur = 20
 
 # scrollback
 scrollback-limit = 4294967296

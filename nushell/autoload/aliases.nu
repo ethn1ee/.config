@@ -4,21 +4,17 @@ alias pip = pip3
 alias python = python3
 alias tailscale = /Applications/Tailscale.app/Contents/MacOS/Tailscale
 
-def conf-apps [] { ["all", "nu", "zed", "starship", "kubernetes", "aerospace", "ssh", "helix", "gemini"] }
+def conf-apps [] { ls --short-names  $env.XDG_CONFIG_HOME | get name }
 # Open config files for various applications
-def conf [app: string@conf-apps] {
-    match $app {
-        "all" => { ^($env.config.buffer_editor) $env.XDG_CONFIG_HOME },
-        "nu" => { ^($env.config.buffer_editor) $nu.default-config-dir },
-        "zed" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, zed ] | path join) },
-        "starship" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, starship.toml ] | path join ) },
-        "kubernetes" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, .kube ] | path join) },
-        "aerospace" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, aerospace ] | path join) },
-        "ssh" => { ^($env.config.buffer_editor) ([ $env.HOME, .ssh ] | path join) },
-        "helix" => { ^($env.config.buffer_editor) ([ $env.XDG_CONFIG_HOME, helix ] | path join) },
-        "gemini" => { ^($env.config.buffer_editor) ([ $env.HOME, .gemini ] | path join) },
-        _ => { error make --unspanned { msg: $"Unknown app: $app. Supported apps: (conf-apps)" } }
+def conf [app?: string@conf-apps] {
+    mut app = $app
+    if $app == null {
+        $app = conf-apps | input list
     }
+
+    let app_path = [ $env.XDG_CONFIG_HOME $app ] | path join
+
+    ^($env.config.buffer_editor) $app_path
 }
 
 # Explore files with yazi

@@ -4,6 +4,12 @@ $env.config.show_banner = false
 $env.config.table.mode = "compact"
 $env.config.cursor_shape.vi_normal = "block"
 $env.config.cursor_shape.vi_insert = "line"
+$env.config.use_kitty_protocol = true
+$env.config.shell_integration = {
+    osc2: true
+    osc7: true
+    osc8: true
+}
 $env.PROMPT_INDICATOR_VI_NORMAL = ""
 $env.PROMPT_INDICATOR_VI_INSERT = ""
 

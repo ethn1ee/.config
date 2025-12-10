@@ -26,3 +26,6 @@ nushell/autoload/secret.nu
 
 !zed/
 !zed/**
+
+!kitty
+!kitty/**
