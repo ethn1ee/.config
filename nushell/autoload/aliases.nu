@@ -11,6 +11,9 @@ def conf [app?: string@conf-apps] {
     if $app == null {
         $app = conf-apps | input list
     }
+    if not (conf-apps | $app in $in) {
+        error make --unspanned { msg: $"'($app)' not found in ($env.XDG_CONFIG_HOME)" }
+    }
 
     let app_path = [ $env.XDG_CONFIG_HOME $app ] | path join
 
@@ -114,12 +117,15 @@ def --env --wrapped cd [...rest: string@z-completion] {
 
 def tmux-sessions [] { tmux ls -F '#{session_name}' | split row "\n" }
 def --env t [session?: string@tmux-sessions] {
+    mut session = $session
     if $session == null {
-        let selected = tmux-sessions | input list
-        tmux a -t $selected
-    } else {
-        tmux a -t $session
+        $session = tmux-sessions | input list
     }
+    if not (tmux-sessions | $session in $in) {
+        error make --unspanned {msg: $"session '($session)' not found"}
+    }
+
+    tmux a -t $session    
 }
 
 def tmake [name: string] {
@@ -133,7 +139,7 @@ def tmake [name: string] {
 
         print $"session '($name)' created"
     } else {
-        print $"session '($name)' already exists"
+        error make --unspanned { msg: $"session '($name)' already exists" }
     }
 }
 
