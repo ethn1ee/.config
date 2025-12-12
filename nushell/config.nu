@@ -15,6 +15,7 @@ $env.PROMPT_INDICATOR_VI_INSERT = ""
 $env.ZELLIJ_CONFIG_DIR = ([ $env.XDG_CONFIG_HOME zellij ] | path join)
 
 use std/log
+source completions.nu
 
 # --- disable last login message ---
 touch ~/.hushlogin
@@ -94,6 +95,7 @@ def --wrapped kubectl [...rest] {
     }
 }
 
+# --- zellij ---
 def zellij-update-tabname [] {
     if ("ZELLIJ" in $env) {
         mut tabname = "";
@@ -125,4 +127,3 @@ $env.config.hooks = {
         ]
     }
 }
-

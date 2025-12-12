@@ -5,14 +5,17 @@ keybinds clear-defaults=true {
     normal {
         bind "Ctrl a" { SwitchToMode "locked"; }
         bind "esc" { SwitchToMode "locked"; }
+
         bind "q" { Quit; }
-        bind "left" { MoveFocusOrTab "left"; }
-        bind "right" { MoveFocusOrTab "right"; }
-        bind "h" { MoveFocusOrTab "left"; }
-        bind "l" { MoveFocusOrTab "right"; }
+        bind "d" { Detach; }
+
+        bind "h" { MoveFocusOrTab "left"; SwitchToMode "locked"; }
+        bind "l" { MoveFocusOrTab "right"; SwitchToMode "locked"; }
 
         bind "p" { SwitchToMode "pane"; }
         bind "t" { SwitchToMode "tab"; }
+        bind "s" { SwitchToMode "session"; }
+        bind "r" { SwitchToMode "resize"; }
     }
     shared_except "locked" "normal" {
         bind "esc" { SwitchToMode "normal"; }
@@ -315,7 +318,6 @@ plugins {
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
     zjstatus-hints
-    // "/Users/ethantlee/.config/zellij/plugins/zjframes.wasm"
 }
 web_client {
     font "monospace"
