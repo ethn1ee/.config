@@ -1,0 +1,60 @@
+layout {
+    default_tab_template {
+        pane size=2 borderless=true {
+            plugin location="file:/Users/ethantlee/.config/zellij/plugins/zjstatus.wasm" {
+                format_left   "#[bg=#26233a,fg=#e0def4,bold] {session} #[] {tabs}"
+                format_center ""
+                format_right  "{pipe_zjstatus_hints} #[bg=#21202e,fg=#e0def4,bold]{mode}"
+                format_space  ""
+
+                pipe_zjstatus_hints_format "{output}"
+
+                // border_enabled  "true"
+                // border_char     " "
+                // border_format   "#[fg=#4C435C]"
+                // border_position "bottom"
+
+                hide_frame_for_single_pane "false"
+
+                mode_locked      ""
+                mode_normal      " NORMAL "
+                mode_resize      " RESIZE "
+                mode_pane        " PANE "
+                mode_move        " MOVE "
+                mode_tab         " TAB "
+                mode_scroll      " SCROLL "
+                mode_search      " SEARCH "
+                mode_entersearch " ENTER SEARCH "
+                mode_renametab   " RENAME TAB "
+                mode_renamepane  " RENAME PANE "
+                mode_session     " SESSION "
+                mode_tmux        " TMUX "
+
+                tab_active              "#[fg=#e0def4,bold] {index} {name}"
+                tab_active_fullscreen   "#[fg=#e0def4,bold] {fullscreen_indicator} {index} {name}"
+                tab_active_sync         "#[fg=#e0def4,bold] {sync_indicator} {index} {name}"
+
+                tab_normal              "#[fg=#908caa,bold] {index} {name}"
+                tab_normal_fullscreen   "#[fg=#908caa,bold] {fullscreen_indicator} {index} {name}"
+                tab_normal_sync         "#[fg=#908caa,bold] {sync_indicator} {index} {name}"
+
+                tab_separator " "
+
+                tab_sync_indicator       "󰓦"
+                tab_fullscreen_indicator "󰊓"
+                tab_floating_indicator   "⬚"
+
+                tab_rename              "#[bg=#524f67,fg=#e0def4,bold] {index} {name} {floating_indicator} "
+
+                tab_display_count         "9"
+                tab_truncate_start_format "#[fg=#FFD080]  +{count}  "
+                tab_truncate_end_format   "#[fg=#FFD080]   +{count} "
+
+                datetime        "#[fg=#7a6c94,bold] {format} "
+                datetime_format "%H:%M:%S"
+                datetime_timezone "America/New_York"
+            }
+        }
+        children
+    }    
+}

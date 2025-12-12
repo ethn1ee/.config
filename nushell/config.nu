@@ -12,6 +12,7 @@ $env.config.shell_integration = {
 }
 $env.PROMPT_INDICATOR_VI_NORMAL = ""
 $env.PROMPT_INDICATOR_VI_INSERT = ""
+$env.ZELLIJ_CONFIG_DIR = ([ $env.XDG_CONFIG_HOME zellij ] | path join)
 
 use std/log
 
@@ -72,29 +73,56 @@ $apps | each { |app|
 
     if (not ($full_path | path exists)) {
         if ($app.pre_install != null) {
-            nu -c $app.pre_install
+            nu -c $app.pre_install;
         }
-        mkdir ($full_path | path dirname)
-        nu -c $app.install | save -f $full_path
+        mkdir ($full_path | path dirname);
+        nu -c $app.install | save -f $full_path;
         if ($app.post_install != null) {
-            nu -c $app.post_install
+            nu -c $app.post_install;
         }
-        log info $"Loaded ($app.name)"
+        log info $"Loaded ($app.name)";
     }
 }
 
 # --- kubectl ----
 # load this before vendor kubectl aliases
 def --wrapped kubectl [...rest] {
-    let cmd = ($rest | get 0)
-    if $cmd == "get" {
-        ^kubectl ...$rest | detect columns
-    } else {
-        ^kubectl ...$rest
+    let cmd = ($rest | get 0);
+    match $cmd {
+        "get" => (^kubectl ...$rest | detect columns),
+        _ => (^kubectl ...$rest),
     }
 }
 
-# --- newline between prompts ---
-$env.config.hooks = {
-    pre_prompt: [{ $env.config.hooks.pre_prompt = [{ print "" }] }]
+def zellij-update-tabname [] {
+    if ("ZELLIJ" in $env) {
+        mut tabname = "";
+        let dir: string = match (pwd) {
+            ($env.HOME) => { "~" },
+            _ => { pwd | path basename },
+        };
+        $tabname = $"[($dir)]";
+
+        try {
+            let cmd = (commandline | into string | split words | first);
+            $tabname = ( [ $tabname " " $cmd ] | str join );
+        };
+
+        zellij action rename-tab $tabname;
+    }
 }
+
+$env.config.hooks = {
+    pre_prompt: [
+        { $env.config.hooks.pre_prompt = [{ print "" }] },
+    ],
+    pre_execution: [
+        { zellij-update-tabname }
+    ],
+    env_change: {
+        PWD: [
+            { zellij-update-tabname }
+        ]
+    }
+}
+
