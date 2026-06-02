@@ -7,12 +7,17 @@ formatter = { command = "goimports" }
 name = "rust"
 scope = "source.rust"
 roots = ["Cargo.toml", "Cargo.lock"]
-formatter = { command = "leptosfmt", args = ["--stdin", "--rustfmt"] }
+formatter = { command = "rustfmt", args = [
+  "--edition",
+  "2024",
+  "--style-edition",
+  "2024",
+] }
 language-servers = [
   "rust-analyzer",
-  "vscode-html-language-server",
-  "tailwindcss-ls",
-  "emmet-ls",
+  # "vscode-html-language-server",
+  # "tailwindcss-ls",
+  # "emmet-ls",
 ]
 
 [[language]]
@@ -56,6 +61,17 @@ language-servers = [
 ]
 
 [[language]]
+name = "svelte"
+# formatter = { command = "bunx", args = ["prettier", "--parser", "typescript"] }
+language-servers = [
+  "svelteserver",
+  "tailwindcss-ls",
+  "typescript-language-server",
+  "eslint",
+  "emmet-ls",
+]
+
+[[language]]
 name = "java"
 scope = "source.java"
 injection-regex = "java"
@@ -82,7 +98,10 @@ formatter = { command = "taplo", args = ["format", "-"] }
 [[language]]
 name = "typst"
 formatter = { command = "typstyle" }
-language-servers = ["tinymist", "harper-ls"]
+language-servers = [
+  "tinymist",
+  # "harper-ls"
+]
 
 [[language]]
 name = "yaml"
@@ -256,3 +275,8 @@ config = { typescript = { tsdk = "/Users/user/.bun/install/global/node_modules/t
 [language-server.mdx-language-server]
 command = "mdx-language-server"
 args = ["--stdio"]
+
+[language-server.yaml-language-server]
+command = "yaml-language-server"
+yaml.kubernetesCRDStore.enable = true
+yaml.hover = true

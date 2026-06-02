@@ -1,3 +1,6 @@
 (require "smooth-scroll/smooth-scroll.scm")
 (require "wakatime/wakatime.scm")
-(require "oil/oil.scm")
+(require "fake-warp/fake-warp.scm")
+(require "helix-file-watcher/file-watcher.scm")
+(install-fake-warp!)
+(spawn-watcher)

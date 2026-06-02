@@ -1,8 +1,6 @@
 config-version = 2
 
-after-startup-command = [
-  # "exec-and-forget borders"
-]
+after-startup-command = []
 
 exec-on-workspace-change = []
 
@@ -199,6 +197,11 @@ run = ["move-node-to-workspace F"]
 [[on-window-detected]]
 if.app-id = "com.apple.iCal"
 run = ["move-node-to-workspace 4"]
+
+[[on-window-detected]]
+# if.app-id = "com.raycast.macos"
+if.app-name-regex-substring = "raycast"
+run = ["layout floating"]
 
 [[on-window-detected]]
 if.app-id = "com.kakao.KakaoTalkMac"

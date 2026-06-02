@@ -63,21 +63,7 @@
       "type": "registry"
     }
   },
-  "ssh_connections": [
-    {
-      "host": "spitikos",
-      "username": "ethantlee",
-      "projects": [
-        {
-          "paths": ["/home/ethantlee"]
-        },
-        {
-          "paths": ["/home/ethantlee/pi"]
-        }
-      ],
-      "nickname": "pi"
-    }
-  ],
+  "ssh_connections": [],
 
   "extend_comment_on_newline": false,
 
@@ -160,9 +146,11 @@
     "dock": "right"
   },
   "git_panel": {
+    "button": false,
     "dock": "right"
   },
   "collaboration_panel": {
+    "dock": "left",
     "button": true
   },
   "terminal": {
@@ -177,6 +165,7 @@
 
   // AI
   "agent": {
+    "button": false,
     "tool_permissions": {
       "default": "allow"
     },
@@ -190,7 +179,7 @@
     "dock": "left"
   },
   "edit_predictions": {
-    "provider": "copilot",
+    "provider": "none",
     "mode": "subtle",
     "copilot": {
       "proxy": null,

@@ -1,24 +1,29 @@
-auto-update-channel = tip
+# auto-update-channel = tip
 
 # font
 font-family = Iosevka Nerd Font
 font-family = D2Coding
 font-size = 16
-window-title-font-family = Iosevka
+# window-title-font-family = Iosevka
 
 # window
-window-padding-x = 20
-window-padding-y = 20
+window-padding-x = 16
+window-padding-y = 16
 window-padding-balance = true
 window-colorspace = display-p3
 window-save-state = always
-macos-titlebar-style = hidden
+# macos-titlebar-style = hidden
+
+# notification
+desktop-notifications = true
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = notify
 
 # theme
 theme = Rose Pine
-background-opacity = 0.8
-background-opacity-cells = true
-background-blur = macos-glass-regular
+background-opacity = 0.5
+# background-opacity-cells = true
+# background-blur = macos-glass-regular
 split-divider-color = #403d52
 unfocused-split-opacity = 0.7
 
@@ -26,17 +31,17 @@ unfocused-split-opacity = 0.7
 scrollback-limit = 4294967296
 
 # quick terminal
-keybind = global:ctrl+`=toggle_quick_terminal
-quick-terminal-position = center
-quick-terminal-screen = mouse
-quick-terminal-animation-duration = 0
-quick-terminal-size = 50%,50%
+# keybind = global:ctrl+`=toggle_quick_terminal
+# quick-terminal-position = center
+# quick-terminal-screen = mouse
+# quick-terminal-animation-duration = 0
+# quick-terminal-size = 50%,50%
 
 clipboard-paste-protection = false
 
 # shader
-# custom-shader = "./shaders/cursor-warp.glsl"
+custom-shader = "./shaders/cursor-warp.glsl"
 
 # shell integration
-# shell-integration-features = ssh-terminfo,sudo
+shell-integration-features = ssh-terminfo,sudo
 

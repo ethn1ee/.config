@@ -4,6 +4,8 @@ theme = "rose-pine"
 mouse = true
 end-of-line-diagnostics = "hint"
 clipboard-provider = "pasteboard"
+continue-comments = false
+auto-pairs = false
 # text-width = 80
 
 [editor.statusline]
@@ -19,8 +21,8 @@ hidden = false
 git-ignore = true
 ignore = true
 
-# [editor.soft-wrap]
-# enable = true
+[editor.soft-wrap]
+enable = true
 # wrap-at-text-width = true
 
 [editor.indent-guides]
@@ -36,6 +38,7 @@ after-delay.timeout = 500
 
 [editor.lsp]
 snippets = true
+# display-inlay-hints = true
 
 [keys.normal]
 pageup = ":page-up-smooth"
@@ -56,15 +59,6 @@ pagedown = ":page-down-smooth"
 ]
 
 [keys.select.space]
-e = [
-  ':sh rm -f /tmp/unique-file',
-  ':set mouse false',
-  ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-file',
-  ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
-  ':open %sh{cat /tmp/unique-file}',
-  ':redraw',
-  ':set mouse true',
-]
 A-w = "@<A-|>tee /tmp/helix-wc.file<ret>:sh cat /tmp/helix-wc.file | wc -w<ret>"
 
 [keys.normal.space]
@@ -77,17 +71,12 @@ e = [
   ':redraw',
   ':set mouse true',
 ]
-
-[keys.normal.space.o]
-o = ":oil"
-ret = ":oil-enter"
-u = ":oil-up"
-s = ":oil-save"
-r = ":oil-refresh"
-q = ":oil-close"
-
-[keys.normal.space.o.m]
-y = ":oil-yank"
-x = ":oil-cut"
-p = ":oil-paste"
-c = ":oil-clipboard-clear"
+# g = [
+#   ':sh rm -f /tmp/unique-file',
+#   ':set mouse false',
+#   ':insert-output lazygit',
+#   ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+#   ':open %sh{cat /tmp/unique-file}',
+#   ':redraw',
+#   ':set mouse true',
+# ]

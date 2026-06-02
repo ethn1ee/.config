@@ -1,0 +1,181 @@
+lastupdatecheck: 0
+recentrepos:
+    - /Users/ethantlee/.config
+    - /Users/ethantlee/dev/macterm
+    - /Users/ethantlee/dev/huddle/app
+    - /Users/ethantlee/dev/homelab
+    - /Users/ethantlee/documents/carnegie-mellon-university/academics/2026-summer/15503
+startuppopupversion: 5
+didshowhunkstaginghint: true
+lastversion: 0.61.1
+customcommandshistory:
+    - q
+hidecommandlog: false
+githubPullRequests:
+    /Users/ethantlee/.config: []
+    /Users/ethantlee/Documents/carnegie-mellon-university/academics/2026-summer/15503: []
+    /Users/ethantlee/dev/homelab: []
+    /Users/ethantlee/dev/huddle/app:
+        - headRefName: feat/inbox
+          number: 75
+          title: Fix organization type
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/75
+          headRepositoryOwner: huddlesurety
+        - headRefName: feat/inbox
+          number: 69
+          title: feat/inbox
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/69
+          headRepositoryOwner: huddlesurety
+        - headRefName: feat/inbox
+          number: 68
+          title: Sync backend routes and refine project UI
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/68
+          headRepositoryOwner: huddlesurety
+        - headRefName: feat/internal-dashboard
+          number: 67
+          title: ' feat(dashboard): add internal root dashboard with agencies view'
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/67
+          headRepositoryOwner: huddlesurety
+        - headRefName: staging
+          number: 104
+          title: Use bun runtime and some UX improvements
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/104
+          headRepositoryOwner: huddlesurety
+        - headRefName: staging
+          number: 90
+          title: Promote staging
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/90
+          headRepositoryOwner: huddlesurety
+        - headRefName: staging
+          number: 89
+          title: Promote staging
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/89
+          headRepositoryOwner: huddlesurety
+        - headRefName: staging
+          number: 88
+          title: Promote staging
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/88
+          headRepositoryOwner: huddlesurety
+        - headRefName: staging
+          number: 87
+          title: Promote staging
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/87
+          headRepositoryOwner: huddlesurety
+        - headRefName: ethan/hud-44-fix-bond-log-view-by-date
+          number: 106
+          title: sort bond log in recency order
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/106
+          headRepositoryOwner: huddlesurety
+        - headRefName: feat/bond-log
+          number: 97
+          title: add bonds page
+          state: MERGED
+          url: https://github.com/huddlesurety/app/pull/97
+          headRepositoryOwner: huddlesurety
+        - headRefName: feat/test
+          number: 96
+          title: add tests
+          state: CLOSED
+          url: https://github.com/huddlesurety/app/pull/96
+          headRepositoryOwner: huddlesurety
+    /Users/ethantlee/dev/macterm:
+        - headRefName: chore/github-automation
+          number: 20
+          title: 'chore: add labeler, stale, dependabot, and release-drafter'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/20
+          headRepositoryOwner: thdxg
+        - headRefName: feat/paste-file-paths
+          number: 28
+          title: 'feat: paste copied file paths into terminals'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/28
+          headRepositoryOwner: m0n99
+        - headRefName: fix/layout-aware-shortcuts
+          number: 26
+          title: 'fix: match shortcuts by keyboard layout'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/26
+          headRepositoryOwner: m0n99
+        - headRefName: fix/required-checks-on-skip
+          number: 23
+          title: 'ci: gate Checks jobs with if-filter instead of on-level paths'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/23
+          headRepositoryOwner: thdxg
+        - headRefName: fix/required-checks-on-skip
+          number: 22
+          title: 'ci: stand-in Checks workflow so path-filtered PRs aren''t stuck on required contexts'
+          state: CLOSED
+          url: https://github.com/thdxg/macterm/pull/22
+          headRepositoryOwner: thdxg
+        - headRefName: main
+          number: 19
+          title: 'feat: desktop notifications'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/19
+          headRepositoryOwner: hrbrmstr
+        - headRefName: refactor/drop-custom-themes
+          number: 37
+          title: Drop custom Macterm themes, ship upstream ghostty themes only
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/37
+          headRepositoryOwner: thdxg
+        - headRefName: refactor/consolidate-mise-tasks
+          number: 36
+          title: Consolidate ci:* mise tasks into a --verbose flag
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/36
+          headRepositoryOwner: thdxg
+        - headRefName: feat/appcast-release-notes
+          number: 33
+          title: 'feat: show GitHub Release notes in Sparkle''s update dialog'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/33
+          headRepositoryOwner: thdxg
+        - headRefName: feat/tab-switcher-and-appearance-tab
+          number: 32
+          title: 'feat: tab switcher in title bar + Appearance settings tab'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/32
+          headRepositoryOwner: thdxg
+        - headRefName: fix/quick-terminal-cleared-binding
+          number: 30
+          title: 'fix: respect user-cleared hotkey bindings'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/30
+          headRepositoryOwner: thdxg
+        - headRefName: fix/bundle-terminfo
+          number: 41
+          title: 'fix: bundle ghostty terminfo so TERM=xterm-ghostty resolves standalone'
+          state: OPEN
+          url: https://github.com/thdxg/macterm/pull/41
+          headRepositoryOwner: thdxg
+        - headRefName: feat/built-in-themes
+          number: 35
+          title: Bundle ghostty themes + shell-integration so theming works standalone
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/35
+          headRepositoryOwner: thdxg
+        - headRefName: fix/appcast-release-notes-rendering
+          number: 34
+          title: 'fix: release notes rendered the tempfile path instead of the body'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/34
+          headRepositoryOwner: thdxg
+        - headRefName: feat/sidebar-toggle-animation
+          number: 31
+          title: 'feat: animate sidebar collapse/expand'
+          state: MERGED
+          url: https://github.com/thdxg/macterm/pull/31
+          headRepositoryOwner: thdxg
